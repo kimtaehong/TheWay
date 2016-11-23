@@ -1304,6 +1304,13 @@ p {
     font-size: 21px;
   }
 }
+@media(max-width: 767px){
+    .img-responsive{
+        display: block;
+        max-width: 100%;
+        height: auto;
+  }
+}
 small,
 .small {
   font-size: 85%;

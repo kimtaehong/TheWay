@@ -40,14 +40,15 @@ h6 {
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 13%;
+    padding-bottom: 13%;
 }
 
 .intro-message > h1 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 9em;
+    font-size: 7em;
+    text-align: center;
 }
 
 .intro-divider {
@@ -181,14 +182,17 @@ p.copyright {
 }
 
 .description{
-    margin-bottom: 10px;
-    margin-top: 10%;
-    margin-left: 20%;
+    margin-bottom: 18%;
+    margin-top: 18%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .description_sec{
-    margin-bottom: 10px;
-    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .attach-right{
@@ -196,7 +200,8 @@ p.copyright {
 }
 
 .top{
-    margin-top:30px;
+    margin-top:10px;
+    margin-bottom: 10px;
 }
 
 .p-header{
@@ -207,9 +212,4 @@ p.copyright {
 }
 .icon{
     margin: 0 0 28px;
-}
-
-.IconList{
-    margin-top:10px;
-    margin-bottom:10px;
 }

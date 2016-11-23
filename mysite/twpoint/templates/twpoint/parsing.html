@@ -3,102 +3,81 @@
 {% block main_content %}
 <div id="page-wrapper">
     <div class="row">
-        <div class="container container-large">
-            <div class="description_sec">
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1">
-                        <h1>Information</h1>
-                    </div>
+        <div class="description_sec">
+            <div class="row">
+                <h1>Information</h1>
+            </div>
+            <div class="row">
+                <div class="well">
+                    <dl class="dl-horizontal">
+                        <dt>Name:</dt>
+                        <dd align="center">{{Name}}</dd><br>
+                        <dt>Case no:</dt>
+                        <dd align="center">{{Case_no}}</dd><br>
+                        <dt>Description:</dt>
+                        <dd align="center">{{Description}}</dd><br>
+                        <dt>Phone:</dt>
+                        <dd align="center">Null</dd>
+                    </dl>
                 </div>
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1">
-                        <div class= "well">
-                            <dl class="dl-horizontal">
-                                <dt>Name:</dt>
-                                <dd align="center">{{Name}}</dd><br>
-                                <dt>Case no:</dt>
-                                <dd align="center">{{Case_no}}</dd><br>
-                                <dt>Description:</dt>
-                                <dd align="center">{{Description}}</dd><br>
-                                <dt>Phone:</dt>
-                                <dd align="center">Null</dd>
-                            </dl>
-                        </div>
-                    </div>
-                    <br/>
+            </div>
+            <div class="row">
+                <h2>Analyzed Application</h2>
+            </div>
+            <div class="row top">
+                <div class="col-lg-2 icon">
+                    {% load static %}<img class="img-responsive listimg" src="{% static 'twpoint/img/Naver.png' %}">
                 </div>
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1">
-                        <h1>Add File</h1>
-                    </div>
+                <div class="col-lg-3">
+                    <h3>application name</h3>
                 </div>
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1">
-                        <div class= "well">
-                            <input type="file" webkitdirectory directory multiple class="filestyle" data-classIcon="icon-plus" data-buttonBefore="true" data-buttonText="BaseStation/ CSV"><br/>
-                        </div>
-                    </div>
+                <div class="col-lg-7">
+                    <h3>app datafile path</h3>
                 </div>
-                <br/>
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1">
-                        <h2>Analyzed Application</h2>
-                    </div>
+            </div>
+            <div class="row top">
+                <div class="col-lg-2 icon">
+                    {% load static %}<img class="img-responsive listimg" src="{% static 'twpoint/img/Naver.png' %}">
                 </div>
-                <div class="row IconList">
-                    <div class="col-lg-1 col-lg-offset-1">
-                        {% load static %}<img class="img-responsive listimg" src="{% static 'twpoint/img/Naver.png' %}">
-                    </div>
-                    <div class="col-lg-3">
-                        <h3>application name</h3>
-                    </div>
-                    <div class="col-lg-7">
-                        <h3>app datafile path</h3>
-                    </div>
+                <div class="col-lg-3">
+                    <h3>application name</h3>
                 </div>
-                <div class="row IconList">
-                    <div class="col-lg-1 col-lg-offset-1">
-                        {% load static %}<img class="img-responsive listimg" src="{% static 'twpoint/img/Naver.png' %}">
-                    </div>
-                    <div class="col-lg-3">
-                        <h3>application name</h3>
-                    </div>
-                    <div class="col-lg-7">
-                        <h3>app datafile path</h3>
-                    </div>
+                <div class="col-lg-7">
+                    <h3>app datafile path</h3>
                 </div>
-                <div class="row IconList">
-                    <div class="col-lg-1 col-lg-offset-1">
-                        {% load static %}<img class="img-responsive listimg" src="{% static 'twpoint/img/Naver.png' %}">
-                    </div>
-                    <div class="col-lg-3">
-                        <h3>application name</h3>
-                    </div>
-                    <div class="col-lg-7">
-                        <h3>app datafile path</h3>
-                    </div>
+            </div>
+            <div class="row top">
+                <div class="col-lg-2 icon">
+                    {% load static %}<img class="img-responsive listimg" src="{% static 'twpoint/img/Naver.png' %}">
                 </div>
-                <div class="row IconList">
-                    <div class="col-lg-1 col-lg-offset-1">
-                        {% load static %}<img class="img-responsive listimg" src="{% static 'twpoint/img/Naver.png' %}">
-                    </div>
-                    <div class="col-lg-3">
-                        <h3>application name</h3>
-                    </div>
-                    <div class="col-lg-7">
-                        <h3>app datafile path</h3>
-                    </div>
+                <div class="col-lg-3">
+                    <h3>application name</h3>
                 </div>
-
-                <div class="row">
-                    <div class="col-lg-2 col-lg-offset-1">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="{% url 'twpoint:result' %}" class="btn btn-success btn-lg"><i class="fa fa-play fa-fw"></i> <span class="network-name">View Result</span></a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="col-lg-7">
+                    <h3>app datafile path</h3>
                 </div>
+            </div>
+            <div class="row top">
+                <div class="col-lg-2 icon">
+                    {% load static %}<img class="img-responsive listimg" src="{% static 'twpoint/img/Naver.png' %}">
+                </div>
+                <div class="col-lg-3">
+                    <h3>application name</h3>
+                </div>
+                <div class="col-lg-7">
+                    <h3>app datafile path</h3>
+                </div>
+            </div>
+            <div class="row">
+                <h1>Add FILE</h1>
+            </div>
+            <div class="row">
+                <div class="top">
+                    <input type="file" webkitdirectory directory multiple class="filestyle" data-classIcon="icon-plus" data-buttonBefore="true" data-buttonText="BaseStation/ CSV"><br/>
+                </div>
+            </div>
+            <div class="row">
+                <a href="{% url 'twpoint:result' %}" class="btn btn-success btn-lg"><i class="fa fa-play fa-fw"></i> <span class="network-name">View Result</span></a>
             </div>
         </div>
     </div>

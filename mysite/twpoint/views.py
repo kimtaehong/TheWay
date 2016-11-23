@@ -38,7 +38,7 @@ def gallery(request):
         'time': timezone.localtime(timezone.now()),
         'application': applications,
     }
-    return render(request, 'twpoint/gallery.html', context )
+    return render(request, 'twpoint/gallery.html', context)
 
 
 def parsing(request):
