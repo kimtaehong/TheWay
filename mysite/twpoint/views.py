@@ -2,7 +2,6 @@ from django.shortcuts import render, get_object_or_404, HttpResponse
 from .models import WayPoint, Application, BaseStation
 from django.utils import timezone
 import json
-import pdb
 
 
 def index(request):

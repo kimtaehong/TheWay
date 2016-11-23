@@ -14,7 +14,7 @@
                     <i class="glyphicon glyphicon-road"></i> App Data
                 </div>
                 <div class="panel-body">
-                    <div class="flot-chart-content" id="flot-bar-chart"></div>
+                    <div class="flot-chart-content" id="flot-pie-chart"></div>
                 </div>
             </div>
         </div>
@@ -30,11 +30,15 @@
         </div>
     </div>
 </div>
-<script src="{% static 'twpoint/vendor/flot/jquery.flot.js' %}"></script>
+
+{% endblock %}
+
+{% block flot_js %}
+<script src="{% static 'twpoint/vendor/flot/excanvas.js' %}"></script>
 <script src="{% static 'twpoint/vendor/flot/jquery.flot.js' %}"></script>
 <script src="{% static 'twpoint/vendor/flot/jquery.flot.pie.js' %}"></script>
 <script src="{% static 'twpoint/vendor/flot/jquery.flot.resize.js' %}"></script>
 <script src="{% static 'twpoint/vendor/flot/jquery.flot.time.js' %}"></script>
 <script src="{% static 'twpoint/vendor/flot-tooltip/jquery.flot.tooltip.min.js' %}"></script>
-
+<script src="{% static 'twpoint/data/flot-data.js' %}"></script>
 {% endblock %}

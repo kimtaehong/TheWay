@@ -69,8 +69,11 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh14mlGU2ZwVyhtw3gAyVKN30Uu_P9hDY&callback=initMap"></script>
 <script src="{% static 'twpoint/js/jquery.dataTables.js' %}"></script>
 <script src="{% static 'twpoint/js/dataTables.bootstrap.js' %}"></script>
-<script src="{% static 'twpoint/data/map-data.js' %}"></script>
 <script src="{% static 'twpoint/js/bootstrap-filestyle.js' %}"></script>
+{% block map_js %}{% endblock %}
+{% block flot_js %}{% endblock %}
+
+
 </body>
 </html>
 
