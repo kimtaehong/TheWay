@@ -1,0 +1,77 @@
+{% extends 'twpoint/base.html' %}
+{% block css_sb %}
+{% load static %} <link href="{% static 'twpoint/bootstrapdist/css/sb-admin-2.css' %}" rel="stylesheet">
+{% endblock %}
+{% block main_content %}
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header"> Gallery </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="glyphicon glyphicon-road"></i> GPS
+                </div>
+                <!--/.panel-heading-->
+                <div class="panel-body">
+                    <div id="map"></div>
+                </div>
+                <!--/.panel-body -->
+            </div>
+            <!--/.panel panel-default-->
+        </div>
+        <div class="col-lg-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Sub
+                </div>
+                <div class="panel-body">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#data" data-toggle="tab">Data</a>
+                        </li>
+                        <li>
+                            <a href="#photo" data-toggle="tab">Photo</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="data" class="tab-pane fade in active">
+                            <h4> Data Sample</h4>
+                            <p> example <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></p>
+                        </div>
+                        <div id="photo" class="tab-pane fade">
+                            <h4> Photo</h4>
+                            <p> example <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- map and data -->
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-photo "></i> Photo
+                </div>
+                <div class="panel-body">
+                    <div class="col-sm-6 col-md-2">
+                        <div class="thumbnail">
+                            <a href="#"><img src="{% static 'twpoint/img/sample_image.jpeg' %}"></a>
+                            <div class="caption">
+                                <h5>Thumbnail label</h5>
+                                <p><a href="#" class="btn btn-primary" role="button">Select</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bootstrap gallery -->
+    </div>
+</div>
+{% endblock %}
