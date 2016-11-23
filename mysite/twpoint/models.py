@@ -1,4 +1,5 @@
 from django.db import models
+import pdb
 
 # Example Model
 class Application(models.Model):
@@ -8,6 +9,13 @@ class Application(models.Model):
 
     def __str__(self):
         return self.app_name
+
+    def dic(self):
+        fields = ['id', 'app_name', 'app_data_path']
+        result = {}
+        for field in fields:
+            result[field] = self.__dict__[field]
+        return result
 
 
 # Example Model
@@ -25,6 +33,13 @@ class WayPoint(models.Model):
     def GetPoint(self):
         """위도와 경도를 한번에 표시"""
         return str(self.point_lat) + ',' + str(self.point_lng)
+
+    def dic(self):
+        fields = ['id', 'app_name_id', 'point_name', 'point_lat', 'point_lng']
+        result = {}
+        for field in fields:
+            result[field] = self.__dict__[field]
+        return result
 
 
 class BaseStation(models.Model):
