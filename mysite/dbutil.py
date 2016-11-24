@@ -1,5 +1,6 @@
 import sqlite3
 import util
+import pdb
 
 #############################################
 ################### SETUP ###################
@@ -35,8 +36,11 @@ def inputResDB(insertQuery) :
 def appdata() :
    return sqlite3.connect('./appinfo.db')
 
-def appdbconnect(packageName, path) :
-   return sqlite3.connect('./phone/data/' + packageName + '/' + path)
+def appdbconnect(packageName, path, filelocation) :
+   file_path = filelocation + '/data/' + packageName + '/' + path
+   # pdb.set_trace()
+   open(file_path, 'rb').read()
+   return sqlite3.connect(file_path)
 
 ################## GEN #####################
 
@@ -54,7 +58,7 @@ def genQuery(record) :
    query = "select "
    values = []
    print('record')
-   for i in record.keys()[4:-1] :
+   for i in list(record.keys())[4:-1] :
       query = query + record[i] + ","
       values.append(i)
    return query[ :-1] + ' from ' + record['tableName'], values

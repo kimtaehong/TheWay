@@ -10,6 +10,7 @@ import re
 import xlrd
 import urllib
 import sys
+import pdb
 
 #############################################################
 ######################## convert ############################
@@ -22,13 +23,7 @@ def rePath() :
     return os.getcwd().replace('\\', '/')
 
 def toString(value):
-    if type(value) == type(int()) :
-        return str(value)
-    elif type(value) == type(long()) :
-        return str(value)
-    elif type(value) == type(float()) :
-        return str(value)
-    return value
+   return str(value)
 
 def deleteResult() :
     os.system("del result.db")

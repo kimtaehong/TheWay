@@ -1,8 +1,13 @@
-from django.shortcuts import render, get_object_or_404, HttpResponse
+from django.shortcuts import render, get_object_or_404, HttpResponse, render_to_response
 from .models import WayPoint, Application, BaseStation
 from django.utils import timezone
 import json
 import bsparser
+import app
+import picture
+from django.views.decorators.csrf import csrf_exempt
+
+@csrf_exempt
 
 def index(request):
     """index page"""
@@ -27,7 +32,6 @@ def result(request):
     if request.method == 'POST':
         if 'file' in request.FILES:
             bsparser.parse(request.FILES['file'].name,request.FILES['file'].read().decode('utf-8'))
-
     applications = Application.objects.all()
     context = {
         'time': timezone.localtime(timezone.now()),
@@ -45,8 +49,14 @@ def gallery(request):
 
 
 def parsing(request):
-    return render(request, 'twpoint/parsing.html', {"time": timezone.localtime(timezone.now()), })
-# data view
+    picture.picture_search('./' + request.POST['filename'])
+    app.appdata('./'+request.POST['filename'])
+    context = {
+            'Name': request.POST['Name'],
+            'Case_no': request.POST['Case_no'],
+            'Description': request.POST['Description']
+        }
+    return render_to_response('twpoint/parsing.html', context)
 
 
 def dataview(request):

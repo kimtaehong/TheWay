@@ -1,5 +1,4 @@
 from django.db import models
-import pdb
 
 # Example Model
 class Application(models.Model):
