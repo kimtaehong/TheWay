@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31419833-df54-4897-a3dd-0b5b8949718e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mysite/twpoint/static/twpoint/data/morris-data.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/twpoint/static/twpoint/data/flot-data.js" afterPath="$PROJECT_DIR$/mysite/twpoint/static/twpoint/data/flot-data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/twpoint/static/twpoint/vendor/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/mysite/twpoint/static/twpoint/vendor/bootstrap/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/twpoint/static/twpoint/vendor/bootstrap/css/landing-page.css" afterPath="$PROJECT_DIR$/mysite/twpoint/static/twpoint/vendor/bootstrap/css/landing-page.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/twpoint/templates/twpoint/header.html" afterPath="$PROJECT_DIR$/mysite/twpoint/templates/twpoint/header.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/twpoint/templates/twpoint/index.html" afterPath="$PROJECT_DIR$/mysite/twpoint/templates/twpoint/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/twpoint/templates/twpoint/parsing.html" afterPath="$PROJECT_DIR$/mysite/twpoint/templates/twpoint/parsing.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/twpoint/templates/twpoint/result.html" afterPath="$PROJECT_DIR$/mysite/twpoint/templates/twpoint/result.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/twpoint/views.py" afterPath="$PROJECT_DIR$/mysite/twpoint/views.py" />
     </list>
     <ignored path="TheWay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="result.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="result.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/twpoint/templates/twpoint/result.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+            <state relative-caret-position="351">
+              <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="morris-data.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/twpoint/static/twpoint/data/morris-data.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -63,31 +68,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flot-data.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/twpoint/static/twpoint/data/flot-data.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/twpoint/templates/twpoint/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" column="51" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
+            <state relative-caret-position="1095">
+              <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parsing.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="parsing.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/twpoint/templates/twpoint/parsing.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+            <state relative-caret-position="285">
+              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -96,7 +91,7 @@
       <file leaf-file-name="landing-page.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/twpoint/static/twpoint/vendor/bootstrap/css/landing-page.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
+            <state relative-caret-position="3030">
               <caret line="202" column="17" selection-start-line="202" selection-start-column="17" selection-end-line="202" selection-end-column="17" />
               <folding />
             </state>
@@ -106,7 +101,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/twpoint/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="405">
               <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding>
                 <element signature="e#0#68#0" expanded="true" />
@@ -118,7 +113,7 @@
       <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/twpoint/static/twpoint/vendor/bootstrap/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
+            <state relative-caret-position="19650">
               <caret line="1310" column="21" selection-start-line="1310" selection-start-column="21" selection-end-line="1310" selection-end-column="21" />
               <folding />
             </state>
@@ -148,13 +143,14 @@
         <option value="$PROJECT_DIR$/mysite/twpoint/templates/twpoint/base.html" />
         <option value="$PROJECT_DIR$/mysite/twpoint/templates/twpoint/detail.html" />
         <option value="$PROJECT_DIR$/mysite/twpoint/static/twpoint/data/flot-data.js" />
-        <option value="$PROJECT_DIR$/mysite/twpoint/templates/twpoint/result.html" />
         <option value="$PROJECT_DIR$/mysite/twpoint/static/twpoint/vendor/bootstrap/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/mysite/twpoint/templates/twpoint/index.html" />
         <option value="$PROJECT_DIR$/mysite/twpoint/static/twpoint/vendor/bootstrap/css/landing-page.css" />
         <option value="$PROJECT_DIR$/mysite/twpoint/templates/twpoint/header.html" />
         <option value="$PROJECT_DIR$/mysite/twpoint/views.py" />
         <option value="$PROJECT_DIR$/mysite/twpoint/templates/twpoint/parsing.html" />
+        <option value="$PROJECT_DIR$/mysite/twpoint/templates/twpoint/index.html" />
+        <option value="$PROJECT_DIR$/mysite/twpoint/templates/twpoint/result.html" />
+        <option value="$PROJECT_DIR$/mysite/twpoint/static/twpoint/data/morris-data.js" />
       </list>
     </option>
   </component>
@@ -194,6 +190,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -237,6 +234,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twpoint" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TheWay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TheWay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twpoint" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -350,14 +373,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="pa&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/parsing.html&#10;views&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/views.py&#10;par&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/parsing.html&#10;he&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/header.html&#10;la&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/static/twpoint/vendor/bootstrap/css/landing-page.css&#10;lan&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/static/twpoint/vendor/bootstrap/css/landing-page.css&#10;land&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/static/twpoint/vendor/bootstrap/css/landing-page.css&#10;parsing.h&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/parsing.html&#10;ind&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/index.html&#10;urls&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/urls.py&#10;h&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/header.html&#10;bootstrap.&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/static/twpoint/vendor/bootstrap/css/bootstrap.css&#10;hea&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/header.html&#10;landing&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/static/twpoint/vendor/bootstrap/css/landing-page.css&#10;inde&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/index.html&#10;header.html&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/header.html&#10;header&#9;null&#9;null&#10;res&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/result.html&#10;fl&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/static/twpoint/data/flot-data.js&#10;re&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/result.html&#10;ㄹㅣ&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/static/twpoint/data/flot-data.js&#10;ㄱ&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/result.html&#10;flo&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/static/twpoint/data/flot-data.js&#10;flot&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/static/twpoint/data/flot-data.js&#10;in&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/index.html&#10;detail.&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/detail.html&#10;deta&#9;null&#9;null&#10;bas&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/base.html&#10;base.&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/base.html&#10;index.ht&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/index.html&#10;view&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/views.py&#10;vies&#9;null&#9;null&#10;mo&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/models.py&#10;ur&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/urls.py&#10;mode&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/models.py&#10;url&#9;null&#9;null&#10;models&#9;null&#9;null&#10;flot.pi&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/static/twpoint/vendor/flot/jquery.flot.pie.js&#10;result.html&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/result.html&#10;resu&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="re&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/result.html&#10;ind&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/index.html&#10;pa&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/parsing.html&#10;views&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/views.py&#10;par&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/parsing.html&#10;he&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/header.html&#10;la&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/static/twpoint/vendor/bootstrap/css/landing-page.css&#10;lan&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/static/twpoint/vendor/bootstrap/css/landing-page.css&#10;land&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/static/twpoint/vendor/bootstrap/css/landing-page.css&#10;parsing.h&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/parsing.html&#10;urls&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/urls.py&#10;h&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/header.html&#10;bootstrap.&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/static/twpoint/vendor/bootstrap/css/bootstrap.css&#10;hea&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/header.html&#10;landing&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/static/twpoint/vendor/bootstrap/css/landing-page.css&#10;inde&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/index.html&#10;header.html&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/header.html&#10;header&#9;null&#9;null&#10;res&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/result.html&#10;fl&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/static/twpoint/data/flot-data.js&#10;ㄹㅣ&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/static/twpoint/data/flot-data.js&#10;ㄱ&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/result.html&#10;flo&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/static/twpoint/data/flot-data.js&#10;flot&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/static/twpoint/data/flot-data.js&#10;in&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/index.html&#10;detail.&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/detail.html&#10;deta&#9;null&#9;null&#10;bas&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/base.html&#10;base.&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/base.html&#10;index.ht&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/index.html&#10;view&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/views.py&#10;vies&#9;null&#9;null&#10;mo&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/models.py&#10;ur&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/urls.py&#10;mode&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/models.py&#10;url&#9;null&#9;null&#10;models&#9;null&#9;null&#10;flot.pi&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/static/twpoint/vendor/flot/jquery.flot.pie.js&#10;result.html&#9;FILE&#9;file:///Users/SangwookAhn/Applications/TheWay/mysite/twpoint/templates/twpoint/result.html&#10;resu&#9;null&#9;null" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="true" />
@@ -528,15 +550,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2090574" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1943128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19203539" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19203539" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -565,13 +587,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mysite/twpoint/static/twpoint/vendor/flot/jquery.flot.pie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/result.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -609,7 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -672,7 +686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -749,7 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -798,7 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -849,7 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1110">
           <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,9 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -867,7 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1245">
           <caret line="83" column="63" selection-start-line="83" selection-start-column="63" selection-end-line="83" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -875,7 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -883,7 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -891,14 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/twpoint/templates/twpoint/result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -913,7 +909,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/twpoint/static/twpoint/vendor/bootstrap/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
+        <state relative-caret-position="19650">
           <caret line="1310" column="21" selection-start-line="1310" selection-start-column="21" selection-end-line="1310" selection-end-column="21" />
           <folding />
         </state>
@@ -929,16 +925,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/twpoint/static/twpoint/vendor/bootstrap/css/landing-page.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
+        <state relative-caret-position="3030">
           <caret line="202" column="17" selection-start-line="202" selection-start-column="17" selection-end-line="202" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/twpoint/templates/twpoint/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="51" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -956,7 +944,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/twpoint/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="405">
           <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
@@ -966,8 +954,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/twpoint/templates/twpoint/parsing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+        <state relative-caret-position="285">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/twpoint/templates/twpoint/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/twpoint/static/twpoint/data/morris-data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/twpoint/templates/twpoint/result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
           <folding />
         </state>
       </provider>
