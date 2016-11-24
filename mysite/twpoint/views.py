@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, HttpResponse
 from .models import WayPoint, Application, BaseStation
 from django.utils import timezone
 import json
-
+import bsparser
 
 def index(request):
     """index page"""
@@ -24,13 +24,16 @@ def detail(request, application_id):
 
 
 def result(request):
+    if request.method == 'POST':
+        if 'file' in request.FILES:
+            bsparser.parse(request.FILES['file'].name,request.FILES['file'].read().decode('utf-8'))
+
     applications = Application.objects.all()
     context = {
         'time': timezone.localtime(timezone.now()),
-        'application': applications,
+        'application': applications
     }
     return render(request, 'twpoint/result.html', context)
-
 
 def gallery(request):
     applications = Application.objects.all()
