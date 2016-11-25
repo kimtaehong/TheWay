@@ -10,7 +10,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <i class="glyphicon glyphicon-road"></i> GPS
@@ -23,34 +23,6 @@
             </div>
             <!--/.panel panel-default-->
         </div>
-        <div class="col-lg-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    Sub
-                </div>
-                <div class="panel-body">
-                    <ul class="nav nav-tabs">
-                        <li class="active">
-                            <a href="#data" data-toggle="tab">Data</a>
-                        </li>
-                        <li>
-                            <a href="#photo" data-toggle="tab">Photo</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="data" class="tab-pane fade in active">
-                            <h4> Data Sample</h4>
-                            <p> example <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></p>
-                        </div>
-                        <div id="photo" class="tab-pane fade">
-                            <h4> Photo</h4>
-                            <p> example <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- map and data -->
     </div>
     <div class="row">
         <div class="col-lg-12">
@@ -74,4 +46,8 @@
         <!-- bootstrap gallery -->
     </div>
 </div>
+{% endblock %}
+
+{% block map_js%}
+<script src="{% static 'twpoint/data/map-data.js' %}"></script>
 {% endblock %}
