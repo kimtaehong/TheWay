@@ -61,10 +61,11 @@ tableDic = ['appName',
             'Seperate',
             'DataType']
 
-def list2dic(record) :
+
+def list2dic(record):
     ret = collections.OrderedDict()
-    for i in range(0, len(tableDic)) :
-        if record[i] != u'' :
+    for i in range(0, len(tableDic)):
+        if record[i] != u'':
             ret[tableDic[i]] = record[i]
     return ret
 
@@ -115,7 +116,8 @@ def locToCoord(location) :
     lon = re.findall('<lng>(.+?)</lng>', location)[0]
     return lat, lon
 
-def timeTotimestamp(timeS) :
+
+def timeTotimestamp(timeS):
     try:
         return int(time.mktime(time.strptime(timeS, "%Y-%m-%d %H:%M:%S")))
     except :
