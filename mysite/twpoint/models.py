@@ -20,6 +20,8 @@ class Application(models.Model):
 class WayPoint(models.Model):
     """위치 정보에 관한 모델"""
     app_name = models.ForeignKey(Application, on_delete=models.CASCADE)
+    path = models.CharField(max_length=255, null=True)
+    table_name = models.CharField(max_length=255, null=True)
     point_time = models.DateTimeField('Point Time', auto_now=False, auto_now_add=False, null=True)
     position = models.CharField(max_length=255, null=True)
     position_x = models.CharField(max_length=255, null=True)
@@ -94,6 +96,7 @@ class Picture(models.Model):
         for field in fields:
             result[field] = self.__dict__[field]
         return result
+
 
 class BaseStation(models.Model):
     time = models.IntegerField()

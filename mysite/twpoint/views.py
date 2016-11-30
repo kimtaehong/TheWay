@@ -18,6 +18,8 @@ def index(request):
     bs_model = BaseStation.objects.all()
     picture_model = Picture.objects.all()
 
+    # db clear
+
     return render(request, 'twpoint/index.html', {"time": timezone.localtime(timezone.now()), })
 
 
