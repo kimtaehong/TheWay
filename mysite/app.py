@@ -3,6 +3,7 @@ import dbutil
 import appParse
 from twpoint.models import Application, WayPoint
 import pdb
+import after
 
 id = 0
 
@@ -59,7 +60,7 @@ def xmlParse(record, path, afterprocess):
         rec.save()
         if afterprocess != '' :
             after.process(afterprocess)
-            
+
 def fileParse(record) :
     return appParse.parse(record['appName'],
                           record['packageName'],
