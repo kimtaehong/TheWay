@@ -14,11 +14,12 @@ def sqlParse(record, path, afterprocess):
         appcursor.execute(query)  # get data
     except:
         return False  # Except None file
-    #  a = Application.objects.filter(name=record['appName']
-    #
-    #  record['appName']
-    ap = Application(app_name = record['appName'], app_package = record['packageName'])
-    ap.save()
+
+    if len(Application.objects.filter(app_name=record['appName']) == 0:
+        ap = Application(app_name = record['appName'], app_package = record['packageName'])
+        ap.save()
+    else :
+        ap = Application.objects.filter(app_name = record['appName'])[0]
 
     while True:
         appRecord = appcursor.fetchone()
@@ -38,6 +39,12 @@ def xmlParse(record, path, afterprocess):
         xmlcon = util.xmlOpen(record['packageName'], record['path'], path)
     except:
         return False
+
+    if len(Application.objects.filter(app_name=record['appName']) == 0:
+        ap = Application(app_name = record['appName'], app_package = record['packageName'])
+        ap.save()
+    else :
+        ap = Application.objects.filter(app_name = record['appName'])[0]
 
     if 'Sperate' in record:
         appRecords = xmlcon.split(record['Seperate'])
