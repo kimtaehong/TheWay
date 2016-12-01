@@ -13,11 +13,11 @@
                 <div class="well">
                     <dl class="dl-horizontal">
                         <dt>Name:</dt>
-                        <dd align="center">{{Name}}</dd><br>
+                        <dd align="center">{{ user.name }}</dd><br>
                         <dt>Case no:</dt>
-                        <dd align="center">{{Case_no}}</dd><br>
+                        <dd align="center">{{user.case_no}}</dd><br>
                         <dt>Description:</dt>
-                        <dd align="center">{{Description}}</dd><br>
+                        <dd align="center">{{user.description}}</dd><br>
                         <dt>Phone:</dt>
                         <dd align="center">Null</dd>
                     </dl>
@@ -71,7 +71,7 @@
                 </div>
             </div>
             <div class="row">
-                <h1>Add FILE</h1>
+                <h1>ADD Base Station File(.CSV)</h1>
             </div>
             <form action="{% url 'twpoint:result' %}" method="post" ENCTYPE="multipart/form-data">{% csrf_token %}
             <div class="row">

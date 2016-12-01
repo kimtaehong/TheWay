@@ -15,7 +15,7 @@ def sqlParse(record, path, afterprocess):
     except:
         return False  # Except None file
 
-    if len(Application.objects.filter(app_name=record['appName']) == 0:
+    if len(Application.objects.filter(app_name=record['appName'])) == 0:
         ap = Application(app_name = record['appName'], app_package = record['packageName'])
         ap.save()
     else :
@@ -40,7 +40,7 @@ def xmlParse(record, path, afterprocess):
     except:
         return False
 
-    if len(Application.objects.filter(app_name=record['appName']) == 0:
+    if len(Application.objects.filter(app_name=record['appName'])) == 0:
         ap = Application(app_name = record['appName'], app_package = record['packageName'])
         ap.save()
     else :

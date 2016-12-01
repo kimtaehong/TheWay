@@ -101,7 +101,7 @@ class Picture(models.Model):
 
 
 class BaseStation(models.Model):
-    time = models.IntegerField()
+    time = models.CharField(max_length=255)
     location = models.CharField(max_length=255)
     lat = models.FloatField('Latitude')
     lng = models.FloatField('Longitude')
@@ -112,3 +112,11 @@ class BaseStation(models.Model):
     def __str__(self):
         return self.name
 
+
+class UserInfo(models.Model):
+    name = models.CharField(max_length=50)
+    case_no = models.CharField(max_length=255)
+    description = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.name

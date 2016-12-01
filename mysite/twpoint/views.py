@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, HttpResponse, render_to_response
-from .models import WayPoint, Application, BaseStation, Picture
+from .models import WayPoint, Application, BaseStation, Picture, UserInfo
 from django.utils import timezone
 import json
 import bsparser
@@ -15,10 +15,12 @@ def index(request):
     """index page"""
     app_model = Application.objects.all()
     way_model = WayPoint.objects.all()
-    bs_model = BaseStation.objects.all()
-    picture_model = Picture.objects.all()
-
+    # bs_model = BaseStation.objects.all()
+    # picture_model = Picture.objects.all()
     # db clear
+
+    app_model.delete()
+    way_model.delete()
 
     return render(request, 'twpoint/index.html', {"time": timezone.localtime(timezone.now()), })
 
@@ -63,10 +65,16 @@ def parsing(request):
     # picture.picture_search('./' + request.POST['filename'])
     app.appdata('./'+request.POST['filename'])
     # db.sqlite3안에 data table, picture table에 값을 가져오는 코드 필요...
+    post_user = UserInfo()
+    post_user.name = request.POST['Name']
+    post_user.case_no = request.POST['Case_no']
+    post_user.description = request.POST['Description']
+    post_user.save()
+
+    user = UserInfo.objects.first()
+
     context = {
-            'Name': request.POST['Name'],
-            'Case_no': request.POST['Case_no'],
-            'Description': request.POST['Description']
+        'user': user
     }
     return render_to_response('twpoint/parsing.html', context)
 
