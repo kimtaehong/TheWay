@@ -1,7 +1,27 @@
 #-*- coding: utf-8 -*-
 import util
 import dbutil
+from twpoint.models import BaseStation
 
+def input_django(rowdata) :
+    #return time, lat, lon, rowData['sender'], rowData['reciver'], rowData['position'], rowData['type']
+    '''
+        time = models.CharField(max_length=255)
+        location = models.CharField(max_length=255)
+        lat = models.FloatField('Latitude')
+        lng = models.FloatField('Longitude')
+        sender = models.CharField(max_length=255)
+        receiver = models.CharField(max_length=255)
+        type = models.CharField(max_length=255)
+    '''
+    bs = BaseStation(time     = rowdata[0],
+                     lat      = rowdata[1],
+                     lng      = rowdata[2],
+                     sender   = rowdata[3],
+                     reciver  = rowdata[4],
+                     location = rowdata[5],
+                     type     = rowdata[6])
+    bs.save()
 
 def CSVcolunmMatch(row):
     Data = {}
@@ -76,7 +96,7 @@ def csvParse(file):
             if row == ['']:
                 continue
             rowData[Matcher] = row[int(Matchers[Matcher])]
-        dbutil.bsQuery(rowData)
+        input_django(dbutil.bsQuery(rowData))
 
 
 def xlsParse(file):
@@ -96,7 +116,7 @@ def xlsParse(file):
             if row == [''] :
                 continue
             rowData[Matcher] = row[int(Matchers[Matcher])]
-        dbutil.bsQuery(rowData)
+        input_django(dbutil.bsQuery(rowData))
 
 
 def parse(filename, file):
