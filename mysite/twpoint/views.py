@@ -60,7 +60,7 @@ def gallery(request):
 
 
 def parsing(request):
-    picture.picture_search('./' + request.POST['filename'])
+    # picture.picture_search('./' + request.POST['filename'])
     app.appdata('./'+request.POST['filename'])
     # db.sqlite3안에 data table, picture table에 값을 가져오는 코드 필요...
     context = {

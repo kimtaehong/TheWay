@@ -22,7 +22,7 @@ class WayPoint(models.Model):
     app_name = models.ForeignKey(Application, on_delete=models.CASCADE)
     path = models.CharField(max_length=255, null=True)
     table_name = models.CharField(max_length=255, null=True)
-    point_time = models.DateTimeField('Point Time', auto_now=False, auto_now_add=False, null=True)
+    point_time = models.CharField(max_length=255, null=True)
     position = models.CharField(max_length=255, null=True)
     position_x = models.CharField(max_length=255, null=True)
     position_y = models.CharField(max_length=255, null=True)
@@ -39,10 +39,12 @@ class WayPoint(models.Model):
     def __str__(self):
         if self.position is not None:
             return self.position
-        if self.start is not None:
+        elif self.start is not None:
             return self.start + "," + self.end
-        if self.search is not None:
+        elif self.search is not None:
             return self.search
+        else:
+            return "WayPoint_model"
 
     def dic(self):
         fields = [

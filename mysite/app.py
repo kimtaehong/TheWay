@@ -5,34 +5,38 @@ from twpoint.models import Application, WayPoint
 import pdb
 import after
 
+
 def sqlParse(record, path, afterprocess):
     query, values = dbutil.genQuery(record)
-    try :
+    try:
         appcon = dbutil.appdbconnect(record['packageName'], record['path'], path)
         appcursor = appcon.cursor()
-        appcursor.execute(query) #get data
-    except :
-        return False #Except None file
-
-    pdb.set_trace
+        appcursor.execute(query)  # get data
+    except:
+        return False  # Except None file
+    #  a = Application.objects.filter(name=record['appName']
+    #
+    #  record['appName']
     ap = Application(app_name = record['appName'], app_package = record['packageName'])
     ap.save()
+
     while True:
         appRecord = appcursor.fetchone()
         if appRecord is None:
             break
         rec = WayPoint(app_name_id = ap.id, path = record['path'], table_name = record['tableName'])
-        for i in range(0, len(values)) :
-            exec 'rec.%s = %s' %(values[i], appRecord[i])
+        for i in range(0, len(values)):
+            rec.__dict__[values[i]] = appRecord[i]
         rec.save()
-    if afterprocess != '' :
+    if afterprocess != '':
         after.process(afterprocess)
 
+
 def xmlParse(record, path, afterprocess):
-    try :
+    try:
         record['tableName'] = ''
         xmlcon = util.xmlOpen(record['packageName'], record['path'], path)
-    except :
+    except:
         return False
 
     if 'Sperate' in record:
@@ -53,12 +57,12 @@ def xmlParse(record, path, afterprocess):
             datas.append(reData)
         rec = WayPoint(app_name_id = ap.id, path = record['path'], table_name = record['tableName'])
         for i in range(0, len(values)) :
-            exec 'rec.%s = %s' %(values[i], appRecord[i])
+            rec.__dict__[values[i]] = appRecord[i]
         rec.save()
         if afterprocess != '' :
             after.process(afterprocess)
 
-def fileParse(record) :
+def fileParse(record):
     return appParse.parse(record['appName'],
                           record['packageName'],
                           record['path'],
