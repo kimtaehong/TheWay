@@ -1,29 +1,18 @@
 "use strict";
+var app_id = location.href.split("result/")[1];
+var way_url = '/waypoint/' + app_id;
+var app_data = [];
 
 jQuery(function($) {
-    // begin test
-    var wp = [];
-    var table = document.getElementById('waypointTable').tBodies.item(0);
-    for(var i = 0; i < table.childElementCount; i++){
-        var cnode = table.children[i].children;
-        var c_id = cnode[0].children[0].id;
-        wp.push({
-            id: c_id,
-            name: cnode[1].textContent,
-            latitude: cnode[2].textContent,
-            longtitude: cnode[3].textContent,
-            time: cnode[4].textContent,
+    var way_points = data;
+    var way_point = way_points[0];
 
-        })
-    }
-    // debugger;
-    // end test
-
-
+    /*
+    ////////////////////////////////////////////
     // 시작시 첫 데이터 마킹
-    var waypoint = waypoints[Object.keys(waypoints)[0]];
-    var location = {lat: waypoint.latitude, lng: waypoint.longitude};
-    var locations = [];
+    // var waypoint = waypoints[Object.keys(waypoints)[0]];
+    // var location = {lat: waypoint.latitude, lng: waypoint.longitude};
+    // var locations = [];
     var markers = [];
     var marker, poly;
 
@@ -59,11 +48,18 @@ jQuery(function($) {
             locations.splice(location,1);
         }
     })
+    */
 
     // Data Table
     $('#waypointTable').DataTable();
 
 })
+
+$.getJSON(way_url,function(w_json){
+    data = w_json;
+});
+
+
 
 /*
     Google Maps Api 사용
