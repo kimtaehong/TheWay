@@ -5,8 +5,6 @@ from twpoint.models import Application, WayPoint
 import pdb
 import after
 
-id = 0
-
 def sqlParse(record, path, afterprocess):
     query, values = dbutil.genQuery(record)
     try :
@@ -16,8 +14,7 @@ def sqlParse(record, path, afterprocess):
     except :
         return False #Except None file
 
-    pdb.set_trace()
-    id += 1
+    pdb.set_trace
     ap = Application(app_name = record['appName'], app_package = record['packageName'])
     ap.save()
     while True:
@@ -26,7 +23,7 @@ def sqlParse(record, path, afterprocess):
             break
         rec = WayPoint(app_name_id = ap.id, path = record['path'], table_name = record['tableName'])
         for i in range(0, len(values)) :
-            eval('rec.%s = %s' %(values[i], appRecord[i]))
+            exec 'rec.%s = %s' %(values[i], appRecord[i])
         rec.save()
     if afterprocess != '' :
         after.process(afterprocess)
@@ -56,7 +53,7 @@ def xmlParse(record, path, afterprocess):
             datas.append(reData)
         rec = WayPoint(app_name_id = ap.id, path = record['path'], table_name = record['tableName'])
         for i in range(0, len(values)) :
-            eval('rec.%s = %s' %(values[i], appRecord[i]))
+            exec 'rec.%s = %s' %(values[i], appRecord[i])
         rec.save()
         if afterprocess != '' :
             after.process(afterprocess)
