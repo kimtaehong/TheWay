@@ -31,7 +31,7 @@
                 </div>
                 <!--/.panel-heading-->
                 <div class="panel-body">
-                    <div id="map"></div>
+                    <div id="app_map"></div>
                 </div>
                 <!--/.panel-body -->
             </div>
@@ -50,20 +50,26 @@
                                 <thead>
                                 <tr>
                                     <th>Show</th>
-                                    <th>Point Name</th>
-                                    <th>time</th>
-                                    <th>latitude</th>
-                                    <th>longitude</th>
+                                    <th>Path</th>
+                                    <th>Table Name</th>
+                                    <th>Point Time</th>
+                                    <th>Position</th>
+                                    <th>Start</th>
+                                    <th>End</th>
+                                    <th>Search</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 {% for a in app.waypoint_set.all %}
                                 <tr class="odd gradeA">
                                     <td><input type="checkbox" id="{{ a.id }}" class="marking"/></td>
-                                    <td>{{ a.point_name }}</td>
+                                    <td>{{ a.path }}</td>
+                                    <td>{{ a.table_name }}</td>
                                     <td>{{ a.point_time }}</td>
-                                    <td>{{ a.point_lat }}</td>
-                                    <td>{{ a.point_lng }}</td>
+                                    <td>{{ a.position }}</td>
+                                    <td>{{ a.start }}</td>
+                                    <td>{{ a.end }}</td>
+                                    <td>{{ a.search }}</td>
                                 </tr>
                                 {% endfor %}
                                 </tbody>

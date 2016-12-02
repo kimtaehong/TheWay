@@ -1,11 +1,46 @@
 "use strict";
-var app_id = location.href.split("result/")[1];
-var way_url = '/waypoint/' + app_id;
-var app_data = [];
+var app_id = location.href.split("result/")[1];     // 위치정보 app id
+var way_url = '/waypoint/' + app_id;                // 위치 정보 url
+var way_data = {};                                  // json 에서 얻어온 모든 위치 정보
+var way_location = {};                              // 특정 위치정보에 위도, 경도
+var way_point = {};                                 // 특정 위치정보
 
-jQuery(function($) {
-    var way_points = data;
-    var way_point = way_points[0];
+// lat = 위도 (37...) , lng = 경도 (127...)
+
+jQuery(function($){
+
+    // map을 처음 그릴 때 center 값 설정
+
+    // 위치 정보에서 첫 번째 데이터를 중심으로 선택
+    way_point = way_data[0];
+
+    // position, start & end, search 값 중 존재하는 값으로 저장
+    if(way_point.position != null){
+        way_location = {lat: way_point.position_y, lng: way_point.position_x };
+    }
+    else if(way_point.start != null){
+        way_location = {lat: way_point.start_y, lng: way_point.start_x };
+    }
+    else if(way_point.search != null){
+        way_location = {lat: way_point.search_y, lng: way_point.search_x };
+    }
+
+    // 위치 정보가 없으면 BOB 센터로 중심을 잡는다.
+    if(way_location.lat == null){
+        way_location.lat = 37.497518;
+        way_location.lng = 127.029676;
+    }
+
+    // 맵 생성
+    var app_map = new google.maps.Map(document.getElementById('app_map'),{
+        zoom: 18,
+        center: way_location,
+        scrollwheel: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        disableDefaultUI: true,
+        scaleControl: true,
+    });
+
 
     /*
     ////////////////////////////////////////////
@@ -56,7 +91,7 @@ jQuery(function($) {
 })
 
 $.getJSON(way_url,function(w_json){
-    data = w_json;
+    way_data = w_json;
 });
 
 
