@@ -15,10 +15,12 @@ def index(request):
     """index page"""
     app_model = Application.objects.all()
     way_model = WayPoint.objects.all()
+    user_model = UserInfo.objects.all()
     # bs_model = BaseStation.objects.all()
     # picture_model = Picture.objects.all()
     # db clear
 
+    user_model.delete()
     app_model.delete()
     way_model.delete()
 
