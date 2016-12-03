@@ -133,6 +133,17 @@ def wayviewbyapp(request, application_id):
             data.append(wp.dic())
     return HttpResponse(json.dumps(data), content_type="application/json")
 
-def image(request) :
+
+def pictureview(request):
+    """ /picture picture 정보"""
+    picture_data = Picture.objects.all()
+    data = []
+    for pic in picture_data:
+        data.append(pic.dic())
+
+    return HttpResponse(json.dumps(data), content_type="application/json")
+
+
+def image(request):
     file = open(request.GET['file'], 'rb').read()
     return HttpResponse(file, content_type="image/jpeg")
