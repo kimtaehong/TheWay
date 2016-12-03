@@ -438,6 +438,12 @@ table.dataTable thead .sorting:after {
     min-width: 200px;
     min-height: 700px;
 }
+#bs_map {
+    width: 100%;
+    height: 100%;
+    min-width: 200px;
+    min-height: 700px;
+}
 
 div > img{
     width:100%;
@@ -457,9 +463,25 @@ footer {
 .p-header{
     margin: 0 0 0px;
 }
+<<<<<<< Updated upstream
 #bs_map {
     width: 100%;
     height: 100%;
     min-width: 200px;
     min-height: 700px;
 }
+=======
+.thumbnail{
+    width: 150px;
+    height: 200px;
+
+}
+
+.photo{
+    transform : rotate(90deg);
+    vertical-align : middle;
+}
+.caption{
+    vertical-align:middle;
+}
+>>>>>>> Stashed changes

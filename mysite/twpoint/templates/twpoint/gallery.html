@@ -31,15 +31,19 @@
                     <i class="fa fa-photo "></i> Photo
                 </div>
                 <div class="panel-body">
+                    {% for a in pc %}
                     <div class="col-sm-6 col-md-2">
+
                         <div class="thumbnail">
-                            <a href="#"><img src="{% static 'twpoint/img/sample_image.jpeg' %}"></a>
+                            <a href="#"><img src= {{path}}{{a.path}}/{{a.name}} class="photo">
                             <div class="caption">
                                 <h5>Thumbnail label</h5>
                                 <p><a href="#" class="btn btn-primary" role="button">Select</a></p>
                             </div>
                         </div>
+
                     </div>
+                {% endfor %}
                 </div>
             </div>
         </div>

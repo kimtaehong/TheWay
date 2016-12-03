@@ -14,7 +14,7 @@ def getEXIFDevice(tags):
 
 def pictureGPS(name, path):
     f = open(path + '/' + name, 'rb')
-
+    path=path[2:]
     tags = util.retTags(f)
     if tags == {}:
         return False
