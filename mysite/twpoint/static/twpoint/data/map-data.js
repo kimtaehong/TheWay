@@ -23,7 +23,6 @@ $(function(){
 
     $(".marking").click(function(){
         if($(this).is(":checked")){
-            console.log('check!');
 
             for(var i=0;i<way_data.length;i++){
                 if(way_data[i].id == this.id){
@@ -33,24 +32,25 @@ $(function(){
             }
             if(way_point == null){
                 console.log("Way Point is NULL!!(checked)");
+                $(this).checked = false;
                 return;
             }
-            debugger;
-            if(way_point.position != null){
+            if(way_point.position != null || way_point.position_x != null && way_point.position_y != null){
                 console.log('position');
                 way_location = {lat: Number(way_point.position_y), lng: Number(way_point.position_x) };
             }
-            else if(way_point.start != null){
+            else if(way_point.start != null || way_point.start_x != null && way_point.start_y !=null){
                 console.log('start');
                 way_location = {lat: Number(way_point.start_y), lng: Number(way_point.start_x) };
             }
-            else if(way_point.search != null){
+            else if(way_point.search != null && way_point.search_x != null && way_point.search_y != null){
                 console.log('search');
                 way_location = {lat: Number(way_point.search_y), lng: Number(way_point.search_x) };
             }
 
             if(way_location == null){
                 console.log("Way Location is NULL!!(checked)");
+                $(this).checked = false;
                 return;
             }
 
@@ -62,7 +62,6 @@ $(function(){
             app_map.panTo(marker.getPosition());
         }
         else{
-            console.log("uncheck!");
             markers[this.id].setMap(null);
         }
     })
