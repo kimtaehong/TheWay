@@ -1,7 +1,6 @@
 "use strict";
-var way_data = {};                                  // json 에서 얻어온 모든 위치 정보
-var way_location = {lat: 37.497518, lng: 127.029676 }; // 특정 위치정보에 위도, 경도
-var way_point = {};                                 // 특정 위치정보
+var bs_url = '/basestation';
+var bs_data = {};                                  // json 에서 얻어온 모든 기지국 정보
 var bs_map;
 // lat = 위도 (37...) , lng = 경도 (127...)
 
@@ -17,3 +16,7 @@ $(function(){
     });
 
 })
+
+$.getJSON(bs_url,function(b_json){
+    bs_data = b_json;
+});

@@ -112,6 +112,22 @@ class BaseStation(models.Model):
     def __str__(self):
         return self.name
 
+    def dic(self):
+        fields = [
+            'id',
+            'time',
+            'location',
+            'lat',
+            'lng',
+            'sender',
+            'receiver',
+            'type'
+        ]
+        result = {}
+        for field in fields:
+            result[field] = self.__dict__[field]
+        return result
+
 
 class UserInfo(models.Model):
     name = models.CharField(max_length=50)

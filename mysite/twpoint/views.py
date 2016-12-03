@@ -146,6 +146,15 @@ def pictureview(request):
 
     return HttpResponse(json.dumps(data), content_type="application/json")
 
+def basestationview(request):
+    """ /basestation basestation 정보"""
+    base_data = BaseStation.objects.all()
+    data = []
+    for bs in base_data:
+        data.append(bs.dic())
+
+    return HttpResponse(json.dumps(data), content_type='application/json')
+
 
 def image(request):
     file = open(request.GET['file'], 'rb').read()
