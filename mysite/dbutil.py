@@ -108,15 +108,6 @@ def picCount():
 
 #CREATE TABLE bs(time int, long real, rat real, sender char(255), reciver char(255), Type char(255));
 
-
-def insertBSData(time, long, lat, sender, reciver, location, type):
-    con = connect()
-    cursor = con.cursor()
-    cursor.execute("insert into bs values(%d, %0.6f, %0.6f, '%s', '%s', '%s', '%s');" %(time, float(long), float(lat), sender, reciver, location, type))
-    con.commit()
-    return True
-
-
 def bsQuery(rowData):
     if 'position' not in rowData.keys():
         return False
@@ -129,4 +120,4 @@ def bsQuery(rowData):
     if 'reciver' not in rowData:
         rowData['reciver'] = 'None'
 
-    insertBSData(time, lat, lon, rowData['sender'], rowData['reciver'], rowData['position'], rowData['type'])
+    return time, lat, lon, rowData['sender'], rowData['reciver'], rowData['position'], rowData['type']
