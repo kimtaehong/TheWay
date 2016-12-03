@@ -2,7 +2,7 @@
 var app_id = location.href.split("result/")[1];     // 위치정보 app id
 var way_url = '/waypoint/' + app_id;                // 위치 정보 url
 var way_data = {};                                  // json 에서 얻어온 모든 위치 정보
-var way_location = {};                              // 특정 위치정보에 위도, 경도
+var way_location = {lat: 37.497518, lng: 127.029676 }; // 특정 위치정보에 위도, 경도
 var way_point = {};                                 // 특정 위치정보
 var app_map;
 // lat = 위도 (37...) , lng = 경도 (127...)
