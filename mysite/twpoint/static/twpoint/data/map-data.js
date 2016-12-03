@@ -7,7 +7,7 @@ var way_point = {};                                 // 특정 위치정보
 var app_map;
 // lat = 위도 (37...) , lng = 경도 (127...)
 
-jQuery(function($){
+$(function(){
 
     // map을 처음 그릴 때 center 값 설정
 
