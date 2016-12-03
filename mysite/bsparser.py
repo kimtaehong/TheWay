@@ -18,7 +18,7 @@ def input_django(rowdata) :
                      lat      = rowdata[1],
                      lng      = rowdata[2],
                      sender   = rowdata[3],
-                     reciver  = rowdata[4],
+                     receiver = rowdata[4],
                      location = rowdata[5],
                      type     = rowdata[6])
     bs.save()
