@@ -69,11 +69,12 @@ def xmlParse(record, path, afterprocess):
         if afterprocess != '' :
             after.process(afterprocess)
 
-def fileParse(record):
-    return appParse.parse(record['appName'],
+def fileParse(record, target):
+    return appParse.Parse(record['appName'],
                           record['packageName'],
                           record['path'],
-                          record['tableName'])
+                          record['tableName'],
+                          target)
 
 def appdata(target) :
     con = dbutil.appdata()
@@ -84,11 +85,12 @@ def appdata(target) :
         if record is None:
             break
         record = util.list2dic(record)
+        print (record)
         if record['DataType'].split('_')[0] == 'SQL':
             sqlParse(record, target, record['DataType'].split('_')[1])
         elif record['DataType'].split('_')[0] == 'XML':
             xmlParse(record, target, record['DataType'].split('_')[1])
-        elif record['DataType'].split('_')[0] == 'File':
-            fileParse(record)
+        elif record['DataType'] == 'File':
+            fileParse(record, target)
         else:
             return False
