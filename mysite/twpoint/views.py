@@ -117,3 +117,7 @@ def wayviewbyapp(request, application_id):
         if wp.dic()['app_name_id'] == int(application_id):
             data.append(wp.dic())
     return HttpResponse(json.dumps(data), content_type="application/json")
+
+def image(request) :
+    file = open(request.GET['file'], 'rb').read()
+    return HttpResponse(file, content_type="image/jpeg")
