@@ -84,10 +84,6 @@ $(function(){
         }
     })
     */
-
-    // Data Table
-    $('#waypointTable').DataTable();
-
 })
 
 $.getJSON(way_url,function(w_json){

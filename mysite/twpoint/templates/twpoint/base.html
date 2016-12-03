@@ -42,7 +42,7 @@
     {% include 'twpoint/footer.html' %}
 </div>
 <!-- jQuery -->
-<script src="{% static 'twpoint/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'twpoint/vendor/jquery/jquery.js' %}"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="{% static 'twpoint/vendor/bootstrap/js/bootstrap.js' %}"></script>
@@ -60,7 +60,6 @@
 <script src="{% static 'twpoint/js/jquery.dataTables.js' %}"></script>
 <script src="{% static 'twpoint/js/dataTables.bootstrap.js' %}"></script>
 <script src="{% static 'twpoint/js/bootstrap-filestyle.js' %}"></script>
-{% block map_js %}{% endblock %}
-{% block flot_js %}{% endblock %}
+{% block js %}{% endblock %}
 </body>
 </html>
