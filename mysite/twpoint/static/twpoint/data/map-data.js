@@ -21,6 +21,10 @@ $(function(){
     else if(way_data[0].search != null){
         way_location = {lat: way_data[0].search_y, lng: way_data[0].search_x };
     }
+    else
+    {
+        way_location = {lat: 37.497518, lng: 127.029676 };
+    }
 
     // 위치 정보가 없으면 BOB 센터로 중심을 잡는다.
     if(way_location.lat == null){
