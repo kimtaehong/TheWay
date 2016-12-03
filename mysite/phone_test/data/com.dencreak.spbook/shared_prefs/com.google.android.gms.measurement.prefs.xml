@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="health_monitor:start" value="1477202325505" />
+    <boolean name="has_been_opened" value="true" />
+    <long name="last_upload" value="1476917748963" />
+    <string name="previous_os_version">6.0</string>
+    <string name="gmp_app_id">1:742958655476:android:a148ced6b2890f9f</string>
+    <boolean name="use_service" value="true" />
+</map>

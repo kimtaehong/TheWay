@@ -117,7 +117,7 @@ def bsQuery(rowData):
     lat, lon = util.locToCoord(rowData['position'])
     if 'sender' not in rowData:
         rowData['sender'] = 'None'
-    if 'reciver' not in rowData:
-        rowData['reciver'] = 'None'
+    if 'receiver' not in rowData:
+        rowData['receiver'] = 'None'
 
-    return time, lat, lon, rowData['sender'], rowData['reciver'], rowData['position'], rowData['type']
+    return time, lat, lon, rowData['sender'], rowData['receiver'], rowData['position'], rowData['type']

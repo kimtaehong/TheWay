@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="NowRate_PKR">104.51253000</string>
+    <string name="LastAutoCurDownTry">1475987702586</string>
+    <string name="NowRate_CZK">24.27468000</string>
+    <string name="NowRate_SCR">13.30109000</string>
+    <string name="NowRate_BDT">78.78206000</string>
+    <string name="AFA_TODAYTRY">1970-01-01-01</string>
+    <int name="SPBInt_ADDKIND" value="1" />
+    <string name="FullLine">tnk</string>
+    <string name="TMP_MMS_TH">1477277931837</string>
+    <string name="SPBInt_DELPRICE">7300.0</string>
+    <string name="NowRate_MGA">3136.33995000</string>
+    <string name="NowRate_LKR">147.36627000</string>
+    <string name="LastFCTreat">1475987701934</string>
+    <string name="NowRate_INR">66.73385000</string>
+    <string name="NowRate_VND">22312.51460000</string>
+    <string name="NowRate_AOA">135.29180000</string>
+    <long name="AppTime_Last" value="1475987702475" />
+    <string name="NowRate_EEK">11.73034290</string>
+    <string name="NowRate_GMD">42.73194000</string>
+    <boolean name="SPB_WOULDYOU_CONTROL" value="true" />
+    <string name="NowRate_NPR">106.77416000</string>
+    <string name="NowRate_KWD">0.30191000</string>
+    <string name="NowRate_EUR">0.89839000</string>
+    <string name="NowRate_KHR">4070.68457000</string>
+    <string name="NowRate_NOK">8.06922000</string>
+    <string name="NowRate_KRW">1115.41551000</string>
+    <string name="NowRate_JPY">103.65421000</string>
+    <string name="AFA_THISWEEK_TEMP">1970-01-01-00</string>
+    <string name="NowRate_HRK">6.74655000</string>
+    <string name="NowRate_LBP">1507.50000000</string>
+    <string name="NowRate_HKD">7.75000000</string>
+    <string name="NowRate_LVL">0.62050000</string>
+    <string name="NowRate_BHD">0.37600000</string>
+    <string name="NowRate_MDL">19.96061000</string>
+    <string name="NowRate_XPF">107.20667000</string>
+    <string name="NowRate_KES">101.33124000</string>
+    <string name="NowRate_TND">2.21705000</string>
+    <string name="NowRate_ARS">15.20928000</string>
+    <long name="SPBInt_DELCARD" value="1" />
+    <string name="NowRate_FJD">2.06514000</string>
+    <string name="NowRate_SGD">1.37336000</string>
+    <string name="NowRate_BRL">3.22833000</string>
+    <string name="NowRate_GTQ">7.50684000</string>
+    <string name="NowRate_HUF">272.72482000</string>
+    <string name="NowRate_MKD">55.31750000</string>
+    <string name="NowRate_PLN">3.84417000</string>
+    <string name="NowRate_NAD">13.92480000</string>
+    <string name="SPBInt_DELTIME">17:01</string>
+    <string name="NowRate_BMD">1.00000000</string>
+    <string name="NowRate_XAF">589.30644000</string>
+    <string name="NowRate_BSD">1.00000000</string>
+    <string name="NowRate_COP">2905.99407000</string>
+    <string name="NowRate_CRC">534.32000000</string>
+    <string name="App Restrictions">AAAAAA==
+    </string>
+    <string name="NowRate_ILS">3.78829000</string>
+    <string name="NowRate_UAH">25.98810000</string>
+    <string name="NowRate_VEF">10.00000000</string>
+    <string name="NowRate_MYR">4.15663000</string>
+    <string name="NowRate_TRY">3.05042000</string>
+    <string name="NowRate_ZAR">13.92480000</string>
+    <string name="NowRate_MAD">9.77127000</string>
+    <string name="NowRate_TJS">6.67290000</string>
+    <string name="NowRate_BAM">1.75710000</string>
+    <string name="LastInputSMS">[Web발신]
+신한체크승인 최*표(0*2*) 10/23 18:48 5,800원 대학마트</string>
+    <string name="NowRate_SEK">8.64558000</string>
+    <string name="NowRate_LAK">8144.37607000</string>
+    <string name="NowRate_UYU">28.49434000</string>
+    <string name="NowRate_GHS">4.00097000</string>
+    <string name="NowRate_SYP">213.30959000</string>
+    <string name="LastCMRTimeM">1475987701934</string>
+    <string name="NowRate_XCD">2.70000000</string>
+    <string name="NowRate_AED">3.67250000</string>
+    <string name="NowRate_TWD">31.41228000</string>
+    <string name="AutoFireLine">date:1:nsm.7000</string>
+    <long name="AppTime_First" value="1475806056147" />
+    <string name="NowRate_GBP">0.80812000</string>
+    <string name="NowRate_NGN">315.36331000</string>
+    <string name="NowRate_NZD">1.40324000</string>
+    <string name="NowRate_IRR">31556.33815000</string>
+    <string name="NowRate_BGN">1.75710000</string>
+    <string name="NowRate_CNY">6.67060000</string>
+    <string name="NowRate_XOF">589.30644000</string>
+    <string name="NowRate_LTL">3.04869683</string>
+    <long name="SPBInt_ADDID" value="828" />
+    <string name="NowRate_PYG">5580.50310000</string>
+    <string name="NowRate_AUD">1.32196000</string>
+    <string name="NowRate_BBD">2.00000000</string>
+    <string name="NowRate_ISK">114.48612000</string>
+    <string name="LastCurRateTime">1475806056877</string>
+    <string name="SPBInt_DELWHERE">승차권대금결제</string>
+    <string name="NowRate_RSD">110.72258000</string>
+    <string name="NowRate_PEN">3.41543000</string>
+    <string name="NowRate_MUR">35.37159000</string>
+    <string name="NowRate_CHF">0.98164000</string>
+    <string name="NowRate_CAD">1.32414000</string>
+    <string name="NowRate_MXN">19.28021000</string>
+    <string name="NowRate_OMR">0.38450000</string>
+    <string name="NowRate_PAB">1.00000000</string>
+    <string name="NowRate_JMD">127.91600000</string>
+    <string name="NowRate_JOD">0.70900000</string>
+    <string name="lastexecute">2016-10-09</string>
+    <string name="NowRate_BOB">6.94750000</string>
+    <string name="NowRate_THB">34.86048000</string>
+    <string name="SPBInt_DELDATE">2016-10-15</string>
+    <string name="NowRate_UGX">3429.45557000</string>
+    <int name="Version_Last" value="207" />
+    <string name="NowRate_DKK">6.68413000</string>
+    <long name="SPBInt_DELCARDM" value="1" />
+    <string name="NowRate_EGP">8.88209000</string>
+    <string name="NowRate_MVR">15.37069000</string>
+    <string name="NowRate_RUB">62.21410000</string>
+    <string name="NowRate_RON">4.02179000</string>
+    <string name="NowRate_SAR">3.75000000</string>
+    <string name="BannerLine">adfit:adfit:cauly:admob:adfit</string>
+    <string name="NowRate_PHP">48.36614000</string>
+    <string name="NowRate_AWG">1.79000000</string>
+    <string name="NowRate_QAR">3.64000000</string>
+    <string name="NowRate_DOP">46.19161000</string>
+    <string name="NowRate_IDR">13006.17195000</string>
+    <string name="LastCMRTimeS">1477216104000</string>
+    <string name="NowRate_CLP">666.79939000</string>
+</map>

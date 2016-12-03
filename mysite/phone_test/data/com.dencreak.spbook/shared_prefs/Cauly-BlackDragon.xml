@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="ModuleVersion" value="3" />
+    <boolean name="isFirstRun" value="false" />
+    <string name="JarVersion">3.4.11</string>
+</map>
