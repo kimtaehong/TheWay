@@ -91,6 +91,21 @@ def parsing(request):
     return render_to_response('twpoint/parsing.html', context)
 
 
+def base_station(request):
+    applications = Application.objects.all()
+    user = UserInfo.objects.all()
+    bs = BaseStation.objects.all()
+
+    context = {
+        'time': timezone.localtime(timezone.now()),
+        'application': applications,
+        'user': user,
+        'bs': bs,
+    }
+
+    return render(request, 'twpoint/basestation.html', context)
+
+
 def dataview(request):
     """/application application 정보"""
     app_data = Application.objects.all()
