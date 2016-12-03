@@ -2,6 +2,7 @@ import dbutil
 import exifread
 import gpsutil
 import util
+from twpoint.models import Picture
 import os
 
 
@@ -32,7 +33,16 @@ def pictureGPS(name, path):
 
     md5 = util.md5(file)
     sha1 = util.sha1(file)
-    dbutil.writeImageData(name, path, time, device, x, y, md5, sha1)
+    # dbutil.writeImageData(name, path, time, device, x, y, md5, sha1)
+    pic = Picture(name = name,
+                  path = path,
+                  time = time,
+                  device = device,
+                  lng = x,
+                  lat = y,
+                  md5 = md5,
+                  sha1 = sha1)
+    pic.save()
     return True
 
 
