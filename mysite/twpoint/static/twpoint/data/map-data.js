@@ -8,30 +8,6 @@ var app_map;
 // lat = 위도 (37...) , lng = 경도 (127...)
 
 $(function(){
-
-    // map을 처음 그릴 때 center 값 설정
-
-    // position, start & end, search 값 중 존재하는 값으로 저장
-    if(way_data[0].position != null){
-        way_location = {lat: way_data[0].position_y, lng: way_data[0].position_x };
-    }
-    else if(way_data[0].start != null){
-        way_location = {lat: way_data[0].start_y, lng: way_data[0].start_x };
-    }
-    else if(way_data[0].search != null){
-        way_location = {lat: way_data[0].search_y, lng: way_data[0].search_x };
-    }
-    else
-    {
-        way_location = {lat: 37.497518, lng: 127.029676 };
-    }
-
-    // 위치 정보가 없으면 BOB 센터로 중심을 잡는다.
-    if(way_location.lat == null){
-        way_location.lat = 37.497518;
-        way_location.lng = 127.029676;
-    }
-
     // 맵 생성
 
     app_map = new google.maps.Map(document.getElementById('app_map'),{
