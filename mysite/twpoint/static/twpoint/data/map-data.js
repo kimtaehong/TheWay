@@ -2,9 +2,11 @@
 var app_id = location.href.split("result/")[1];     // 위치정보 app id
 var way_url = '/waypoint/' + app_id;                // 위치 정보 url
 var way_data = {};                                  // json 에서 얻어온 모든 위치 정보
-var way_location = {lat: 37.497518, lng: 127.029676 }; // 특정 위치정보에 위도, 경도
+var way_location; // 특정 위치정보에 위도, 경도
 var way_point = {};                                 // 특정 위치정보
 var app_map;
+var marker;
+var markers = [];
 // lat = 위도 (37...) , lng = 경도 (127...)
 
 $(function(){
@@ -12,13 +14,58 @@ $(function(){
 
     app_map = new google.maps.Map(document.getElementById('app_map'),{
         zoom: 18,
-        center: way_location,
+        center: {lat: 37.497518, lng: 127.029676 },
         scrollwheel: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         disableDefaultUI: true,
         scaleControl: true,
     });
 
+    $(".marking").click(function(){
+        if($(this).is(":checked")){
+            console.log('check!');
+
+            for(var i=0;i<way_data.length;i++){
+                if(way_data[i].id == this.id){
+                    way_point = way_data[i];
+                    break;
+                }
+            }
+            if(way_point == null){
+                console.log("Way Point is NULL!!(checked)");
+                return;
+            }
+            debugger;
+            if(way_point.position != null){
+                console.log('position');
+                way_location = {lat: Number(way_point.position_y), lng: Number(way_point.position_x) };
+            }
+            else if(way_point.start != null){
+                console.log('start');
+                way_location = {lat: Number(way_point.start_y), lng: Number(way_point.start_x) };
+            }
+            else if(way_point.search != null){
+                console.log('search');
+                way_location = {lat: Number(way_point.search_y), lng: Number(way_point.search_x) };
+            }
+
+            if(way_location == null){
+                console.log("Way Location is NULL!!(checked)");
+                return;
+            }
+
+            marker = new google.maps.Marker({
+                position: way_location,
+                map: app_map,
+            });
+            markers[this.id] = marker;
+            app_map.panTo(marker.getPosition());
+        }
+        else{
+            console.log("uncheck!");
+            markers[this.id].setMap(null);
+        }
+    })
 
 
 
