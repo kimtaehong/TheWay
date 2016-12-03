@@ -14,6 +14,8 @@ def input_django(rowdata) :
         receiver = models.CharField(max_length=255)
         type = models.CharField(max_length=255)
     '''
+    if rowdata == False :
+        return
     bs = BaseStation(time     = rowdata[0],
                      lat      = rowdata[1],
                      lng      = rowdata[2],

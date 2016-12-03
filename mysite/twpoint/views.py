@@ -16,10 +16,12 @@ def index(request):
     app_model = Application.objects.all()
     way_model = WayPoint.objects.all()
     user_model = UserInfo.objects.all()
-    # bs_model = BaseStation.objects.all()
-    # picture_model = Picture.objects.all()
+    bs_model = BaseStation.objects.all()
+    picture_model = Picture.objects.all()
     # db clear
 
+    bs_model.delete()
+    picture_model.delete()
     user_model.delete()
     app_model.delete()
     way_model.delete()
@@ -72,7 +74,7 @@ def gallery(request):
 
 
 def parsing(request):
-    # picture.picture_search('./' + request.POST['filename'])
+    picture.picture_search('./' + request.POST['filename'])
     app.appdata('./'+request.POST['filename'])
     # db.sqlite3안에 data table, picture table에 값을 가져오는 코드 필요...
     post_user = UserInfo()
