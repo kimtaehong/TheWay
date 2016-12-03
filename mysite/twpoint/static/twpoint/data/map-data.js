@@ -11,18 +11,15 @@ $(function(){
 
     // map을 처음 그릴 때 center 값 설정
 
-    // 위치 정보에서 첫 번째 데이터를 중심으로 선택
-    way_point = way_data[0];
-
     // position, start & end, search 값 중 존재하는 값으로 저장
-    if(way_point.position != null){
-        way_location = {lat: way_point.position_y, lng: way_point.position_x };
+    if(way_data[0].position != null){
+        way_location = {lat: way_data[0].position_y, lng: way_data[0].position_x };
     }
-    else if(way_point.start != null){
-        way_location = {lat: way_point.start_y, lng: way_point.start_x };
+    else if(way_data[0].start != null){
+        way_location = {lat: way_data[0].start_y, lng: way_data[0].start_x };
     }
-    else if(way_point.search != null){
-        way_location = {lat: way_point.search_y, lng: way_point.search_x };
+    else if(way_data[0].search != null){
+        way_location = {lat: way_data[0].search_y, lng: way_data[0].search_x };
     }
 
     // 위치 정보가 없으면 BOB 센터로 중심을 잡는다.
@@ -32,16 +29,16 @@ $(function(){
     }
 
     // 맵 생성
-    function initMap() {
-        app_map = new google.maps.Map(document.getElementById('app_map'),{
-            zoom: 18,
-            center: way_location,
-            scrollwheel: false,
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            disableDefaultUI: true,
-            scaleControl: true,
-        });
-    };
+
+    app_map = new google.maps.Map(document.getElementById('app_map'),{
+        zoom: 18,
+        center: way_location,
+        scrollwheel: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        disableDefaultUI: true,
+        scaleControl: true,
+    });
+
 
 
 
