@@ -1,0 +1,1698 @@
+{
+  "version": 3,
+  "id": "com.nike.nrc.ko",
+  "language": "ko",
+  "region": "KO",
+  "platform": "android",
+  "bundles": [
+    {
+      "id": "male_ko",
+      "assets": {
+        "구": "ae9dfaba0157964ac98dcc9ee6d653b3ecad32fb",
+        "사": "847501d7f625c0ab689bf819d1947113a9061aa1",
+        "오": "7734e2aaa16a60a2d63d5db46eaf1417269a6d80",
+        "이": "511e5b03c1e357907a3f107e3eb57814e46a783c",
+        "초": "2a45a3054f2a56250153ba49eb27def30d7d8af0",
+        "시_분_초": "5c02407d7d1ef474aeee0ed0f75d5388bb4b4eba",
+        "초_복수형": "a6966f62006c36bca027bf9d6e787ea8ed781e26",
+        "공": "ad84ff53c46cc90856c1c6cb6bdfea5d21508877",
+        "당": "037b7d58d591708d4ebb0ec9dd1ec0d92e486cb8",
+        "백": "c01a83aaa62808876dd349764427cfb1d95ef5ae",
+        "분": "6b08b2e2f132f4a2f2682a891c95b79cca7516a4",
+        "삼": "9a399e42cfa44cc595d95157597bf5e8c3838747",
+        "십": "3461a657875b3f2d16dd351a0d5167ef5fbac05e",
+        "영": "f035d19f07d26fa73966356cc81588065f75a9d0",
+        "육": "fb99c751ce0582515f7dbc0c80ce94842ce84d60",
+        "일": "17c0309486176c4cfb2f1777d491d01af4a4ab2a",
+        "점": "b3f32d39090344507c94b5ae6b1fb44c785177c5",
+        "천": "a088c52b11e98b93d14fc196eae8188ab50add68",
+        "칠": "ac8e4c5caeced1c2d697921697c525b3fb7568ee",
+        "팔": "faaf2caf61565cf0663f0e9d1781771cc43f799e",
+        "일_마일_목표_초과": "d5a708a6b7f861de5d4e567a815c4b221be81429",
+        "분_복수형": "84c114cb60f96c0039aca61a09fffdb1f8e72331",
+        "일_킬로미터_완료": "8b6331468463f5e2a8eacfa3806fb572b049e93f",
+        "일_킬로미터_목표_초과": "b8801b203c777336f6ef58243f5266e26bca0537",
+        "거리": "1e448e1039e908f2ecadad51ce2f9083fe8426b9",
+        "미터": "5b9b85119768dba45807b857a8587e761c92a117",
+        "최고_거리_기록_점차_도달": "fe2a25808d9148bf8a77308ec7ccd6507932a463",
+        "최고_거리_기록_점차_도달_파워송_추가": "79470b3100194daa2ee35918bf0b175c1dc18a78",
+        "최고_시간_기록_점차_도달": "f5952b3cea92bbb7c5ebe48d36cdbc0688089d9c",
+        "최고_시간_기록_점차_도달_파워송_추가": "13538a92073a760701ccc504202b220769fda0ce",
+        "거리_목표_달성": "fe76b18820d70182e603000e4af573fd6d6a0248",
+        "미터_복수형": "3219d0406642041729010947280952c664f055f4",
+        "구십": "2e730125fc9481777f823b9e499ebb45ed8ea70b",
+        "마일": "d21d128a78f0cb425d7852193c8fdec6296da1ed",
+        "사십": "ce2cb3a6055c1e4d44666770bcf8df5201ca3dda",
+        "속도": "42efe01e4bd28024e059f13c4e34f87380ba5cd8",
+        "시간": "b21ea0f130bf312e03d3a083c89192956410a4dd",
+        "십구": "2a6d7597e297015e1240002ae0b50c550a5e0276",
+        "십사": "ae59cad91265fb6c6a3e09aadf1fd05dcad0190a",
+        "십오": "07639829dd0caadd41cab2019ec126d4f71b7ae8",
+        "십이": "d1151677e6568c1b10225d6a3b1bb88295ae59dc",
+        "오십": "2f598af5c6485b4ae1a271505133ff69aed014dd",
+        "완료": "3b948609f657e973466fc0159b60e484a4463839",
+        "이십": "2754491de42e3d66c20a8b566ee978d06ef6b7ed",
+        "마일_당": "3dea3981db3955c4670eab12e119bbb4d220efb6",
+        "목표_초과": "115d51b981f9941b5cc1071e6be695ed6338d072",
+        "마일_완료": "73cdb49aed03d7544b107be10b42ed040748b7d4",
+        "목표_도달": "477d0442e38a180dd10fe4021218bdb77ce3629f",
+        "현재_속도": "48083d9415af43e155bfe4a60c79dd8fd3b9b2bb",
+        "마일_목표_초과": "a88a329f8cd13e2d66913ba8f28c4d6665a9721e",
+        "속도_목표_달성": "ba94d72f2f8d7e02b572bc648971a1abd923c904",
+        "시간_목표_달성": "cd1dbe4ea6f0ba21767b95d6c9578c03e70fef26",
+        "목표_도달_파워송_도전": "c4b692c1ac568d26d261e9f5ab711753b6669364",
+        "마일_남음": "585a6042cb9b88fa786a9e5134594436feffaf8d",
+        "목표_달성": "26f0e799f431a5bf94ce18af4922195d66ebe3f0",
+        "목표_달성_조건": "73dd9981593b3d92ce449109400c001a151a56bc",
+        "목표_칼로리_소모": "83838caa9906e10a7e4ed1f7b85bd884b045bdc5",
+        "마일_복수형": "1e710263640f89fbf85efcb2598f27d5c2d69bcc",
+        "시간_복수형": "1d4d6e3be8174de96477acb4c20fc71ad88f63b9",
+        "마일_복수형_완료": "51f521788e859de768e0e1da5df907b94b58d5c8",
+        "마일_복수형_목표_초과": "bcd7116eaa39e65c98bf43d3626fa9990e62b0d0",
+        "마일_복수형_남음": "708e18fa45ad76eb6cd329fd27ba2ebcbd353c7c",
+        "이분_남았음": "c4a79de3565d1d1a59a0d00217ba184b57f6c49b",
+        "삼십": "6118e969151f934b4e15430d1c210c574188dee9",
+        "십삼": "daaff1e0658b3b4676f19d31804e25e24c9b721c",
+        "십육": "ccaf757163634f3e7bfc9b2cce3762322a0de451",
+        "십일": "c04700bceb644833dd209dcbb0abbe5d1dc9cdd0",
+        "십칠": "6a034d91290b42485ada0a44ae3cfe4b9df50155",
+        "십팔": "65aa8912590682bdc4c23b82a6303db27a120faf",
+        "육십": "1230dea178c55e00fde4a140bd0b4737c2a29268",
+        "칠십": "8f6c6a2d573ac78b05d59a0ede5d59acadd52950",
+        "팔십": "82faa2fbffcf236eaab97bf4e5f6b71f86b6796b",
+        "운동_시작": "896aad6d33ed9a1611b5cfc970bd3b7a84f443b5",
+        "운동_완료": "7ca39f429c553239fa70121a21022378afb68730",
+        "중간_지점": "a4735aed0ec2a35a4c97f6278cd857de689f2cf5",
+        "평균_속도": "077ce22118bf786d02b34693120abcd985b3a48e",
+        "운동_다시시작": "17905ac6196ed17be9ba5dec13381ac6b0e25863",
+        "운동_일시중단": "29180776f355eecff7c01269bf7e396b1372b6b4",
+        "칼로리": "45230ea413907654e8bc7182a3d8761bd33f927c",
+        "남았음": "fbcb77e581cd892410217c09733fac4cdef49dc3",
+        "달렸음": "ac08ece7c625761e5e4655d94d7010a3c9b1d80c",
+        "킬로미터": "8d98851cfa70d623526f8a5fbeb3529d01e90022",
+        "킬로미터_당": "f9c1469ee79988cb41c30039a154f20613a513d0",
+        "킬로미터_완료": "cddebfd6399804b6e01183f53d48916b198a605b",
+        "킬로미터_목표_초과": "d373b05f17b6d898c45f82100e38709b6653fd2d",
+        "킬로미터_남음": "8e98f63de567ce8d4793d88eee13abfc843048f6",
+        "킬로미터_복수형": "d613be51711d01864be616f42960eb0253488f47",
+        "킬로미터_복수형_완료": "e76ef68f4730698f7ee01226f265c8fcd07447b2",
+        "킬로미터_복수형_목표_초과": "693bc63f1f6c368f1f413c3212029451ac75862c",
+        "킬로미터_복수형_남음": "acea77bb1bdc22c6a5c8c26f827531edc58b0513",
+        "축하합니다": "ebec8e797528c2190f8173acaad205ade3f36126",
+        "남았습니다": "bca7064d18ea0b5bfb9bf6569a28121c053b0830"
+      }
+    },
+    {
+      "id": "female_ko",
+      "assets": {
+        "구": "93303f18cec01403e372f230f3fc81b43feceafa",
+        "사": "1015e06fcdba10378cab5b0acd5cf70d345fb7f1",
+        "오": "0196837609d90288c749f1c73e18830169852a62",
+        "이": "b74af7789ee653d17b0294e76235ea7f30b4b030",
+        "초": "6913e3a9609418200b968bbcae270296d279ec10",
+        "시_분_초": "63a4871e404299a85e991a270ea996fc9e299262",
+        "초_복수형": "060da4a4998d0b652afa4e14f019dc58405781f8",
+        "공": "b9eee16a416c96631cdb31b499021666005b5a42",
+        "당": "92b08a57899fa9faae086563fa6576edc0a42a82",
+        "백": "e136888afb52cf77312dfac844ebfd045dd5157b",
+        "분": "88bc087d2a1294bdb4e675483510e5695f15f978",
+        "삼": "22bfa684624b2c004da28cf1b430c6c7f0348ef8",
+        "십": "98e832d13c888932122b78ffe092245066f743cf",
+        "영": "4a72ad99187eeca458f9ffe7456a0b32cf84efe9",
+        "육": "ea6b8850a24b735c53f2353efb30cd10579cafaf",
+        "일": "6943c7e5f8d57b516047280d3e3e2a0570ab982e",
+        "점": "8f8a07b02325de6020d08a7739ba182a875e63b1",
+        "천": "dcc5a3042dbb4fb033f3fbb5f3b40ce4a2976e4a",
+        "칠": "01b8b45ef7c76b87aa4eae74f385dc2d87d3477a",
+        "팔": "942a7e20b21012353d3bc33c794066e70c3273e7",
+        "일_마일_목표_초과": "d7d2c47e6308a04623c88f04e4535e3de5bb429f",
+        "분_복수형": "455e0858fc88da57f6035c2eaa510e5d34a76ef3",
+        "일_킬로미터_완료": "578394a7a9a0c316a1305751bf38ec068a2f1e46",
+        "일_킬로미터_목표_초과": "7db9655544004fb55e588e887f41c2b1914cec69",
+        "거리": "45b7b1c3731325eb9f03e2cebb0dcd1d79be8a00",
+        "미터": "9814ee95cfc18aede0368d07294e8cfa5210b23c",
+        "최고_거리_기록_점차_도달": "f4a3674e1288cabc2bca554a96504b6a81613fec",
+        "최고_거리_기록_점차_도달_파워송_추가": "43c36c78d47aee5e45ce03c9a14d62f814708e1e",
+        "최고_시간_기록_점차_도달": "2e1975d40c92b64ac3c1de6fa6bad299d34b60e4",
+        "최고_시간_기록_점차_도달_파워송_추가": "5d428c2b2f86ba96e2ac4c3fbe79cdcade56af87",
+        "거리_목표_달성": "51b112d03a3e23e144668b03199d6dceac3bc8ee",
+        "미터_복수형": "eb493c8e64e3a5051dc439d746f32ad472bcf7a8",
+        "구십": "661b09d5026f13164bf7973853f1f77b8ca245f1",
+        "마일": "1de69d34c09911ca263f8b8f094a8c9928166fcd",
+        "사십": "08a8aec46210b301d3adf2cee1113a4f9ed3a235",
+        "속도": "266ca9d550b618ed4be218cad5defe43684e5514",
+        "시간": "49c4a84fe163d33f0a2254178e8954f530f966af",
+        "십구": "624799d9d9bdaa2b59e19f219f5247544dbd99cd",
+        "십사": "32dd48098096066a33f14c2f8a37292c3048010e",
+        "십오": "99ff21c4b433be4d729a0b93a00f3801709c6885",
+        "십이": "858785ca27d21faa293a14b148cf4dc5d34af115",
+        "오십": "0f049abf8464f4a0bc100508d543cfe2ae0fbd4b",
+        "완료": "40823f2440260f3a3096bf38d05bfdd6249a6514",
+        "이십": "d94b73c7a93c0652d1b10df5f00b5eba8b1bc825",
+        "마일_당": "ce2c141e1d26181b35944021f349bb84920d3ce1",
+        "목표_초과": "e9b646a7e057027f1da59eb566849092d6240cfc",
+        "마일_완료": "a136e0196ca476a18dfe38b6a8c43210eea69f3a",
+        "목표_도달": "bcd5956f73265d1a87239d119863c3bf66abfaf9",
+        "현재_속도": "7154e3d5dd2be2bd2ed8c6a3309eed759bafd62e",
+        "마일_목표_초과": "3c81e153b849886e6fe6bbefe9e1439aecdf0f1f",
+        "속도_목표_달성": "9e3028362ecfc7bfe1630bb036b85d698c1605b9",
+        "시간_목표_달성": "c0a6264143fd1ffdd17e9cf42dde9f46ac1f7df5",
+        "목표_도달_파워송_도전": "86476d294238bebcdc593aa8ddc986fd91a90321",
+        "마일_남음": "cc45515608ee081452827b181e114d0d7b091e8b",
+        "목표_달성": "5a73a3c5896dc0e17ce5b21c0ef664f2c1b10e19",
+        "목표_달성_조건": "6d305520839cf974318158dfeaffd80c97f82340",
+        "목표_칼로리_소모": "a1765991ca04c9e1ea75ae25e0e846e3bdd05f6f",
+        "마일_복수형": "5dd05e6f03346f3caf5d2e2d067991fcb507975c",
+        "시간_복수형": "02b3f4b25e90a8b3141f93f1d1d61ef8c5265c9b",
+        "마일_복수형_완료": "2b7f1cc827af7791750b428f7d8290dfcdc18e81",
+        "마일_복수형_목표_초과": "12c00a940ab251c1cefc6447497df13152f731a2",
+        "마일_복수형_남음": "5d5382abdf49c001e0b064797970fabe2b73ce89",
+        "이분_남았음": "78bd07ebc68500aeabb8f7025db8294bfa23a7bb",
+        "삼십": "1a8fa16ad9e39d3a02577638835e4444269b6c54",
+        "십삼": "8aef572fb7f7eec7bf9f3797a3547a338c2d75cb",
+        "십육": "58dc4e4fbb07a4bdd2f5dbdc309324f354e65da9",
+        "십일": "53f0bf03d48ca04e0abd9d51ef68e3f7f54a9814",
+        "십칠": "e5a3fc17d7c080fba648f4bf2c3a054df76f6ed6",
+        "십팔": "9b1338dd73ee8cb5af18ded4dc945ee79984b4c6",
+        "육십": "35275fe9031e6433abce2421433b6a80b4c4726b",
+        "칠십": "e332ac2ad95f073e3162685e424b23fb970ba375",
+        "팔십": "16cdf53350a9fab9500c4f633ed741e326ba72a2",
+        "운동_시작": "6d7f9b6fd3e0b9cd3254d0b858a301c6c5538945",
+        "운동_완료": "31a197e6887f4994488f922f7c742c6c35e6bac1",
+        "중간_지점": "34b3f74f1bfa7d139531a2dc0374412a63679dcd",
+        "평균_속도": "8102707264e2f64cfbff0e8a170cca3336409e13",
+        "운동_다시시작": "7f1fa4a6bc90dd5ebf43a71e82b071e765c4f8ad",
+        "운동_일시중단": "e97c4a4bc6861ba2a69abb2317296cc4e4a51dd8",
+        "칼로리": "6b47b9675440ecb4858c2e310e898047d1e2ddf6",
+        "남았음": "95d452aa0a416c129c313710de62ce2f54671e4a",
+        "달렸음": "2dd690e1214d95745b9e714d120c089b00d99efe",
+        "킬로미터": "a5d5956aeffb1cb4a347e1f8fe573302d707bd6f",
+        "킬로미터_당": "ff4a8ec2cfec5a9eacf02d5c1a43f28a3e7e7e57",
+        "킬로미터_완료": "1e9f3769edb62723d0c7a440133bec50f59691ba",
+        "킬로미터_목표_초과": "6cbe6de82325b3a0df68a71ce7c150faf0424ee8",
+        "킬로미터_남음": "06c6a3c0395ef961fa882f2f83e31b0edcdf8d3b",
+        "킬로미터_복수형": "29992e58932819f3e8e484b9c750cc7a29f9ce94",
+        "킬로미터_복수형_완료": "4a8a93e395722aa67b30161cac4aaf3bd5aaf925",
+        "킬로미터_복수형_목표_초과": "685dbff69f3ba993a1f3d5b28612cbe15b73529e",
+        "킬로미터_복수형_남음": "ffcd4db28331bea7d71b213e8d144750c9d78102",
+        "축하합니다": "054a1e5cc3176fdfd71ac8548faed822bb2b9d48",
+        "남았습니다": "d8bf207ef84ef86d863f2ca289b32ef267c586f2"
+      }
+    },
+    {
+      "id": "guidedruns_ko",
+      "assets": {
+        "BM1": "0d671b02552c0372f6d9f84f509acae5a0af2cc5",
+        "BM2": "475cb00bcd139e2d275d2712a193516c4c138d05",
+        "BM3": "12461212794a69681682e03529883deac0828f95",
+        "BM4": "cafc864189a49951fef5d3636f2fe6cb5871a480",
+        "BM5": "c2be4084bae8734a52db65bf6cdda93a69ff423e",
+        "BM6": "c5ba7959714578c546476966ec5d2d1fa793b330",
+        "BM7": "e7da4c48d087c16fb3689b5e8e893a7cdfbe670b",
+        "CD0": "19bd6832355ff63047d42607f9ab9d93d9999318",
+        "CD1": "c3a103fc57261f1f366093df98e62c0fb3bc45b7",
+        "CD2": "42996fb2c846d9358fad0a2cc1162e26b6853c15",
+        "CD3": "13fad738de96aba2bdd21dc7bd3eeb392c12d3cf",
+        "CD4": "acc82aa6be4f7eae745c9f9e0167dee5ab8c18e1",
+        "CD5": "37b81835e1f227939eb76bbb6ceb84882602f514",
+        "CD6": "e4bea1389c16770b6335760ade44ed309f71bddb",
+        "CD7": "04197fdb968d6484cc4cd11bbc0d29539c50f863",
+        "CD8": "0a422873580f6dec9eb50a0dfbd2517c22b49db6",
+        "WarmUp2": "b4e95205d3a71daf3da79c9b8ab03629491b2924",
+        "WarmUp3": "c2af5b4a5693a9398168f5bf8e0630b765c1749f",
+        "WarmUp4": "0cfd2862483bd2ad9fa97825e0ccc4a066ca43d5",
+        "WarmUp5": "000e80b8c206affc3bcc616a0852f31afada8d55",
+        "WarmUp6": "6f51943503ad1d9d7ebb9315f5fccdfef32b65bf",
+        "WarmUp7": "b941176179194b41f041c1ee5896aec4e93d368e",
+        "WarmUp8": "506991beb52be1abf1855c5b5b34c11983020ffb",
+        "WarmUp9": "d811b734a3102b43e1154c9f224d765e161bc74a",
+        "Warmup1": "bc66aba2ba0e5b2c9451cce12e42f89a0ac52808"
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "ae9dfaba0157964ac98dcc9ee6d653b3ecad32fb",
+      "type": "audio/m4a",
+      "size": 7186,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%80%E1%85%AE.m4a",
+      "checksum": "ec635a0f3450df6e5704ce4d3ffcd7ab86abe4ca"
+    },
+    {
+      "id": "847501d7f625c0ab689bf819d1947113a9061aa1",
+      "type": "audio/m4a",
+      "size": 8536,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%89%E1%85%A1.m4a",
+      "checksum": "651b3348e8f6d5500f8b34e73e5e997ecffcfe01"
+    },
+    {
+      "id": "7734e2aaa16a60a2d63d5db46eaf1417269a6d80",
+      "type": "audio/m4a",
+      "size": 7595,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8B%E1%85%A9.m4a",
+      "checksum": "008d060e4437183d68b5af88341760c196cec77a"
+    },
+    {
+      "id": "511e5b03c1e357907a3f107e3eb57814e46a783c",
+      "type": "audio/m4a",
+      "size": 7657,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8B%E1%85%B5.m4a",
+      "checksum": "8bc8802f9c3e16da20b62f8a84e2e9a94f0eb08b"
+    },
+    {
+      "id": "2a45a3054f2a56250153ba49eb27def30d7d8af0",
+      "type": "audio/m4a",
+      "size": 7689,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8E%E1%85%A9.m4a",
+      "checksum": "9c545f2e23f4e735d3e33dd0b5322354d28aa8af"
+    },
+    {
+      "id": "5c02407d7d1ef474aeee0ed0f75d5388bb4b4eba",
+      "type": "audio/m4a",
+      "size": 9553,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%89%E1%85%B5_%E1%84%87%E1%85%AE%E1%86%AB_%E1%84%8E%E1%85%A9.m4a",
+      "checksum": "657ddb8b91069cbddb24727f815408aa1111f412"
+    },
+    {
+      "id": "a6966f62006c36bca027bf9d6e787ea8ed781e26",
+      "type": "audio/m4a",
+      "size": 7246,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8E%E1%85%A9_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC.m4a",
+      "checksum": "0baf0ae806d05355f9efa96ab52b10354b0e10c7"
+    },
+    {
+      "id": "ad84ff53c46cc90856c1c6cb6bdfea5d21508877",
+      "type": "audio/m4a",
+      "size": 7957,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%80%E1%85%A9%E1%86%BC.m4a",
+      "checksum": "b75a0d7550f8bb431dc3316a85d590f6ae8f28fc"
+    },
+    {
+      "id": "037b7d58d591708d4ebb0ec9dd1ec0d92e486cb8",
+      "type": "audio/m4a",
+      "size": 7391,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%83%E1%85%A1%E1%86%BC.m4a",
+      "checksum": "68e6b4e907a06103ce823aea9330db91176ea9f1"
+    },
+    {
+      "id": "c01a83aaa62808876dd349764427cfb1d95ef5ae",
+      "type": "audio/m4a",
+      "size": 6524,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%87%E1%85%A2%E1%86%A8.m4a",
+      "checksum": "2d7177b7691b559d2cc2f965e9c04cdfbef228d3"
+    },
+    {
+      "id": "6b08b2e2f132f4a2f2682a891c95b79cca7516a4",
+      "type": "audio/m4a",
+      "size": 7180,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%87%E1%85%AE%E1%86%AB.m4a",
+      "checksum": "77d5934cdb03c3cadcc9c7b9ace009b375c5916d"
+    },
+    {
+      "id": "9a399e42cfa44cc595d95157597bf5e8c3838747",
+      "type": "audio/m4a",
+      "size": 8909,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%89%E1%85%A1%E1%86%B7.m4a",
+      "checksum": "1359673a021c1ad0184f50d5cdebbf48d1f02eea"
+    },
+    {
+      "id": "3461a657875b3f2d16dd351a0d5167ef5fbac05e",
+      "type": "audio/m4a",
+      "size": 7784,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%89%E1%85%B5%E1%86%B8.m4a",
+      "checksum": "2a229c0a32282f42b6584b6e68b140ca61244f53"
+    },
+    {
+      "id": "f035d19f07d26fa73966356cc81588065f75a9d0",
+      "type": "audio/m4a",
+      "size": 7957,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8B%E1%85%A7%E1%86%BC.m4a",
+      "checksum": "2076c400dd6527d7a945b893aa020c3160a0de62"
+    },
+    {
+      "id": "fb99c751ce0582515f7dbc0c80ce94842ce84d60",
+      "type": "audio/m4a",
+      "size": 7236,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8B%E1%85%B2%E1%86%A8.m4a",
+      "checksum": "ce6cd18f7b8c4bc29a68c23d4ecae4626d0adf9b"
+    },
+    {
+      "id": "17c0309486176c4cfb2f1777d491d01af4a4ab2a",
+      "type": "audio/m4a",
+      "size": 7562,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8B%E1%85%B5%E1%86%AF.m4a",
+      "checksum": "a11559e7928be8cc73e853b4eab733c3f7adc926"
+    },
+    {
+      "id": "b3f32d39090344507c94b5ae6b1fb44c785177c5",
+      "type": "audio/m4a",
+      "size": 6805,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8C%E1%85%A5%E1%86%B7.m4a",
+      "checksum": "d9a549e5756b11faf6458f398c1415df9c87a0fc"
+    },
+    {
+      "id": "a088c52b11e98b93d14fc196eae8188ab50add68",
+      "type": "audio/m4a",
+      "size": 7352,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8E%E1%85%A5%E1%86%AB.m4a",
+      "checksum": "370a686d9f50e4c1c75d497852d5f93e7577d499"
+    },
+    {
+      "id": "ac8e4c5caeced1c2d697921697c525b3fb7568ee",
+      "type": "audio/m4a",
+      "size": 7963,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8E%E1%85%B5%E1%86%AF.m4a",
+      "checksum": "8717b3f8f263bbf6cc8bc80589240dce9b0fd5ee"
+    },
+    {
+      "id": "faaf2caf61565cf0663f0e9d1781771cc43f799e",
+      "type": "audio/m4a",
+      "size": 7549,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%91%E1%85%A1%E1%86%AF.m4a",
+      "checksum": "d523dc9f19d853d7d6d0c49b67ad902db58aa335"
+    },
+    {
+      "id": "d5a708a6b7f861de5d4e567a815c4b221be81429",
+      "type": "audio/m4a",
+      "size": 19729,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%8E%E1%85%A9%E1%84%80%E1%85%AA.m4a",
+      "checksum": "b8dfa493eb12a3064e2af37f5dc8f0db701e50d3"
+    },
+    {
+      "id": "84c114cb60f96c0039aca61a09fffdb1f8e72331",
+      "type": "audio/m4a",
+      "size": 6959,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%87%E1%85%AE%E1%86%AB_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC.m4a",
+      "checksum": "16e13143cbc2ed1893a15fd513764619d859af47"
+    },
+    {
+      "id": "8b6331468463f5e2a8eacfa3806fb572b049e93f",
+      "type": "audio/m4a",
+      "size": 18948,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%85%E1%85%AD.m4a",
+      "checksum": "a401e5b2e62a478e5a91cb1ea0b639c06439f897"
+    },
+    {
+      "id": "b8801b203c777336f6ef58243f5266e26bca0537",
+      "type": "audio/m4a",
+      "size": 22443,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%8E%E1%85%A9%E1%84%80%E1%85%AA.m4a",
+      "checksum": "9e5427bafcde542097f834b0e2a65896bb14b59e"
+    },
+    {
+      "id": "1e448e1039e908f2ecadad51ce2f9083fe8426b9",
+      "type": "audio/m4a",
+      "size": 8152,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%80%E1%85%A5%E1%84%85%E1%85%B5.m4a",
+      "checksum": "1b5f2483434203f33683cedd28066159234b6187"
+    },
+    {
+      "id": "5b9b85119768dba45807b857a8587e761c92a117",
+      "type": "audio/m4a",
+      "size": 9042,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5.m4a",
+      "checksum": "a73564630ef5ad84182434694df6c692b7a98b94"
+    },
+    {
+      "id": "fe2a25808d9148bf8a77308ec7ccd6507932a463",
+      "type": "audio/m4a",
+      "size": 32528,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8E%E1%85%AC%E1%84%80%E1%85%A9_%E1%84%80%E1%85%A5%E1%84%85%E1%85%B5_%E1%84%80%E1%85%B5%E1%84%85%E1%85%A9%E1%86%A8_%E1%84%8C%E1%85%A5%E1%86%B7%E1%84%8E%E1%85%A1_%E1%84%83%E1%85%A9%E1%84%83%E1%85%A1%E1%86%AF.m4a",
+      "checksum": "bb7f9b1aea3757085d37e74d9ec1637f44b3ea3c"
+    },
+    {
+      "id": "79470b3100194daa2ee35918bf0b175c1dc18a78",
+      "type": "audio/m4a",
+      "size": 55140,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8E%E1%85%AC%E1%84%80%E1%85%A9_%E1%84%80%E1%85%A5%E1%84%85%E1%85%B5_%E1%84%80%E1%85%B5%E1%84%85%E1%85%A9%E1%86%A8_%E1%84%8C%E1%85%A5%E1%86%B7%E1%84%8E%E1%85%A1_%E1%84%83%E1%85%A9%E1%84%83%E1%85%A1%E1%86%AF_%E1%84%91%E1%85%A1%E1%84%8B%E1%85%AF%E1%84%89%E1%85%A9%E1%86%BC_%E1%84%8E%E1%85%AE%E1%84%80%E1%85%A1.m4a",
+      "checksum": "2f194eec2a2caf4257aa4fbe7f6bd772ff54d00e"
+    },
+    {
+      "id": "f5952b3cea92bbb7c5ebe48d36cdbc0688089d9c",
+      "type": "audio/m4a",
+      "size": 32566,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8E%E1%85%AC%E1%84%80%E1%85%A9_%E1%84%89%E1%85%B5%E1%84%80%E1%85%A1%E1%86%AB_%E1%84%80%E1%85%B5%E1%84%85%E1%85%A9%E1%86%A8_%E1%84%8C%E1%85%A5%E1%86%B7%E1%84%8E%E1%85%A1_%E1%84%83%E1%85%A9%E1%84%83%E1%85%A1%E1%86%AF.m4a",
+      "checksum": "4a6929a66d6919d28f15f700b27719b832f49aac"
+    },
+    {
+      "id": "13538a92073a760701ccc504202b220769fda0ce",
+      "type": "audio/m4a",
+      "size": 53573,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8E%E1%85%AC%E1%84%80%E1%85%A9_%E1%84%89%E1%85%B5%E1%84%80%E1%85%A1%E1%86%AB_%E1%84%80%E1%85%B5%E1%84%85%E1%85%A9%E1%86%A8_%E1%84%8C%E1%85%A5%E1%86%B7%E1%84%8E%E1%85%A1_%E1%84%83%E1%85%A9%E1%84%83%E1%85%A1%E1%86%AF_%E1%84%91%E1%85%A1%E1%84%8B%E1%85%AF%E1%84%89%E1%85%A9%E1%86%BC_%E1%84%8E%E1%85%AE%E1%84%80%E1%85%A1.m4a",
+      "checksum": "d1cca7f0a78f7658720b428ecb14f41555327486"
+    },
+    {
+      "id": "fe76b18820d70182e603000e4af573fd6d6a0248",
+      "type": "audio/m4a",
+      "size": 17967,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%80%E1%85%A5%E1%84%85%E1%85%B5_%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%83%E1%85%A1%E1%86%AF%E1%84%89%E1%85%A5%E1%86%BC.m4a",
+      "checksum": "f38e5b56089294b46a653dbc0ad114ff09ac28b8"
+    },
+    {
+      "id": "3219d0406642041729010947280952c664f055f4",
+      "type": "audio/m4a",
+      "size": 9203,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC.m4a",
+      "checksum": "166c8928d98b6b78bfa92502eda36514244ca5c8"
+    },
+    {
+      "id": "2e730125fc9481777f823b9e499ebb45ed8ea70b",
+      "type": "audio/m4a",
+      "size": 7938,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%80%E1%85%AE%E1%84%89%E1%85%B5%E1%86%B8.m4a",
+      "checksum": "b82b1d5d0ae990089afbacf74ee74825f9cba37a"
+    },
+    {
+      "id": "d21d128a78f0cb425d7852193c8fdec6296da1ed",
+      "type": "audio/m4a",
+      "size": 8812,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF.m4a",
+      "checksum": "6711229e8d89692cff4523aebf24ab13c1ea4f92"
+    },
+    {
+      "id": "ce2cb3a6055c1e4d44666770bcf8df5201ca3dda",
+      "type": "audio/m4a",
+      "size": 9303,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%89%E1%85%A1%E1%84%89%E1%85%B5%E1%86%B8.m4a",
+      "checksum": "b411ce12d242f6bc3fe73add02248fb38bf8eeb9"
+    },
+    {
+      "id": "42efe01e4bd28024e059f13c4e34f87380ba5cd8",
+      "type": "audio/m4a",
+      "size": 10062,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%89%E1%85%A9%E1%86%A8%E1%84%83%E1%85%A9.m4a",
+      "checksum": "38d5d692dd525c8a6d6915594542fdba13101104"
+    },
+    {
+      "id": "b21ea0f130bf312e03d3a083c89192956410a4dd",
+      "type": "audio/m4a",
+      "size": 9390,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%89%E1%85%B5%E1%84%80%E1%85%A1%E1%86%AB.m4a",
+      "checksum": "00ae1fba159b5b42eec3d69c7f605f94cd595475"
+    },
+    {
+      "id": "2a6d7597e297015e1240002ae0b50c550a5e0276",
+      "type": "audio/m4a",
+      "size": 10069,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%89%E1%85%B5%E1%86%B8%E1%84%80%E1%85%AE.m4a",
+      "checksum": "f27fafe980b1684668ed3bad31ebdc1b1240899d"
+    },
+    {
+      "id": "ae59cad91265fb6c6a3e09aadf1fd05dcad0190a",
+      "type": "audio/m4a",
+      "size": 10212,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%89%E1%85%B5%E1%86%B8%E1%84%89%E1%85%A1.m4a",
+      "checksum": "05c9ab37e2b8494391113465c3db817e01161458"
+    },
+    {
+      "id": "07639829dd0caadd41cab2019ec126d4f71b7ae8",
+      "type": "audio/m4a",
+      "size": 9003,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%89%E1%85%B5%E1%86%B8%E1%84%8B%E1%85%A9.m4a",
+      "checksum": "0b94cc87e4c0a0ca79b5ebfa1d0e3cbbc2a88deb"
+    },
+    {
+      "id": "d1151677e6568c1b10225d6a3b1bb88295ae59dc",
+      "type": "audio/m4a",
+      "size": 9252,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%89%E1%85%B5%E1%86%B8%E1%84%8B%E1%85%B5.m4a",
+      "checksum": "dff9913e1ece4eb3276e6e622747705282915e9d"
+    },
+    {
+      "id": "2f598af5c6485b4ae1a271505133ff69aed014dd",
+      "type": "audio/m4a",
+      "size": 8286,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8B%E1%85%A9%E1%84%89%E1%85%B5%E1%86%B8.m4a",
+      "checksum": "750b5c66bb0855efb19df709180e93a07794ad03"
+    },
+    {
+      "id": "3b948609f657e973466fc0159b60e484a4463839",
+      "type": "audio/m4a",
+      "size": 12331,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%85%E1%85%AD.m4a",
+      "checksum": "7f03fc1af5387c0eb8b1a55d0d1198f89bd20f2f"
+    },
+    {
+      "id": "2754491de42e3d66c20a8b566ee978d06ef6b7ed",
+      "type": "audio/m4a",
+      "size": 8344,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B5%E1%86%B8.m4a",
+      "checksum": "77729e0887eb17e1b16e025df7bd1aef67a936ec"
+    },
+    {
+      "id": "3dea3981db3955c4670eab12e119bbb4d220efb6",
+      "type": "audio/m4a",
+      "size": 10435,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%83%E1%85%A1%E1%86%BC.m4a",
+      "checksum": "569ba0624471eb5ea5ee660b8bb926e5b745245a"
+    },
+    {
+      "id": "115d51b981f9941b5cc1071e6be695ed6338d072",
+      "type": "audio/m4a",
+      "size": 16545,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%8E%E1%85%A9%E1%84%80%E1%85%AA.m4a",
+      "checksum": "b483342c8d467eb1d85ad4437f55ec21e9fe7e73"
+    },
+    {
+      "id": "73cdb49aed03d7544b107be10b42ed040748b7d4",
+      "type": "audio/m4a",
+      "size": 17003,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%85%E1%85%AD.m4a",
+      "checksum": "db54b774903d01ad2214781654b45a4618fd2935"
+    },
+    {
+      "id": "477d0442e38a180dd10fe4021218bdb77ce3629f",
+      "type": "audio/m4a",
+      "size": 31263,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%83%E1%85%A9%E1%84%83%E1%85%A1%E1%86%AF.m4a",
+      "checksum": "83c6fe16b99adce14ef0c05e9c8b3e01ee608aa6"
+    },
+    {
+      "id": "48083d9415af43e155bfe4a60c79dd8fd3b9b2bb",
+      "type": "audio/m4a",
+      "size": 13122,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%92%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%A2_%E1%84%89%E1%85%A9%E1%86%A8%E1%84%83%E1%85%A9.m4a",
+      "checksum": "12e43f382951e53657711236985cfae699eea49f"
+    },
+    {
+      "id": "a88a329f8cd13e2d66913ba8f28c4d6665a9721e",
+      "type": "audio/m4a",
+      "size": 18824,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%8E%E1%85%A9%E1%84%80%E1%85%AA.m4a",
+      "checksum": "62a328e603ca4af63c80b036433f1a66922c1b21"
+    },
+    {
+      "id": "ba94d72f2f8d7e02b572bc648971a1abd923c904",
+      "type": "audio/m4a",
+      "size": 20558,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%89%E1%85%A9%E1%86%A8%E1%84%83%E1%85%A9_%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%83%E1%85%A1%E1%86%AF%E1%84%89%E1%85%A5%E1%86%BC.m4a",
+      "checksum": "fdb01b0edd7ffb67569d2c97821d31c232b62451"
+    },
+    {
+      "id": "cd1dbe4ea6f0ba21767b95d6c9578c03e70fef26",
+      "type": "audio/m4a",
+      "size": 18994,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%89%E1%85%B5%E1%84%80%E1%85%A1%E1%86%AB_%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%83%E1%85%A1%E1%86%AF%E1%84%89%E1%85%A5%E1%86%BC.m4a",
+      "checksum": "946af971e856ebf55660f85485ce71f895723362"
+    },
+    {
+      "id": "c4b692c1ac568d26d261e9f5ab711753b6669364",
+      "type": "audio/m4a",
+      "size": 51289,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%83%E1%85%A9%E1%84%83%E1%85%A1%E1%86%AF_%E1%84%91%E1%85%A1%E1%84%8B%E1%85%AF%E1%84%89%E1%85%A9%E1%86%BC_%E1%84%83%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB.m4a",
+      "checksum": "898d82bd6fa38efbcd9edb69f8dfe0cc49ff5648"
+    },
+    {
+      "id": "585a6042cb9b88fa786a9e5134594436feffaf8d",
+      "type": "audio/m4a",
+      "size": 14525,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%82%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B3%E1%86%B7.m4a",
+      "checksum": "382e8fa5777467dfc7b67e8759f19a005363ef86"
+    },
+    {
+      "id": "26f0e799f431a5bf94ce18af4922195d66ebe3f0",
+      "type": "audio/m4a",
+      "size": 16474,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%83%E1%85%A1%E1%86%AF%E1%84%89%E1%85%A5%E1%86%BC.m4a",
+      "checksum": "d69effb40b21c03c6fdd2892ccf6ade3f42c3180"
+    },
+    {
+      "id": "73dd9981593b3d92ce449109400c001a151a56bc",
+      "type": "audio/m4a",
+      "size": 15868,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%83%E1%85%A1%E1%86%AF%E1%84%89%E1%85%A5%E1%86%BC_%E1%84%8C%E1%85%A9%E1%84%80%E1%85%A5%E1%86%AB.m4a",
+      "checksum": "13b7aefa4f8aa4be7ad364505b44f2ea9e9fbb45"
+    },
+    {
+      "id": "83838caa9906e10a7e4ed1f7b85bd884b045bdc5",
+      "type": "audio/m4a",
+      "size": 19993,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%8F%E1%85%A1%E1%86%AF%E1%84%85%E1%85%A9%E1%84%85%E1%85%B5_%E1%84%89%E1%85%A9%E1%84%86%E1%85%A9.m4a",
+      "checksum": "393bdd579bd25f0f62543fbf5d84932cc2970edc"
+    },
+    {
+      "id": "1e710263640f89fbf85efcb2598f27d5c2d69bcc",
+      "type": "audio/m4a",
+      "size": 8912,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC.m4a",
+      "checksum": "cfd3301802eb8bf781a54e1ed1afd26b4b770982"
+    },
+    {
+      "id": "1d4d6e3be8174de96477acb4c20fc71ad88f63b9",
+      "type": "audio/m4a",
+      "size": 9558,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%89%E1%85%B5%E1%84%80%E1%85%A1%E1%86%AB_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC.m4a",
+      "checksum": "ce8b4f88a74656d79d67823ed0e8b2e4ef0429e7"
+    },
+    {
+      "id": "51f521788e859de768e0e1da5df907b94b58d5c8",
+      "type": "audio/m4a",
+      "size": 17003,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC_%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%85%E1%85%AD.m4a",
+      "checksum": "ea576dc2cda504ec13da8885bccac18bb14c910f"
+    },
+    {
+      "id": "bcd7116eaa39e65c98bf43d3626fa9990e62b0d0",
+      "type": "audio/m4a",
+      "size": 18824,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC_%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%8E%E1%85%A9%E1%84%80%E1%85%AA.m4a",
+      "checksum": "ac2b2722493c94aacb34b930a29a41d4e9f191be"
+    },
+    {
+      "id": "708e18fa45ad76eb6cd329fd27ba2ebcbd353c7c",
+      "type": "audio/m4a",
+      "size": 14525,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC_%E1%84%82%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B3%E1%86%B7.m4a",
+      "checksum": "fae4557d87784718828b2662be3677267088ae14"
+    },
+    {
+      "id": "c4a79de3565d1d1a59a0d00217ba184b57f6c49b",
+      "type": "audio/m4a",
+      "size": 12835,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8B%E1%85%B5%E1%84%87%E1%85%AE%E1%86%AB_%E1%84%82%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%A1%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%B7.m4a",
+      "checksum": "643fc448711725ab7e8ddc151b5e7818b6ebf6a8"
+    },
+    {
+      "id": "6118e969151f934b4e15430d1c210c574188dee9",
+      "type": "audio/m4a",
+      "size": 9792,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%89%E1%85%A1%E1%86%B7%E1%84%89%E1%85%B5%E1%86%B8.m4a",
+      "checksum": "75374faa495e0df97ecab404945f009c6a921f70"
+    },
+    {
+      "id": "daaff1e0658b3b4676f19d31804e25e24c9b721c",
+      "type": "audio/m4a",
+      "size": 10262,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%89%E1%85%B5%E1%86%B8%E1%84%89%E1%85%A1%E1%86%B7.m4a",
+      "checksum": "92f281d8edda8d0de0fe6c39d7024f4f1c2fb3e5"
+    },
+    {
+      "id": "ccaf757163634f3e7bfc9b2cce3762322a0de451",
+      "type": "audio/m4a",
+      "size": 9273,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%89%E1%85%B5%E1%86%B8%E1%84%8B%E1%85%B2%E1%86%A8.m4a",
+      "checksum": "c7c7e0554597a8a755debabc69ca6d9fa90fb2e9"
+    },
+    {
+      "id": "c04700bceb644833dd209dcbb0abbe5d1dc9cdd0",
+      "type": "audio/m4a",
+      "size": 9210,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%89%E1%85%B5%E1%86%B8%E1%84%8B%E1%85%B5%E1%86%AF.m4a",
+      "checksum": "67dc5ee47f7e5342228993eb0d905ef0c40b67b8"
+    },
+    {
+      "id": "6a034d91290b42485ada0a44ae3cfe4b9df50155",
+      "type": "audio/m4a",
+      "size": 10366,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%89%E1%85%B5%E1%86%B8%E1%84%8E%E1%85%B5%E1%86%AF.m4a",
+      "checksum": "29bb6858165c8c8e4be5956e77dd2dc846b6bc51"
+    },
+    {
+      "id": "65aa8912590682bdc4c23b82a6303db27a120faf",
+      "type": "audio/m4a",
+      "size": 9834,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%89%E1%85%B5%E1%86%B8%E1%84%91%E1%85%A1%E1%86%AF.m4a",
+      "checksum": "8d2f788136c527144a5426e7c5cf2278f90860bb"
+    },
+    {
+      "id": "1230dea178c55e00fde4a140bd0b4737c2a29268",
+      "type": "audio/m4a",
+      "size": 8881,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8B%E1%85%B2%E1%86%A8%E1%84%89%E1%85%B5%E1%86%B8.m4a",
+      "checksum": "444a6be234a17297d3c9f1f7b10cae5f03818b2a"
+    },
+    {
+      "id": "8f6c6a2d573ac78b05d59a0ede5d59acadd52950",
+      "type": "audio/m4a",
+      "size": 9022,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8E%E1%85%B5%E1%86%AF%E1%84%89%E1%85%B5%E1%86%B8.m4a",
+      "checksum": "7c116f155f1361bcaa7d79081b4bcf907e75ccc2"
+    },
+    {
+      "id": "82faa2fbffcf236eaab97bf4e5f6b71f86b6796b",
+      "type": "audio/m4a",
+      "size": 8718,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%91%E1%85%A1%E1%86%AF%E1%84%89%E1%85%B5%E1%86%B8.m4a",
+      "checksum": "b83438cd75f35f3c57d8a972ce4c460f6b3fe775"
+    },
+    {
+      "id": "896aad6d33ed9a1611b5cfc970bd3b7a84f443b5",
+      "type": "audio/m4a",
+      "size": 15322,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8B%E1%85%AE%E1%86%AB%E1%84%83%E1%85%A9%E1%86%BC_%E1%84%89%E1%85%B5%E1%84%8C%E1%85%A1%E1%86%A8.m4a",
+      "checksum": "b3f4e5d4de438accb4d9d717504881f801d37cc9"
+    },
+    {
+      "id": "7ca39f429c553239fa70121a21022378afb68730",
+      "type": "audio/m4a",
+      "size": 16221,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8B%E1%85%AE%E1%86%AB%E1%84%83%E1%85%A9%E1%86%BC_%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%85%E1%85%AD.m4a",
+      "checksum": "d52600083f9f2ace0f37756e3ba82625235e814a"
+    },
+    {
+      "id": "a4735aed0ec2a35a4c97f6278cd857de689f2cf5",
+      "type": "audio/m4a",
+      "size": 10888,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8C%E1%85%AE%E1%86%BC%E1%84%80%E1%85%A1%E1%86%AB_%E1%84%8C%E1%85%B5%E1%84%8C%E1%85%A5%E1%86%B7.m4a",
+      "checksum": "a4846ef6c585a4a16ce6fd05869fc476f8ab29bc"
+    },
+    {
+      "id": "077ce22118bf786d02b34693120abcd985b3a48e",
+      "type": "audio/m4a",
+      "size": 14344,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%91%E1%85%A7%E1%86%BC%E1%84%80%E1%85%B2%E1%86%AB_%E1%84%89%E1%85%A9%E1%86%A8%E1%84%83%E1%85%A9.m4a",
+      "checksum": "d2d04d37ef6778df5b3038d2c4685f9a870e23e5"
+    },
+    {
+      "id": "17905ac6196ed17be9ba5dec13381ac6b0e25863",
+      "type": "audio/m4a",
+      "size": 17572,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8B%E1%85%AE%E1%86%AB%E1%84%83%E1%85%A9%E1%86%BC_%E1%84%83%E1%85%A1%E1%84%89%E1%85%B5%E1%84%89%E1%85%B5%E1%84%8C%E1%85%A1%E1%86%A8.m4a",
+      "checksum": "e08b5bb06151a690005f10c8af474cdb8898d2cc"
+    },
+    {
+      "id": "29180776f355eecff7c01269bf7e396b1372b6b4",
+      "type": "audio/m4a",
+      "size": 19319,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8B%E1%85%AE%E1%86%AB%E1%84%83%E1%85%A9%E1%86%BC_%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%89%E1%85%B5%E1%84%8C%E1%85%AE%E1%86%BC%E1%84%83%E1%85%A1%E1%86%AB.m4a",
+      "checksum": "f0a1b255eae68bc0d785e57601382159351b1919"
+    },
+    {
+      "id": "45230ea413907654e8bc7182a3d8761bd33f927c",
+      "type": "audio/m4a",
+      "size": 9496,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8F%E1%85%A1%E1%86%AF%E1%84%85%E1%85%A9%E1%84%85%E1%85%B5.m4a",
+      "checksum": "a5916d317d6258cd0016d45aed3a236153da6767"
+    },
+    {
+      "id": "fbcb77e581cd892410217c09733fac4cdef49dc3",
+      "type": "audio/m4a",
+      "size": 11361,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%82%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%A1%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%B7.m4a",
+      "checksum": "fc4e7fe00527b9a05800823656b3d79f60045dc3"
+    },
+    {
+      "id": "ac08ece7c625761e5e4655d94d7010a3c9b1d80c",
+      "type": "audio/m4a",
+      "size": 11340,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%83%E1%85%A1%E1%86%AF%E1%84%85%E1%85%A7%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%B7.m4a",
+      "checksum": "5f3672b34afb1cac95486d5d01200ec8e3a894a6"
+    },
+    {
+      "id": "8d98851cfa70d623526f8a5fbeb3529d01e90022",
+      "type": "audio/m4a",
+      "size": 10258,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5.m4a",
+      "checksum": "3eaf19fde8e5e40ed2e211628400d9dd7857dec9"
+    },
+    {
+      "id": "f9c1469ee79988cb41c30039a154f20613a513d0",
+      "type": "audio/m4a",
+      "size": 11856,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%83%E1%85%A1%E1%86%BC.m4a",
+      "checksum": "8fe8b6ab1b526768d0647ebfe478d3f6f587018e"
+    },
+    {
+      "id": "cddebfd6399804b6e01183f53d48916b198a605b",
+      "type": "audio/m4a",
+      "size": 17660,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%85%E1%85%AD.m4a",
+      "checksum": "ea9d99c14553389d4a5f908a192e780b29b6dc8a"
+    },
+    {
+      "id": "d373b05f17b6d898c45f82100e38709b6653fd2d",
+      "type": "audio/m4a",
+      "size": 15648,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%8E%E1%85%A9%E1%84%80%E1%85%AA.m4a",
+      "checksum": "014d723fcead256934582b936c50e9bdef1bcbb4"
+    },
+    {
+      "id": "8e98f63de567ce8d4793d88eee13abfc843048f6",
+      "type": "audio/m4a",
+      "size": 16002,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%82%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B3%E1%86%B7.m4a",
+      "checksum": "58e89f984d5d8c8a8166f6cd756bdc14f4f187aa"
+    },
+    {
+      "id": "d613be51711d01864be616f42960eb0253488f47",
+      "type": "audio/m4a",
+      "size": 11100,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC.m4a",
+      "checksum": "8f3d4b1e3b2e00dac79285126a98f012b41f1589"
+    },
+    {
+      "id": "e76ef68f4730698f7ee01226f265c8fcd07447b2",
+      "type": "audio/m4a",
+      "size": 17660,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC_%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%85%E1%85%AD.m4a",
+      "checksum": "00551372fdf0e58925ab39cad401616f95f1d54d"
+    },
+    {
+      "id": "693bc63f1f6c368f1f413c3212029451ac75862c",
+      "type": "audio/m4a",
+      "size": 15648,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC_%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%8E%E1%85%A9%E1%84%80%E1%85%AA.m4a",
+      "checksum": "1a305c5cd5f44c1bf28f3e467f1eee3d43891d54"
+    },
+    {
+      "id": "acea77bb1bdc22c6a5c8c26f827531edc58b0513",
+      "type": "audio/m4a",
+      "size": 16002,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC_%E1%84%82%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B3%E1%86%B7.m4a",
+      "checksum": "225d1a3ccb5434f88cc6e8493c0a874e901b593a"
+    },
+    {
+      "id": "ebec8e797528c2190f8173acaad205ade3f36126",
+      "type": "audio/m4a",
+      "size": 11287,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%8E%E1%85%AE%E1%86%A8%E1%84%92%E1%85%A1%E1%84%92%E1%85%A1%E1%86%B8%E1%84%82%E1%85%B5%E1%84%83%E1%85%A1.m4a",
+      "checksum": "b899062f87a1a5da272e94c9110ae349cdc455e3"
+    },
+    {
+      "id": "bca7064d18ea0b5bfb9bf6569a28121c053b0830",
+      "type": "audio/m4a",
+      "size": 11897,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/male/%E1%84%82%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%A1%E1%86%BB%E1%84%89%E1%85%B3%E1%86%B8%E1%84%82%E1%85%B5%E1%84%83%E1%85%A1.m4a",
+      "checksum": "0054c0d20f33c2f00eb5c48d87f20ff3ca3567dc"
+    },
+    {
+      "id": "93303f18cec01403e372f230f3fc81b43feceafa",
+      "type": "audio/m4a",
+      "size": 7448,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%80%E1%85%AE.m4a",
+      "checksum": "30ae990066a2b91b68e437ec99a8f2c9df36e6f2"
+    },
+    {
+      "id": "1015e06fcdba10378cab5b0acd5cf70d345fb7f1",
+      "type": "audio/m4a",
+      "size": 7946,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%89%E1%85%A1.m4a",
+      "checksum": "6b408655fa3ef46a695b813fa13b6db4b1a8b2e0"
+    },
+    {
+      "id": "0196837609d90288c749f1c73e18830169852a62",
+      "type": "audio/m4a",
+      "size": 6970,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8B%E1%85%A9.m4a",
+      "checksum": "f2bad61ce4486784d6801b79923e97f1078249ee"
+    },
+    {
+      "id": "b74af7789ee653d17b0294e76235ea7f30b4b030",
+      "type": "audio/m4a",
+      "size": 7312,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8B%E1%85%B5.m4a",
+      "checksum": "9b08e73d8282cf65e95fa46f42dce7433a526310"
+    },
+    {
+      "id": "6913e3a9609418200b968bbcae270296d279ec10",
+      "type": "audio/m4a",
+      "size": 7141,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8E%E1%85%A9.m4a",
+      "checksum": "e3108ec7d811f0e42511ea1945b0d5e0685c00dc"
+    },
+    {
+      "id": "63a4871e404299a85e991a270ea996fc9e299262",
+      "type": "audio/m4a",
+      "size": 8951,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%89%E1%85%B5_%E1%84%87%E1%85%AE%E1%86%AB_%E1%84%8E%E1%85%A9.m4a",
+      "checksum": "f25a4e48a22d5dd6dd5b378a4659f9b14a2ae8f5"
+    },
+    {
+      "id": "060da4a4998d0b652afa4e14f019dc58405781f8",
+      "type": "audio/m4a",
+      "size": 7121,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8E%E1%85%A9_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC.m4a",
+      "checksum": "482cce9685add93ca7ffe7eab12c24efd05b91f5"
+    },
+    {
+      "id": "b9eee16a416c96631cdb31b499021666005b5a42",
+      "type": "audio/m4a",
+      "size": 8245,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%80%E1%85%A9%E1%86%BC.m4a",
+      "checksum": "8cd27e5a19049fe1cb2f9eac0f4c96380825ddcf"
+    },
+    {
+      "id": "92b08a57899fa9faae086563fa6576edc0a42a82",
+      "type": "audio/m4a",
+      "size": 7833,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%83%E1%85%A1%E1%86%BC.m4a",
+      "checksum": "28a6e59f1f221bad483fb6987f50265662adeb09"
+    },
+    {
+      "id": "e136888afb52cf77312dfac844ebfd045dd5157b",
+      "type": "audio/m4a",
+      "size": 6144,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%87%E1%85%A2%E1%86%A8.m4a",
+      "checksum": "6e7287bc437e41cf7c44603b1bd4edf2444b9447"
+    },
+    {
+      "id": "88bc087d2a1294bdb4e675483510e5695f15f978",
+      "type": "audio/m4a",
+      "size": 7172,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%87%E1%85%AE%E1%86%AB.m4a",
+      "checksum": "a505eb9bf8636cc7a3f3d6ccd354a19a2fa40af6"
+    },
+    {
+      "id": "22bfa684624b2c004da28cf1b430c6c7f0348ef8",
+      "type": "audio/m4a",
+      "size": 8036,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%89%E1%85%A1%E1%86%B7.m4a",
+      "checksum": "d99bd8922bbf4fb1575680b101f44f3ede7faedb"
+    },
+    {
+      "id": "98e832d13c888932122b78ffe092245066f743cf",
+      "type": "audio/m4a",
+      "size": 7106,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%89%E1%85%B5%E1%86%B8.m4a",
+      "checksum": "29096b63d64795832e1cd2eab1ce527c979838ff"
+    },
+    {
+      "id": "4a72ad99187eeca458f9ffe7456a0b32cf84efe9",
+      "type": "audio/m4a",
+      "size": 8245,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8B%E1%85%A7%E1%86%BC.m4a",
+      "checksum": "05964ec552a7f6653828f7770eedd674c577247a"
+    },
+    {
+      "id": "ea6b8850a24b735c53f2353efb30cd10579cafaf",
+      "type": "audio/m4a",
+      "size": 6708,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8B%E1%85%B2%E1%86%A8.m4a",
+      "checksum": "6a3d10b9c9f890373793642cc586befe27d3e2cb"
+    },
+    {
+      "id": "6943c7e5f8d57b516047280d3e3e2a0570ab982e",
+      "type": "audio/m4a",
+      "size": 7374,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8B%E1%85%B5%E1%86%AF.m4a",
+      "checksum": "3ed3dc44096538ef16dcc7d863685f4f56a5ba4e"
+    },
+    {
+      "id": "8f8a07b02325de6020d08a7739ba182a875e63b1",
+      "type": "audio/m4a",
+      "size": 7018,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8C%E1%85%A5%E1%86%B7.m4a",
+      "checksum": "8f938efdc35b1a2e06db98c5a7e2a2b10508bde3"
+    },
+    {
+      "id": "dcc5a3042dbb4fb033f3fbb5f3b40ce4a2976e4a",
+      "type": "audio/m4a",
+      "size": 7645,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8E%E1%85%A5%E1%86%AB.m4a",
+      "checksum": "747799c96875d511baa6f26f58070e40d1e113dc"
+    },
+    {
+      "id": "01b8b45ef7c76b87aa4eae74f385dc2d87d3477a",
+      "type": "audio/m4a",
+      "size": 7572,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8E%E1%85%B5%E1%86%AF.m4a",
+      "checksum": "86d9f5a9ac2572eb902198443b9d69a25c70cd71"
+    },
+    {
+      "id": "942a7e20b21012353d3bc33c794066e70c3273e7",
+      "type": "audio/m4a",
+      "size": 7320,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%91%E1%85%A1%E1%86%AF.m4a",
+      "checksum": "cf10900f920db99ba4a84b46567812f970c62e39"
+    },
+    {
+      "id": "d7d2c47e6308a04623c88f04e4535e3de5bb429f",
+      "type": "audio/m4a",
+      "size": 20654,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%8E%E1%85%A9%E1%84%80%E1%85%AA.m4a",
+      "checksum": "26fff0f297ec61039abf77f3f517a25195e16d05"
+    },
+    {
+      "id": "455e0858fc88da57f6035c2eaa510e5d34a76ef3",
+      "type": "audio/m4a",
+      "size": 7351,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%87%E1%85%AE%E1%86%AB_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC.m4a",
+      "checksum": "8fc74d4feb711001347fa3212e0229e46b2b4d3d"
+    },
+    {
+      "id": "578394a7a9a0c316a1305751bf38ec068a2f1e46",
+      "type": "audio/m4a",
+      "size": 19806,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%85%E1%85%AD.m4a",
+      "checksum": "307b72ce7a5d136451ef09639ce4cf01fd87551d"
+    },
+    {
+      "id": "7db9655544004fb55e588e887f41c2b1914cec69",
+      "type": "audio/m4a",
+      "size": 22553,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%8E%E1%85%A9%E1%84%80%E1%85%AA.m4a",
+      "checksum": "3cfb3dc649d90da7a863167f77a1d90bdcdadaa0"
+    },
+    {
+      "id": "45b7b1c3731325eb9f03e2cebb0dcd1d79be8a00",
+      "type": "audio/m4a",
+      "size": 8409,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%80%E1%85%A5%E1%84%85%E1%85%B5.m4a",
+      "checksum": "a80f2f7b7aecb9f842f63f783bbb2450fc4daf95"
+    },
+    {
+      "id": "9814ee95cfc18aede0368d07294e8cfa5210b23c",
+      "type": "audio/m4a",
+      "size": 9062,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5.m4a",
+      "checksum": "7f965bff3405bad9fef84ef1cc35073012d06038"
+    },
+    {
+      "id": "f4a3674e1288cabc2bca554a96504b6a81613fec",
+      "type": "audio/m4a",
+      "size": 33516,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8E%E1%85%AC%E1%84%80%E1%85%A9_%E1%84%80%E1%85%A5%E1%84%85%E1%85%B5_%E1%84%80%E1%85%B5%E1%84%85%E1%85%A9%E1%86%A8_%E1%84%8C%E1%85%A5%E1%86%B7%E1%84%8E%E1%85%A1_%E1%84%83%E1%85%A9%E1%84%83%E1%85%A1%E1%86%AF.m4a",
+      "checksum": "ceb66742f898cd988103cea4fa25645e6a4467fa"
+    },
+    {
+      "id": "43c36c78d47aee5e45ce03c9a14d62f814708e1e",
+      "type": "audio/m4a",
+      "size": 57672,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8E%E1%85%AC%E1%84%80%E1%85%A9_%E1%84%80%E1%85%A5%E1%84%85%E1%85%B5_%E1%84%80%E1%85%B5%E1%84%85%E1%85%A9%E1%86%A8_%E1%84%8C%E1%85%A5%E1%86%B7%E1%84%8E%E1%85%A1_%E1%84%83%E1%85%A9%E1%84%83%E1%85%A1%E1%86%AF_%E1%84%91%E1%85%A1%E1%84%8B%E1%85%AF%E1%84%89%E1%85%A9%E1%86%BC_%E1%84%8E%E1%85%AE%E1%84%80%E1%85%A1.m4a",
+      "checksum": "187eedf078b4ec94b0bb830a5288545dc2f2baeb"
+    },
+    {
+      "id": "2e1975d40c92b64ac3c1de6fa6bad299d34b60e4",
+      "type": "audio/m4a",
+      "size": 34052,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8E%E1%85%AC%E1%84%80%E1%85%A9_%E1%84%89%E1%85%B5%E1%84%80%E1%85%A1%E1%86%AB_%E1%84%80%E1%85%B5%E1%84%85%E1%85%A9%E1%86%A8_%E1%84%8C%E1%85%A5%E1%86%B7%E1%84%8E%E1%85%A1_%E1%84%83%E1%85%A9%E1%84%83%E1%85%A1%E1%86%AF.m4a",
+      "checksum": "58cc2556686b75a53a04a572749a4c9aa367c47b"
+    },
+    {
+      "id": "5d428c2b2f86ba96e2ac4c3fbe79cdcade56af87",
+      "type": "audio/m4a",
+      "size": 58526,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8E%E1%85%AC%E1%84%80%E1%85%A9_%E1%84%89%E1%85%B5%E1%84%80%E1%85%A1%E1%86%AB_%E1%84%80%E1%85%B5%E1%84%85%E1%85%A9%E1%86%A8_%E1%84%8C%E1%85%A5%E1%86%B7%E1%84%8E%E1%85%A1_%E1%84%83%E1%85%A9%E1%84%83%E1%85%A1%E1%86%AF_%E1%84%91%E1%85%A1%E1%84%8B%E1%85%AF%E1%84%89%E1%85%A9%E1%86%BC_%E1%84%8E%E1%85%AE%E1%84%80%E1%85%A1.m4a",
+      "checksum": "73f8a0f2e05dacf8ced97d6afb186598384f2104"
+    },
+    {
+      "id": "51b112d03a3e23e144668b03199d6dceac3bc8ee",
+      "type": "audio/m4a",
+      "size": 19018,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%80%E1%85%A5%E1%84%85%E1%85%B5_%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%83%E1%85%A1%E1%86%AF%E1%84%89%E1%85%A5%E1%86%BC.m4a",
+      "checksum": "eab52e71af613bf79a0952368688833b5f2467dd"
+    },
+    {
+      "id": "eb493c8e64e3a5051dc439d746f32ad472bcf7a8",
+      "type": "audio/m4a",
+      "size": 8727,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC.m4a",
+      "checksum": "d38b98726fb4a0e660420ce198d09e4c12112542"
+    },
+    {
+      "id": "661b09d5026f13164bf7973853f1f77b8ca245f1",
+      "type": "audio/m4a",
+      "size": 8088,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%80%E1%85%AE%E1%84%89%E1%85%B5%E1%86%B8.m4a",
+      "checksum": "988328e02d1a6229a962b2f7b1620cdfd5b569aa"
+    },
+    {
+      "id": "1de69d34c09911ca263f8b8f094a8c9928166fcd",
+      "type": "audio/m4a",
+      "size": 8576,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF.m4a",
+      "checksum": "ddef93e86a71b50621398b2d024ed7acc13d87e2"
+    },
+    {
+      "id": "08a8aec46210b301d3adf2cee1113a4f9ed3a235",
+      "type": "audio/m4a",
+      "size": 9109,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%89%E1%85%A1%E1%84%89%E1%85%B5%E1%86%B8.m4a",
+      "checksum": "016a14f9b2ce17a95fb710b1ce78783710111278"
+    },
+    {
+      "id": "266ca9d550b618ed4be218cad5defe43684e5514",
+      "type": "audio/m4a",
+      "size": 9344,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%89%E1%85%A9%E1%86%A8%E1%84%83%E1%85%A9.m4a",
+      "checksum": "89f64531f09c2a36b8b2ffd55e165a0320867996"
+    },
+    {
+      "id": "49c4a84fe163d33f0a2254178e8954f530f966af",
+      "type": "audio/m4a",
+      "size": 8803,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%89%E1%85%B5%E1%84%80%E1%85%A1%E1%86%AB.m4a",
+      "checksum": "31dc2fcee8344ce4a90128aa4efda7dc453e5f81"
+    },
+    {
+      "id": "624799d9d9bdaa2b59e19f219f5247544dbd99cd",
+      "type": "audio/m4a",
+      "size": 9790,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%89%E1%85%B5%E1%86%B8%E1%84%80%E1%85%AE.m4a",
+      "checksum": "8a44f16b152d32965207be61f420ff5f26989794"
+    },
+    {
+      "id": "32dd48098096066a33f14c2f8a37292c3048010e",
+      "type": "audio/m4a",
+      "size": 9758,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%89%E1%85%B5%E1%86%B8%E1%84%89%E1%85%A1.m4a",
+      "checksum": "04323fc06653417c0d2f77124657d7e7195d5cc8"
+    },
+    {
+      "id": "99ff21c4b433be4d729a0b93a00f3801709c6885",
+      "type": "audio/m4a",
+      "size": 8989,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%89%E1%85%B5%E1%86%B8%E1%84%8B%E1%85%A9.m4a",
+      "checksum": "cc913028a5f52d4986d2b87703060649872a2f0b"
+    },
+    {
+      "id": "858785ca27d21faa293a14b148cf4dc5d34af115",
+      "type": "audio/m4a",
+      "size": 8988,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%89%E1%85%B5%E1%86%B8%E1%84%8B%E1%85%B5.m4a",
+      "checksum": "cef8dd0cddd5ae49dbf8adbd3c44c651813dd3d5"
+    },
+    {
+      "id": "0f049abf8464f4a0bc100508d543cfe2ae0fbd4b",
+      "type": "audio/m4a",
+      "size": 8198,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8B%E1%85%A9%E1%84%89%E1%85%B5%E1%86%B8.m4a",
+      "checksum": "63a17e3f758212f47315666506bf94a039e7294c"
+    },
+    {
+      "id": "40823f2440260f3a3096bf38d05bfdd6249a6514",
+      "type": "audio/m4a",
+      "size": 12094,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%85%E1%85%AD.m4a",
+      "checksum": "bad869d229800448f81deb8ae08aa56b22090cb6"
+    },
+    {
+      "id": "d94b73c7a93c0652d1b10df5f00b5eba8b1bc825",
+      "type": "audio/m4a",
+      "size": 8467,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B5%E1%86%B8.m4a",
+      "checksum": "f5f6e2bb3e81e92df72df93fada7147b7d941eaf"
+    },
+    {
+      "id": "ce2c141e1d26181b35944021f349bb84920d3ce1",
+      "type": "audio/m4a",
+      "size": 10695,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%83%E1%85%A1%E1%86%BC.m4a",
+      "checksum": "c625ab21b7ee7b21b6a7777168586bc556e5e7a8"
+    },
+    {
+      "id": "e9b646a7e057027f1da59eb566849092d6240cfc",
+      "type": "audio/m4a",
+      "size": 16325,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%8E%E1%85%A9%E1%84%80%E1%85%AA.m4a",
+      "checksum": "7f9a604955e16ec871f4b5f157dc55fcc96c9b39"
+    },
+    {
+      "id": "a136e0196ca476a18dfe38b6a8c43210eea69f3a",
+      "type": "audio/m4a",
+      "size": 16615,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%85%E1%85%AD.m4a",
+      "checksum": "475e913e37184a2c22178a81af81cb291e377f71"
+    },
+    {
+      "id": "bcd5956f73265d1a87239d119863c3bf66abfaf9",
+      "type": "audio/m4a",
+      "size": 30382,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%83%E1%85%A9%E1%84%83%E1%85%A1%E1%86%AF.m4a",
+      "checksum": "4444617e7a1e5b2bcd4a95dae9e4bf4c1d39a3d4"
+    },
+    {
+      "id": "7154e3d5dd2be2bd2ed8c6a3309eed759bafd62e",
+      "type": "audio/m4a",
+      "size": 11657,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%92%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%A2_%E1%84%89%E1%85%A9%E1%86%A8%E1%84%83%E1%85%A9.m4a",
+      "checksum": "28ccbe4bdc6517d1939c1a3216766e75bddc4795"
+    },
+    {
+      "id": "3c81e153b849886e6fe6bbefe9e1439aecdf0f1f",
+      "type": "audio/m4a",
+      "size": 22627,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%8E%E1%85%A9%E1%84%80%E1%85%AA.m4a",
+      "checksum": "ccbafa2c94b1a1f297d62c17c4265a418a77a791"
+    },
+    {
+      "id": "9e3028362ecfc7bfe1630bb036b85d698c1605b9",
+      "type": "audio/m4a",
+      "size": 20767,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%89%E1%85%A9%E1%86%A8%E1%84%83%E1%85%A9_%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%83%E1%85%A1%E1%86%AF%E1%84%89%E1%85%A5%E1%86%BC.m4a",
+      "checksum": "7def4039d6d7e7ffa31e4e72a11991025d84ce57"
+    },
+    {
+      "id": "c0a6264143fd1ffdd17e9cf42dde9f46ac1f7df5",
+      "type": "audio/m4a",
+      "size": 20126,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%89%E1%85%B5%E1%84%80%E1%85%A1%E1%86%AB_%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%83%E1%85%A1%E1%86%AF%E1%84%89%E1%85%A5%E1%86%BC.m4a",
+      "checksum": "783b7dca53f873be56ff85f3827f99315a607687"
+    },
+    {
+      "id": "86476d294238bebcdc593aa8ddc986fd91a90321",
+      "type": "audio/m4a",
+      "size": 49509,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%83%E1%85%A9%E1%84%83%E1%85%A1%E1%86%AF_%E1%84%91%E1%85%A1%E1%84%8B%E1%85%AF%E1%84%89%E1%85%A9%E1%86%BC_%E1%84%83%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB.m4a",
+      "checksum": "5262bac0e1c74cf9c5ffe7930da8762f1cd6e19e"
+    },
+    {
+      "id": "cc45515608ee081452827b181e114d0d7b091e8b",
+      "type": "audio/m4a",
+      "size": 17243,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%82%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B3%E1%86%B7.m4a",
+      "checksum": "dadd94a6b52099b8bd7bda73f1f1c418af525269"
+    },
+    {
+      "id": "5a73a3c5896dc0e17ce5b21c0ef664f2c1b10e19",
+      "type": "audio/m4a",
+      "size": 17712,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%83%E1%85%A1%E1%86%AF%E1%84%89%E1%85%A5%E1%86%BC.m4a",
+      "checksum": "82971287fdee479713a3c245cd73530e48fc9f15"
+    },
+    {
+      "id": "6d305520839cf974318158dfeaffd80c97f82340",
+      "type": "audio/m4a",
+      "size": 15923,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%83%E1%85%A1%E1%86%AF%E1%84%89%E1%85%A5%E1%86%BC_%E1%84%8C%E1%85%A9%E1%84%80%E1%85%A5%E1%86%AB.m4a",
+      "checksum": "a2cfe893e60b82ca3a45034ecfc2778b5634b78a"
+    },
+    {
+      "id": "a1765991ca04c9e1ea75ae25e0e846e3bdd05f6f",
+      "type": "audio/m4a",
+      "size": 20753,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%8F%E1%85%A1%E1%86%AF%E1%84%85%E1%85%A9%E1%84%85%E1%85%B5_%E1%84%89%E1%85%A9%E1%84%86%E1%85%A9.m4a",
+      "checksum": "f49a52a6374d580975d848a7a2cbfb4822256f67"
+    },
+    {
+      "id": "5dd05e6f03346f3caf5d2e2d067991fcb507975c",
+      "type": "audio/m4a",
+      "size": 8599,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC.m4a",
+      "checksum": "663a7fbda6cf54a2b3e5123012de244270acd220"
+    },
+    {
+      "id": "02b3f4b25e90a8b3141f93f1d1d61ef8c5265c9b",
+      "type": "audio/m4a",
+      "size": 8845,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%89%E1%85%B5%E1%84%80%E1%85%A1%E1%86%AB_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC.m4a",
+      "checksum": "265b1b1496e0c1649fdfac8d5dba1b4e7ea1f3dc"
+    },
+    {
+      "id": "2b7f1cc827af7791750b428f7d8290dfcdc18e81",
+      "type": "audio/m4a",
+      "size": 16615,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC_%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%85%E1%85%AD.m4a",
+      "checksum": "805c14b4aacebdf5b2530fddefc2bdd43ddb2780"
+    },
+    {
+      "id": "12c00a940ab251c1cefc6447497df13152f731a2",
+      "type": "audio/m4a",
+      "size": 22627,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC_%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%8E%E1%85%A9%E1%84%80%E1%85%AA.m4a",
+      "checksum": "d41f97eed28d54960803b9a179ea9ad2571502ac"
+    },
+    {
+      "id": "5d5382abdf49c001e0b064797970fabe2b73ce89",
+      "type": "audio/m4a",
+      "size": 17243,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC_%E1%84%82%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B3%E1%86%B7.m4a",
+      "checksum": "37e2ad2b4a68d530c69410679e74d972d907098d"
+    },
+    {
+      "id": "78bd07ebc68500aeabb8f7025db8294bfa23a7bb",
+      "type": "audio/m4a",
+      "size": 14762,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8B%E1%85%B5%E1%84%87%E1%85%AE%E1%86%AB_%E1%84%82%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%A1%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%B7.m4a",
+      "checksum": "1d72df0f5e2247255c94537a40afc08f872ff1f0"
+    },
+    {
+      "id": "1a8fa16ad9e39d3a02577638835e4444269b6c54",
+      "type": "audio/m4a",
+      "size": 9772,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%89%E1%85%A1%E1%86%B7%E1%84%89%E1%85%B5%E1%86%B8.m4a",
+      "checksum": "54455175fc10d74b2f6a05c605362f2f451dd3a5"
+    },
+    {
+      "id": "8aef572fb7f7eec7bf9f3797a3547a338c2d75cb",
+      "type": "audio/m4a",
+      "size": 9941,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%89%E1%85%B5%E1%86%B8%E1%84%89%E1%85%A1%E1%86%B7.m4a",
+      "checksum": "61afd6ac26431ab24b46b0e14b1fc3e9b837e400"
+    },
+    {
+      "id": "58dc4e4fbb07a4bdd2f5dbdc309324f354e65da9",
+      "type": "audio/m4a",
+      "size": 9274,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%89%E1%85%B5%E1%86%B8%E1%84%8B%E1%85%B2%E1%86%A8.m4a",
+      "checksum": "5e38dbfbd12e8560af850f6f32603eb63365c241"
+    },
+    {
+      "id": "53f0bf03d48ca04e0abd9d51ef68e3f7f54a9814",
+      "type": "audio/m4a",
+      "size": 9095,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%89%E1%85%B5%E1%86%B8%E1%84%8B%E1%85%B5%E1%86%AF.m4a",
+      "checksum": "098281ffcf9df561fcc72551432b45806fbbf65f"
+    },
+    {
+      "id": "e5a3fc17d7c080fba648f4bf2c3a054df76f6ed6",
+      "type": "audio/m4a",
+      "size": 9199,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%89%E1%85%B5%E1%86%B8%E1%84%8E%E1%85%B5%E1%86%AF.m4a",
+      "checksum": "2f7b825b2661e6631ecdfd78cac842e27376fc22"
+    },
+    {
+      "id": "9b1338dd73ee8cb5af18ded4dc945ee79984b4c6",
+      "type": "audio/m4a",
+      "size": 9487,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%89%E1%85%B5%E1%86%B8%E1%84%91%E1%85%A1%E1%86%AF.m4a",
+      "checksum": "bbe69a1d7a6bddb7c10b8474cd2041da5d656c27"
+    },
+    {
+      "id": "35275fe9031e6433abce2421433b6a80b4c4726b",
+      "type": "audio/m4a",
+      "size": 8903,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8B%E1%85%B2%E1%86%A8%E1%84%89%E1%85%B5%E1%86%B8.m4a",
+      "checksum": "483a3f0852f7e2499f3e03684613c516b01404d9"
+    },
+    {
+      "id": "e332ac2ad95f073e3162685e424b23fb970ba375",
+      "type": "audio/m4a",
+      "size": 8936,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8E%E1%85%B5%E1%86%AF%E1%84%89%E1%85%B5%E1%86%B8.m4a",
+      "checksum": "21ecc1fa6e096e739eff9545cc3f9c0f08d967bf"
+    },
+    {
+      "id": "16cdf53350a9fab9500c4f633ed741e326ba72a2",
+      "type": "audio/m4a",
+      "size": 9320,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%91%E1%85%A1%E1%86%AF%E1%84%89%E1%85%B5%E1%86%B8.m4a",
+      "checksum": "8aa29db7ff909c9b72b84918e326ac1cb772cfcf"
+    },
+    {
+      "id": "6d7f9b6fd3e0b9cd3254d0b858a301c6c5538945",
+      "type": "audio/m4a",
+      "size": 15438,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8B%E1%85%AE%E1%86%AB%E1%84%83%E1%85%A9%E1%86%BC_%E1%84%89%E1%85%B5%E1%84%8C%E1%85%A1%E1%86%A8.m4a",
+      "checksum": "44fc2b1b373e6012ff876ed5669ea8b4c4b5ae28"
+    },
+    {
+      "id": "31a197e6887f4994488f922f7c742c6c35e6bac1",
+      "type": "audio/m4a",
+      "size": 16396,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8B%E1%85%AE%E1%86%AB%E1%84%83%E1%85%A9%E1%86%BC_%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%85%E1%85%AD.m4a",
+      "checksum": "7c3c700eb6128a71242348209cc3f62142ec0bac"
+    },
+    {
+      "id": "34b3f74f1bfa7d139531a2dc0374412a63679dcd",
+      "type": "audio/m4a",
+      "size": 11592,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8C%E1%85%AE%E1%86%BC%E1%84%80%E1%85%A1%E1%86%AB_%E1%84%8C%E1%85%B5%E1%84%8C%E1%85%A5%E1%86%B7.m4a",
+      "checksum": "f327485af82e08caca862d4f857a69e884ac35d4"
+    },
+    {
+      "id": "8102707264e2f64cfbff0e8a170cca3336409e13",
+      "type": "audio/m4a",
+      "size": 13784,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%91%E1%85%A7%E1%86%BC%E1%84%80%E1%85%B2%E1%86%AB_%E1%84%89%E1%85%A9%E1%86%A8%E1%84%83%E1%85%A9.m4a",
+      "checksum": "4c370cf022f561ddd353cb8c70b0b423a726ffab"
+    },
+    {
+      "id": "7f1fa4a6bc90dd5ebf43a71e82b071e765c4f8ad",
+      "type": "audio/m4a",
+      "size": 19180,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8B%E1%85%AE%E1%86%AB%E1%84%83%E1%85%A9%E1%86%BC_%E1%84%83%E1%85%A1%E1%84%89%E1%85%B5%E1%84%89%E1%85%B5%E1%84%8C%E1%85%A1%E1%86%A8.m4a",
+      "checksum": "9b7ae5a14b02817d82cbf1b78d8bbbb860d50623"
+    },
+    {
+      "id": "e97c4a4bc6861ba2a69abb2317296cc4e4a51dd8",
+      "type": "audio/m4a",
+      "size": 20686,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8B%E1%85%AE%E1%86%AB%E1%84%83%E1%85%A9%E1%86%BC_%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%89%E1%85%B5%E1%84%8C%E1%85%AE%E1%86%BC%E1%84%83%E1%85%A1%E1%86%AB.m4a",
+      "checksum": "fdfc44d7fa7f96c30ace8b1a4c1f19ef38dfaac2"
+    },
+    {
+      "id": "6b47b9675440ecb4858c2e310e898047d1e2ddf6",
+      "type": "audio/m4a",
+      "size": 9499,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8F%E1%85%A1%E1%86%AF%E1%84%85%E1%85%A9%E1%84%85%E1%85%B5.m4a",
+      "checksum": "40b0c50164a1e52d03a783e75d850804b5c7831e"
+    },
+    {
+      "id": "95d452aa0a416c129c313710de62ce2f54671e4a",
+      "type": "audio/m4a",
+      "size": 11911,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%82%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%A1%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%B7.m4a",
+      "checksum": "b3f1d1f72d8395374f06feb3103017d6b5eb10b1"
+    },
+    {
+      "id": "2dd690e1214d95745b9e714d120c089b00d99efe",
+      "type": "audio/m4a",
+      "size": 11327,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%83%E1%85%A1%E1%86%AF%E1%84%85%E1%85%A7%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%B7.m4a",
+      "checksum": "524272ba51112fbb90dcd9338e2c57456999900b"
+    },
+    {
+      "id": "a5d5956aeffb1cb4a347e1f8fe573302d707bd6f",
+      "type": "audio/m4a",
+      "size": 10199,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5.m4a",
+      "checksum": "e1aa48b7bcc0620e530ce0d09382281616074552"
+    },
+    {
+      "id": "ff4a8ec2cfec5a9eacf02d5c1a43f28a3e7e7e57",
+      "type": "audio/m4a",
+      "size": 11922,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%83%E1%85%A1%E1%86%BC.m4a",
+      "checksum": "014f229e3d3105e8bd7598ba88bea95e3259aeba"
+    },
+    {
+      "id": "1e9f3769edb62723d0c7a440133bec50f59691ba",
+      "type": "audio/m4a",
+      "size": 17774,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%85%E1%85%AD.m4a",
+      "checksum": "fb6c95eafdd30b04270146484159302c298af5a8"
+    },
+    {
+      "id": "6cbe6de82325b3a0df68a71ce7c150faf0424ee8",
+      "type": "audio/m4a",
+      "size": 16082,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%8E%E1%85%A9%E1%84%80%E1%85%AA.m4a",
+      "checksum": "d3632a5adada496ba5d7dea124b3639b497e0554"
+    },
+    {
+      "id": "06c6a3c0395ef961fa882f2f83e31b0edcdf8d3b",
+      "type": "audio/m4a",
+      "size": 17355,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%82%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B3%E1%86%B7.m4a",
+      "checksum": "bd7f206c61680d04a54ef54ec19d3511e7f3daa3"
+    },
+    {
+      "id": "29992e58932819f3e8e484b9c750cc7a29f9ce94",
+      "type": "audio/m4a",
+      "size": 10380,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC.m4a",
+      "checksum": "b1d6c484b9bad99f34495c989bc542b181c7e28c"
+    },
+    {
+      "id": "4a8a93e395722aa67b30161cac4aaf3bd5aaf925",
+      "type": "audio/m4a",
+      "size": 17774,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC_%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%85%E1%85%AD.m4a",
+      "checksum": "9439ec8682728dc1d786d741e3b2ee009f3bf17f"
+    },
+    {
+      "id": "685dbff69f3ba993a1f3d5b28612cbe15b73529e",
+      "type": "audio/m4a",
+      "size": 16082,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC_%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD_%E1%84%8E%E1%85%A9%E1%84%80%E1%85%AA.m4a",
+      "checksum": "218afb5e103662bfadcd17c63c5e815bef6d6dd5"
+    },
+    {
+      "id": "ffcd4db28331bea7d71b213e8d144750c9d78102",
+      "type": "audio/m4a",
+      "size": 17355,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A9%E1%84%86%E1%85%B5%E1%84%90%E1%85%A5_%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%AE%E1%84%92%E1%85%A7%E1%86%BC_%E1%84%82%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B3%E1%86%B7.m4a",
+      "checksum": "88ae496536f66b8bd9a8e4d7d071235a041a92c2"
+    },
+    {
+      "id": "054a1e5cc3176fdfd71ac8548faed822bb2b9d48",
+      "type": "audio/m4a",
+      "size": 11082,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%8E%E1%85%AE%E1%86%A8%E1%84%92%E1%85%A1%E1%84%92%E1%85%A1%E1%86%B8%E1%84%82%E1%85%B5%E1%84%83%E1%85%A1.m4a",
+      "checksum": "6e9919684312fcad6d439cbc16a4f7ab983005f4"
+    },
+    {
+      "id": "d8bf207ef84ef86d863f2ca289b32ef267c586f2",
+      "type": "audio/m4a",
+      "size": 12317,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/voiceover/female/%E1%84%82%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%A1%E1%86%BB%E1%84%89%E1%85%B3%E1%86%B8%E1%84%82%E1%85%B5%E1%84%83%E1%85%A1.m4a",
+      "checksum": "69cb5d3c9d2d5735a69dfe1a0ae40fca9c832eef"
+    },
+    {
+      "id": "0d671b02552c0372f6d9f84f509acae5a0af2cc5",
+      "type": "audio/m4a",
+      "size": 46228,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/BM1.m4a",
+      "checksum": "ba5f9498791d994a79a77a65905f77b02a5fea18"
+    },
+    {
+      "id": "475cb00bcd139e2d275d2712a193516c4c138d05",
+      "type": "audio/m4a",
+      "size": 33354,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/BM2.m4a",
+      "checksum": "60c4207cf71fbbb96db5620229ef8f9711e46917"
+    },
+    {
+      "id": "12461212794a69681682e03529883deac0828f95",
+      "type": "audio/m4a",
+      "size": 116187,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/BM3.m4a",
+      "checksum": "64df93572386dd13427ed2989a6ccd39ec8fb4fb"
+    },
+    {
+      "id": "cafc864189a49951fef5d3636f2fe6cb5871a480",
+      "type": "audio/m4a",
+      "size": 49285,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/BM4.m4a",
+      "checksum": "f3719ab5b7a01cf80a65039f5cd09c5a9fa967f3"
+    },
+    {
+      "id": "c2be4084bae8734a52db65bf6cdda93a69ff423e",
+      "type": "audio/m4a",
+      "size": 21908,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/BM5.m4a",
+      "checksum": "4b8dc6c3a758a7e632eb5ea6f5ec7827ef72bb83"
+    },
+    {
+      "id": "c5ba7959714578c546476966ec5d2d1fa793b330",
+      "type": "audio/m4a",
+      "size": 72661,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/BM6.m4a",
+      "checksum": "ab8f2b0b61505587b4554089c6a1ebc8e67ba1ef"
+    },
+    {
+      "id": "e7da4c48d087c16fb3689b5e8e893a7cdfbe670b",
+      "type": "audio/m4a",
+      "size": 90849,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/BM7.m4a",
+      "checksum": "3c47986f1208c053cab9f04363fe4bf36dc10f4a"
+    },
+    {
+      "id": "19bd6832355ff63047d42607f9ab9d93d9999318",
+      "type": "audio/m4a",
+      "size": 10567,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/CD0.m4a",
+      "checksum": "bb8e16d65a4d0289f95114e5c47fc2faee20cdcd"
+    },
+    {
+      "id": "c3a103fc57261f1f366093df98e62c0fb3bc45b7",
+      "type": "audio/m4a",
+      "size": 65962,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/CD1.m4a",
+      "checksum": "008cc635916f1fdacf0582d3db9a2f264fb4ee5f"
+    },
+    {
+      "id": "42996fb2c846d9358fad0a2cc1162e26b6853c15",
+      "type": "audio/m4a",
+      "size": 42583,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/CD2.m4a",
+      "checksum": "688161701ffb748283890c2922fe0aaf4b383ad0"
+    },
+    {
+      "id": "13fad738de96aba2bdd21dc7bd3eeb392c12d3cf",
+      "type": "audio/m4a",
+      "size": 122088,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/CD3.m4a",
+      "checksum": "2232ac0d8247f0cf3cbc48488d19cf26126e468b"
+    },
+    {
+      "id": "acc82aa6be4f7eae745c9f9e0167dee5ab8c18e1",
+      "type": "audio/m4a",
+      "size": 88929,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/CD4.m4a",
+      "checksum": "61d38ea91f7186ed3d190195fdb8960e4bd94bb8"
+    },
+    {
+      "id": "37b81835e1f227939eb76bbb6ceb84882602f514",
+      "type": "audio/m4a",
+      "size": 126240,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/CD5.m4a",
+      "checksum": "22ff5d06d1d55e9e552124be1a505e488732def8"
+    },
+    {
+      "id": "e4bea1389c16770b6335760ade44ed309f71bddb",
+      "type": "audio/m4a",
+      "size": 62628,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/CD6.m4a",
+      "checksum": "8014244566aff6bed6d56a915662303aa9362750"
+    },
+    {
+      "id": "04197fdb968d6484cc4cd11bbc0d29539c50f863",
+      "type": "audio/m4a",
+      "size": 126308,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/CD7.m4a",
+      "checksum": "5b3d1230e03e796413c41bd5ab536104837afc12"
+    },
+    {
+      "id": "0a422873580f6dec9eb50a0dfbd2517c22b49db6",
+      "type": "audio/m4a",
+      "size": 88541,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/CD8.m4a",
+      "checksum": "96a0e399ec82f6a8f09ec094d5df7dc5baa808e0"
+    },
+    {
+      "id": "b4e95205d3a71daf3da79c9b8ab03629491b2924",
+      "type": "audio/m4a",
+      "size": 60584,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/WarmUp2.m4a",
+      "checksum": "cedcfb2cc663be8114bccda4a58be8efab7384d5"
+    },
+    {
+      "id": "c2af5b4a5693a9398168f5bf8e0630b765c1749f",
+      "type": "audio/m4a",
+      "size": 99304,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/WarmUp3.m4a",
+      "checksum": "f54914f8c3777c54cea7a58827af6429e1a97d77"
+    },
+    {
+      "id": "0cfd2862483bd2ad9fa97825e0ccc4a066ca43d5",
+      "type": "audio/m4a",
+      "size": 157508,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/WarmUp4.m4a",
+      "checksum": "c594666ca485a8956587ffec28a986c7f8eba744"
+    },
+    {
+      "id": "000e80b8c206affc3bcc616a0852f31afada8d55",
+      "type": "audio/m4a",
+      "size": 147984,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/WarmUp5.m4a",
+      "checksum": "2b2d4a69cd1b5ce441a7e3ef0ff9387bad5087c8"
+    },
+    {
+      "id": "6f51943503ad1d9d7ebb9315f5fccdfef32b65bf",
+      "type": "audio/m4a",
+      "size": 109333,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/WarmUp6.m4a",
+      "checksum": "036461da68de34bd1278c40c1492a06c55a0dc74"
+    },
+    {
+      "id": "b941176179194b41f041c1ee5896aec4e93d368e",
+      "type": "audio/m4a",
+      "size": 55580,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/WarmUp7.m4a",
+      "checksum": "d931e151d73634b4b385244ce1b161cac1462f75"
+    },
+    {
+      "id": "506991beb52be1abf1855c5b5b34c11983020ffb",
+      "type": "audio/m4a",
+      "size": 21886,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/WarmUp8.m4a",
+      "checksum": "836d201c090949e1b05a2b750032ec53092cf359"
+    },
+    {
+      "id": "d811b734a3102b43e1154c9f224d765e161bc74a",
+      "type": "audio/m4a",
+      "size": 96035,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/WarmUp9.m4a",
+      "checksum": "b4fd4dbbe620eb2951c3a52e6010cb6a6d628ed4"
+    },
+    {
+      "id": "bc66aba2ba0e5b2c9451cce12e42f89a0ac52808",
+      "type": "audio/m4a",
+      "size": 137686,
+      "url": "https://nike-plus-android.s3.amazonaws.com/cortez/voiceover/ko/audio/guidedruns/Warmup1.m4a",
+      "checksum": "fc534374edb1d22a9e04eee74e04d9948d1f9873"
+    }
+  ]
+}

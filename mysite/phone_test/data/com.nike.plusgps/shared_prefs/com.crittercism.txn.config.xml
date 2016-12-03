@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="interval" value="10" />
+    <boolean name="enabled" value="true" />
+    <string name="transactions">{}</string>
+    <int name="defaultTimeout" value="3600000" />
+</map>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="RecordingIdentifier" value="1" />
+    <long name="RecordingStartTime" value="1475125229091" />
+    <boolean name="MachineIsOn" value="false" />
+    <boolean name="AutoPauseEnabled" value="true" />
+    <int name="RecordingType" value="1" />
+</map>

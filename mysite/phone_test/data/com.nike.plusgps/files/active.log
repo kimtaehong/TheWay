@@ -1,0 +1,76 @@
+I20160929 14:02:011 146 I: i{com.fullpower.location}-enableLocationSamples enable: false
+I20160929 14:02:013 146 I: i{com.fullpower.location}-enableLocationSamples enable: false
+I20160929 14:02:037 146 I: i{com.fullpower.location}-enableLocationSamples enable: false
+I20160929 14:02:042 146 I: i{com.fullpower.location}-enableLocationSamples enable: true
+I20160929 14:02:042 146 I: l{com.fullpower.location}-enableLocationSamples enable: true
+W20160929 14:02:042 146 W: n{com.fullpower.location}-enableLocationSamples this: Thread[Thread-121,5,main] enable: true locationType: GPS
+W20160929 14:02:042 146 W: n{com.fullpower.location}-setIsFirstLocationAfterEnable this: Thread[Thread-121,5,main]isFirstLocationAfterEnable: true
+W20160929 14:02:042 146 W: n{com.fullpower.location}-enableLocationSamples location updates request sent to LocationWorker
+W20160929 14:02:042 146 W: n{com.fullpower.location}-GPS_EVENT_STARTED
+W20160929 14:02:042 146 W: n{com.fullpower.location}-GPS_EVENT_FIRST_FIX
+W20160929 14:02:042 146 W: n{com.fullpower.location}-onLocationChanged first location after an enable location: Location[gps 37.432220,126.698897 acc=1 et=+1h1m5s562ms alt=0.0 vel=0.0 bear=0.0 {Bundle[mParcelledData.dataSize=44]}]
+W20160929 14:02:042 146 W: n{com.fullpower.location}-setIsFirstLocationAfterEnable this: Thread[Thread-121,5,main]isFirstLocationAfterEnable: false
+I20160929 14:02:042 146 I: i{com.fullpower.location}-enableLocationSamples enable: true
+W20160929 14:02:042 146 W: n{com.fullpower.location}-GPS_EVENT_FIRST_FIX
+I20160929 14:02:044 146 I: i{com.fullpower.location}-enableLocationSamples enable: false
+I20160929 14:02:044 146 I: l{com.fullpower.location}-enableLocationSamples enable: false
+W20160929 14:02:044 146 W: n{com.fullpower.location}-enableLocationSamples this: Thread[Thread-121,5,main] enable: false locationType: GPS
+W20160929 14:02:044 146 W: n{com.fullpower.location}-setIsFirstLocationAfterEnable this: Thread[Thread-121,5,main]isFirstLocationAfterEnable: false
+W20160929 14:02:044 146 W: n{com.fullpower.location}-enableLocationSamples location updates removal request sent to LocationWorker
+W20160929 14:02:044 146 W: n{com.fullpower.location}-GPS_EVENT_STOPPED
+I20160929 14:02:055 146 I: i{com.fullpower.location}-enableLocationSamples enable: true
+I20160929 14:02:055 146 I: l{com.fullpower.location}-enableLocationSamples enable: true
+W20160929 14:02:055 146 W: n{com.fullpower.location}-enableLocationSamples this: Thread[Thread-121,5,main] enable: true locationType: GPS
+W20160929 14:02:055 146 W: n{com.fullpower.location}-setIsFirstLocationAfterEnable this: Thread[Thread-121,5,main]isFirstLocationAfterEnable: true
+W20160929 14:02:055 146 W: n{com.fullpower.location}-enableLocationSamples location updates request sent to LocationWorker
+W20160929 14:02:055 146 W: n{com.fullpower.location}-GPS_EVENT_STARTED
+W20160929 14:02:055 146 W: n{com.fullpower.location}-GPS_EVENT_FIRST_FIX
+W20160929 14:02:055 146 W: n{com.fullpower.location}-onLocationChanged first location after an enable location: Location[gps 37.432220,126.698897 acc=1 et=+1h1m18s994ms alt=0.0 vel=0.0 bear=0.0 {Bundle[mParcelledData.dataSize=44]}]
+W20160929 14:02:055 146 W: n{com.fullpower.location}-setIsFirstLocationAfterEnable this: Thread[Thread-121,5,main]isFirstLocationAfterEnable: false
+W20160929 14:02:055 146 W: n{com.fullpower.location}-GPS_EVENT_FIRST_FIX
+I20160929 14:02:055 146 I: i{com.fullpower.location}-enableLocationSamples enable: true
+E20160929 14:03:000 146 E: i{com.fullpower.location}-deliverLocationEvent data.calories: 0
+I20160929 14:03:002 146 I: i{com.fullpower.location}-enableLocationSamples enable: false
+I20160929 14:03:002 146 I: l{com.fullpower.location}-enableLocationSamples enable: false
+W20160929 14:03:002 146 W: n{com.fullpower.location}-enableLocationSamples this: Thread[Thread-121,5,main] enable: false locationType: GPS
+W20160929 14:03:002 146 W: n{com.fullpower.location}-setIsFirstLocationAfterEnable this: Thread[Thread-121,5,main]isFirstLocationAfterEnable: false
+W20160929 14:03:002 146 W: n{com.fullpower.location}-enableLocationSamples location updates removal request sent to LocationWorker
+W20160929 14:03:002 146 W: n{com.fullpower.location}-GPS_EVENT_STOPPED
+I20160929 14:03:012 146 I: i{com.fullpower.location}-enableLocationSamples enable: false
+I20160929 14:03:015 146 I: i{com.fullpower.location}-enableLocationSamples enable: false
+I20160929 14:03:016 146 I: i{com.fullpower.location}-enableLocationSamples enable: true
+I20160929 14:03:016 146 I: l{com.fullpower.location}-enableLocationSamples enable: true
+W20160929 14:03:016 146 W: n{com.fullpower.location}-enableLocationSamples this: Thread[Thread-121,5,main] enable: true locationType: GPS
+W20160929 14:03:016 146 W: n{com.fullpower.location}-setIsFirstLocationAfterEnable this: Thread[Thread-121,5,main]isFirstLocationAfterEnable: true
+W20160929 14:03:016 146 W: n{com.fullpower.location}-enableLocationSamples location updates request sent to LocationWorker
+I20160929 14:03:016 146 I: i{com.fullpower.location}-enableLocationSamples enable: true
+W20160929 14:03:017 146 W: n{com.fullpower.location}-GPS_EVENT_STARTED
+W20160929 14:03:017 146 W: n{com.fullpower.location}-GPS_EVENT_FIRST_FIX
+W20160929 14:03:017 146 W: n{com.fullpower.location}-onLocationChanged first location after an enable location: Location[gps 37.432220,126.698897 acc=1 et=+1h1m40s498ms alt=0.0 vel=0.0 bear=0.0 {Bundle[mParcelledData.dataSize=44]}]
+W20160929 14:03:017 146 W: n{com.fullpower.location}-setIsFirstLocationAfterEnable this: Thread[Thread-121,5,main]isFirstLocationAfterEnable: false
+W20160929 14:03:017 146 W: n{com.fullpower.location}-GPS PROVIDER TEMPORARILY UNAVAILABLE gps
+W20160929 14:03:017 146 W: n{com.fullpower.location}-GPS PROVIDER TEMPORARILY AVAILABLE gps
+I20160929 14:03:020 146 I: i{com.fullpower.location}-enableLocationSamples enable: false
+I20160929 14:03:020 146 I: l{com.fullpower.location}-enableLocationSamples enable: false
+W20160929 14:03:020 146 W: n{com.fullpower.location}-enableLocationSamples this: Thread[Thread-121,5,main] enable: false locationType: GPS
+W20160929 14:03:020 146 W: n{com.fullpower.location}-setIsFirstLocationAfterEnable this: Thread[Thread-121,5,main]isFirstLocationAfterEnable: false
+W20160929 14:03:020 146 W: n{com.fullpower.location}-enableLocationSamples location updates removal request sent to LocationWorker
+W20160929 14:03:020 146 W: n{com.fullpower.location}-GPS_EVENT_STOPPED
+I20160929 14:03:046 146 I: i{com.fullpower.location}-enableLocationSamples enable: true
+I20160929 14:03:046 146 I: l{com.fullpower.location}-enableLocationSamples enable: true
+W20160929 14:03:046 146 W: n{com.fullpower.location}-enableLocationSamples this: Thread[Thread-121,5,main] enable: true locationType: GPS
+W20160929 14:03:046 146 W: n{com.fullpower.location}-setIsFirstLocationAfterEnable this: Thread[Thread-121,5,main]isFirstLocationAfterEnable: true
+W20160929 14:03:046 146 W: n{com.fullpower.location}-enableLocationSamples location updates request sent to LocationWorker
+W20160929 14:03:046 146 W: n{com.fullpower.location}-GPS_EVENT_STARTED
+W20160929 14:03:046 146 W: n{com.fullpower.location}-GPS_EVENT_FIRST_FIX
+I20160929 14:03:046 146 I: i{com.fullpower.location}-enableLocationSamples enable: true
+W20160929 14:03:046 146 W: n{com.fullpower.location}-onLocationChanged first location after an enable location: Location[gps 37.432220,126.698897 acc=1 et=+1h2m9s595ms alt=0.0 vel=0.0 bear=0.0 {Bundle[mParcelledData.dataSize=44]}]
+W20160929 14:03:046 146 W: n{com.fullpower.location}-setIsFirstLocationAfterEnable this: Thread[Thread-121,5,main]isFirstLocationAfterEnable: false
+W20160929 14:03:046 146 W: n{com.fullpower.location}-GPS_EVENT_FIRST_FIX
+I20160929 14:03:049 146 I: i{com.fullpower.location}-enableLocationSamples enable: false
+I20160929 14:03:049 146 I: l{com.fullpower.location}-enableLocationSamples enable: false
+W20160929 14:03:049 146 W: n{com.fullpower.location}-enableLocationSamples this: Thread[Thread-121,5,main] enable: false locationType: GPS
+W20160929 14:03:049 146 W: n{com.fullpower.location}-setIsFirstLocationAfterEnable this: Thread[Thread-121,5,main]isFirstLocationAfterEnable: false
+W20160929 14:03:049 146 W: n{com.fullpower.location}-enableLocationSamples location updates removal request sent to LocationWorker
+W20160929 14:03:049 146 W: n{com.fullpower.location}-GPS_EVENT_STOPPED
+I20160929 14:03:049 146 I: i{com.fullpower.location}-enableLocationSamples enable: false

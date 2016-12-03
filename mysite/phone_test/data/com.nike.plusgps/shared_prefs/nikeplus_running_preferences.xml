@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="prefs_key_unit_of_measure_override" value="false" />
+    <long name="interval_start_distance" value="0" />
+    <long name="interval_start_time" value="0" />
+    <string name="prefs_key_heart_rate_device_name"></string>
+    <boolean name="prefs_key_voice_is_male" value="false" />
+    <int name="prefs_key_version_code" value="1702000050" />
+    <long name="last_distance_goal.value" value="4612811918334230528" />
+    <string name="tag_photos"></string>
+    <long name="prefs_key_cached_pace_aggs" value="4606878520270899992" />
+    <long name="prefs_key_next_rate_the_app" value="1475384102294" />
+    <boolean name="prefs_key_autopause_enabled" value="true" />
+    <boolean name="prefs_key_has_shown_rpe_explanation" value="false" />
+    <int name="prefs_key_weight_unit_of_measure" value="0" />
+    <boolean name="prefs_key_heart_rate_simulated" value="false" />
+    <null name="in_run_media_item" />
+    <int name="prefs_key_total_prescribed_intervals" value="0" />
+    <int name="prefs_key_coach_adapt_override" value="-1" />
+    <int name="prefs_key_height_unit_of_measure" value="3" />
+    <int name="prefs_key_voice_over_frequency" value="3" />
+    <string name="goal_type">basic</string>
+    <int name="prefs_key_guided_run_name" value="-1" />
+    <string name="prefs_key_heart_rate_device_address"></string>
+    <boolean name="prefs_key_show_coach_needs_action" value="false" />
+    <int name="current_interval" value="1" />
+    <long name="last_timed_goal.value" value="4627730092099895296" />
+    <boolean name="prefs_key_onboarding_completed" value="true" />
+    <long name="interval_rest_start" value="0" />
+    <long name="last_quickstart_distance_goal.value" value="4612811918334230528" />
+    <long name="current_pace" value="0" />
+    <boolean name="prefs_key_vibrate_enabled" value="false" />
+    <boolean name="run_lock_state" value="false" />
+    <boolean name="prefs_key_is_indoors" value="false" />
+    <long name="prefs_key_cached_distance_aggs" value="4610402243646559492" />
+    <int name="prefs_key_temperature_unit_of_measure" value="0" />
+    <string name="active_coach_workout_id"></string>
+    <int name="last_quickstart_distance_goal.unit" value="1" />
+    <int name="prefs_key_unit_of_measure" value="1" />
+    <long name="prefs_key_cached_fuel_aggs" value="0" />
+    <int name="last_timed_goal.unit" value="2" />
+    <long name="prefs_key_total_prescribed_pace" value="0" />
+    <int name="current_activity_id" value="2" />
+    <long name="prefs_key_last_profile_timestamp" value="1475125196158" />
+    <int name="prefs_key_cached_run_level_aggs" value="-1" />
+    <int name="hero_metric_position" value="0" />
+    <int name="prefs_key_ascent_unit_of_measure" value="2" />
+    <null name="prefs_key_run_simulation" />
+    <long name="com.nike.plusgps.configuration.ClientConfigurationStoreImpl.last_obtained" value="1475125195989" />
+    <boolean name="prefs_key_rate_the_app_override" value="false" />
+    <boolean name="prefs_key_voice_over_duration_enabled_key" value="true" />
+    <int name="last_quickstart_timed_goal.unit" value="2" />
+    <boolean name="prefs_key_heart_rate_enabled" value="false" />
+    <boolean name="prefs_key_strict_mode_death" value="false" />
+    <int name="prefs_key_cached_run_count_aggs" value="-1" />
+    <string name="last_quickstart_goal_type">basic</string>
+    <boolean name="prefs_key_voice_feedback_enabled" value="true" />
+    <int name="prefs_key_distance_unit_of_measure" value="0" />
+    <int name="prefs_key_pace_unit_of_measure" value="0" />
+    <int name="prefs_key_orientation" value="1" />
+    <boolean name="prefs_key_milestones_attaboys_enabled_key" value="true" />
+    <boolean name="prefs_key_voice_over_pace_enabled" value="true" />
+    <boolean name="prefs_key_voice_over_distance_enabled_key" value="true" />
+    <int name="prefs_key_run_countdown_duration" value="3" />
+    <int name="prefs_key_in_coach_override" value="-1" />
+    <long name="prefs_key_total_prescribed_distance" value="0" />
+    <boolean name="prefs_key_run_level_enabled" value="true" />
+    <boolean name="prefs_key_lock_on_start_enabled" value="false" />
+    <long name="last_quickstart_timed_goal.value" value="4627730092099895296" />
+    <boolean name="prefs_key_pause_run_for_calls_enabled_keys" value="false" />
+    <int name="prefs_key_profile_gender" value="0" />
+    <boolean name="prefs_key_music_tied_to_run_controls_key" value="false" />
+    <boolean name="pref_has_gotten_plans" value="true" />
+    <boolean name="prefs_key_health_data_basic_local_enabled" value="false" />
+    <int name="prefs_key_run_level_override" value="-1" />
+    <int name="last_distance_goal.unit" value="1" />
+    <int name="music_session_flags" value="0" />
+</map>

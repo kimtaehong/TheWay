@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="calibrationCountOutdoor" value="0" />
+    <int name="calibrationCount" value="0" />
+    <int name="uploadNextOutdoorCount" value="10" />
+    <int name="calibrationCountIndoor" value="0" />
+    <int name="uploadNextIndoorCount" value="3" />
+</map>

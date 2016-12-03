@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="ADMS_SuccessfulClose" value="true" />
+    <string name="ADOBEMOBILE_STOREDDEFAULTS_OS">Android 4.4.2</string>
+    <long name="ADMS_SessionStart" value="1475124915781" />
+    <int name="ADMS_Launches" value="1" />
+    <long name="ADMS_LastDateUsed" value="1475124901781" />
+    <string name="ADBMOBILE_PERSISTED_MID_BLOB">cIBAx_aQzFEHcPoEv0GwcQ</string>
+    <string name="ADMS_LifecycleData">{&quot;a.Resolution&quot;:&quot;720x1280&quot;,&quot;n.experience&quot;:&quot;nike run club&quot;,&quot;a.InstallEvent&quot;:&quot;InstallEvent&quot;,&quot;a.locale&quot;:&quot;ko-KR&quot;,&quot;a.DailyEngUserEvent&quot;:&quot;DailyEngUserEvent&quot;,&quot;a.OSVersion&quot;:&quot;Android 4.4.2&quot;,&quot;s.server&quot;:&quot;nikeplusappprod&quot;,&quot;n.marketingcloudvisitorid&quot;:&quot;24903806837725906871227504715235554738&quot;,&quot;n.loginstatus&quot;:&quot;logged out&quot;,&quot;n.division&quot;:&quot;nikeplus&quot;,&quot;n.language&quot;:&quot;ko&quot;,&quot;a.DeviceName&quot;:&quot;Nexus&quot;,&quot;a.HourOfDay&quot;:&quot;13&quot;,&quot;n.appversion&quot;:&quot;2.0.5&quot;,&quot;a.MonthlyEngUserEvent&quot;:&quot;MonthlyEngUserEvent&quot;,&quot;a.AppID&quot;:&quot;Nike⁠+ Run Club 2.0.5 (1702000052)&quot;,&quot;a.CarrierName&quot;:&quot;China Mobile&quot;,&quot;n.appname&quot;:&quot;nike nrc Android app&quot;,&quot;a.LaunchEvent&quot;:&quot;LaunchEvent&quot;,&quot;n.sdkversion&quot;:&quot;4.8.2-AN&quot;,&quot;n.platform&quot;:&quot;app&quot;,&quot;a.DayOfWeek&quot;:&quot;5&quot;,&quot;a.RunMode&quot;:&quot;Application&quot;,&quot;a.ltv.amount&quot;:&quot;0&quot;,&quot;a.Launches&quot;:&quot;1&quot;,&quot;n.appvisitorid&quot;:&quot;6AD9624504BD404EE9092B603A9E1EC8DA32&quot;,&quot;n.country&quot;:&quot;KR&quot;,&quot;a.InstallDate&quot;:&quot;9\/29\/2016&quot;}</string>
+    <long name="ADBMOBILE_VISITORID_SYNC" value="1475125194" />
+    <long name="ADBLastKnownTimestampKey" value="1475125428" />
+    <string name="ADMS_LastVersion">2.0.5</string>
+    <long name="ADBMOBILE_VISITORID_TTL" value="604800" />
+    <boolean name="ADOBEMOBILE_STOREDDEFAULTS_IGNORE_AID" value="true" />
+    <string name="ADBMOBILE_PERSISTED_MID_HINT">11</string>
+    <string name="ADBMOBILE_VISITORID_IDS">&amp;d_cid_ic=profileId%010%010&amp;d_cid_ic=profileId%0114593311907%011</string>
+    <long name="ADMS_PauseDate" value="1475125428993" />
+    <string name="ADBMOBILE_PERSISTED_MID">24903806837725906871227504715235554738</string>
+    <long name="ADMS_InstallDate" value="1475124901781" />
+    <string name="ADOBEMOBILE_STOREDDEFAULTS_APPID">Nike⁠+ Run Club 2.0.5 (1702000052)</string>
+</map>

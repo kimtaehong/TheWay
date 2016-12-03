@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="health_monitor:count" value="2" />
+    <long name="health_monitor:start" value="1475124900079" />
+    <string name="health_monitor:value">1EC8298:Uploading is not possible. App measurement disabled</string>
+</map>

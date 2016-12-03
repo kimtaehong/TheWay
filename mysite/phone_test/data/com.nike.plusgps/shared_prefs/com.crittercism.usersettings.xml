@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="sessionIDSetting" value="1" />
+    <string name="hashedDeviceID">ed637a73-7cba-4cc0-88d6-2cf513c8e5f4</string>
+    <boolean name="crashedOnLastLoad" value="false" />
+</map>
