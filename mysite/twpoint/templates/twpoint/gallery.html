@@ -10,7 +10,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-9">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <i class="glyphicon glyphicon-road"></i> GPS
@@ -23,14 +23,14 @@
             </div>
             <!--/.panel panel-default-->
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     Photo Info
                 </div>
                 <div class="panel-body">
                     <div class="thumbnail">
-                        <img src="{% static 'twpoint/img/sample_image.jpeg' %}">
+                        <img src="{% static 'twpoint/img/The_way.png' %}">
                         <div class="caption">
                             <h5 class="page-header">Name</h5>
                             <h5>Latitude: 127.000</h5>
@@ -53,22 +53,14 @@
                         <li><a href="#lists" data-toggle="tab" aria-expanded="false">Lists</a></li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane fade active in" id="thumnails">
+                        <div class="tab-pane fade in active" id="thumnails">
+                            <div class="row"></div>
+                            <div id="pagination"></div>
+                        </div>
+                        <div class="tab-pane fade" id="lists">
 
                         </div>
-                        <div class="tab-pane fade" id="lists"></div>
                     </div>
-                    <!-- {% for a in pc %}
-                    <div class="col-sm-6 col-md-2">
-                        <div class="thumbnail">
-                            <a href="#"><img src= {{path}}{{a.path}}/{{a.name}}></a>
-                            <div class="caption">
-                                <h5>Thumbnail label</h5>
-                                <p><a href="#" class="btn btn-primary" role="button">Select</a></p>
-                            </div>
-                        </div>
-                    </div>
-                {% endfor %} -->
                 </div>
             </div>
         </div>
@@ -79,4 +71,6 @@
 
 {% block js %}
 <script src="{% static 'twpoint/data/gallery-data.js' %}"></script>
+<script src="{% static 'twpoint/data/table-data.js' %}"></script>
+<script src="{% static 'twpoint/data/pagination-data.js' %}"></script>
 {% endblock %}

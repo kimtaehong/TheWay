@@ -62,16 +62,13 @@ def result(request):
 
 
 def gallery(request):
-    path="/image?file="+os.path.abspath( __file__ ).replace('\\','/').split('twpoint')[0]
     applications = Application.objects.all()
     user = UserInfo.objects.all()
-    pc = Picture.objects.all()
+
     context = {
         'time': timezone.localtime(timezone.now()),
         'application': applications,
         'user': user,
-        'path':path,
-        'pc':pc
     }
     return render(request, 'twpoint/gallery.html', context)
 
@@ -145,6 +142,7 @@ def pictureview(request):
         data.append(pic.dic())
 
     return HttpResponse(json.dumps(data), content_type="application/json")
+
 
 def basestationview(request):
     """ /basestation basestation 정보"""
