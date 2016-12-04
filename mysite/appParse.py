@@ -70,3 +70,4 @@ def GGulGGulMoneyBook_spending(appName, packageName, path, target) :
         input_data = WayPoint(position = position,
                               point_time = date,
                               app_name_id = ap.id)
+        input_data.save()
