@@ -23,7 +23,6 @@ $(function(){
 
     $(".marking").click(function(){
         if($(this).is(":checked")){
-
             for(var i=0;i<way_data.length;i++){
                 if(way_data[i].id == this.id){
                     way_point = way_data[i];
@@ -65,51 +64,6 @@ $(function(){
             markers[this.id].setMap(null);
         }
     })
-
-
-
-    /*
-    ////////////////////////////////////////////
-    // 시작시 첫 데이터 마킹
-    // var waypoint = waypoints[Object.keys(waypoints)[0]];
-    // var location = {lat: waypoint.latitude, lng: waypoint.longitude};
-    // var locations = [];
-    var markers = [];
-    var marker, poly;
-
-    // map
-    var map = new google.maps.Map(document.getElementById('map'),{
-        zoom: 18,
-        center: location,
-        scrollwheel: false,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        disableDefaultUI: true,
-        scaleControl: true,
-    });
-
-    // click, checked
-    $(".marking").click(function(){
-        if($(this).is(":checked")){
-            waypoint = waypoints[this.id];
-            location = {lat: waypoint.latitude, lng: waypoint.longitude };
-            locations.push(location);
-
-            marker = new google.maps.Marker({
-                position: location,
-                map: map,
-            });
-            markers[this.id] = marker;
-
-            map.panTo(marker.getPosition());
-        }
-        else{
-            waypoint = waypoints[this.id];
-            location = {lat: waypoint.latitude, lng: waypoint.longitude };
-            markers[this.id].setMap(null);
-            locations.splice(location,1);
-        }
-    })
-    */
 })
 
 $.getJSON(way_url,function(w_json){
