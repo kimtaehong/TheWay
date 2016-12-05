@@ -12,9 +12,9 @@ var markers = [];
 $(function(){
     // 맵 생성
     bs_map = new google.maps.Map(document.getElementById('bs_map'),{
-        zoom: 18,
+        zoom: 15,
         center: {lat: 37.497518, lng: 127.029676 },
-        scrollwheel: true,
+        scrollwheel: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         disableDefaultUI: true,
         scaleControl: true,
@@ -32,12 +32,16 @@ $(function(){
             marker = new google.maps.Marker({
                 position: bs_location,
                 map: bs_map,
+                icon:{
+                    url: '/static/twpoint/img/base_station_icon.png',
+                    scaledSize: new google.maps.Size(50,50),
+                }
             });
 
             circle = new google.maps.Circle({
                map: bs_map,
                fillColor: '#ff0000',
-               fillOpacity: 0.35,
+               fillOpacity: 0.3,
                strokeColor: '#ff0000',
                strokeOpacity: 1.0,
                strokeWeight: 1.5,
