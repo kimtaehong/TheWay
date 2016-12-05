@@ -62,14 +62,14 @@ def XLScolunmMatch(row):
     return Data
 
 
-def findRow_csv(data):
+def findRow_csv(data) :
     lenTmp = 0
     position = 0
     for row in data:
-        row = row.split(',')
-        if lenTmp == len(row) and lenTmp > 3:
+        rows = row.split(',')
+        if lenTmp == len(rows) and lenTmp > 3:
             return position - 1
-        lenTmp = len(row)
+        lenTmp = len(rows)
         position += 1
 
 
@@ -122,6 +122,7 @@ def xlsParse(file):
 
 
 def parse(filename, file):
+    print (file)
     if filename.split('.')[-1].lower() == 'csv':
         csvParse(file)
     elif file.split('.')[-1].lower() == 'xls':
