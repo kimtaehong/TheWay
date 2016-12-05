@@ -2,9 +2,8 @@
 
 var app_url = "/application";
 var way_url = "/waypoint";
-var pic_url = "/picture";
 
-var app_data = [] , way_count = 0, pic_count = 0;
+var app_data = [] , way_count = 0;
 var data = [];
 
 $(function() {
@@ -16,30 +15,24 @@ $(function() {
             way_count = new_json.length;
             data.push({'label': app_data[i]["app_name"], "data": way_count});
         }
-
-        $.getJSON(pic_url, function(p_json){
-            pic_count = p_json.length;
-            data.push({'label': "Picture", "data": pic_count});
-
-            var plotObj = $.plot($("#flot-pie-chart"), data, {
-                series: {
-                    pie: {
-                        show: true
-                    }
-                },
-                grid: {
-                    hoverable: true
-                },
-                tooltip: true,
-                tooltipOpts: {
-                    content: "%p.0%, %s", // show percentages, rounding to 2 decimal places
-                    shifts: {
-                        x: 20,
-                        y: 0
-                    },
-                    defaultTheme: false
+        var plotObj = $.plot($("#flot-pie-chart"), data, {
+            series: {
+                pie: {
+                    show: true
                 }
-            });
+            },
+            grid: {
+                hoverable: true
+            },
+            tooltip: true,
+            tooltipOpts: {
+                content: "%p.0%, %s", // show percentages, rounding to 2 decimal places
+                shifts: {
+                    x: 20,
+                    y: 0
+                },
+                defaultTheme: false
+            }
         });
     });
 });

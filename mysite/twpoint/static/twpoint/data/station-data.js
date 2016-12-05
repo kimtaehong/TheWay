@@ -41,7 +41,7 @@ $(function(){
                strokeColor: '#ff0000',
                strokeOpacity: 1.0,
                strokeWeight: 1.5,
-               radius: 100,
+               radius: 500,
                center: bs_location,
             });
 
