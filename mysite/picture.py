@@ -38,8 +38,8 @@ def pictureGPS(name, path):
                   path = path,
                   time = time,
                   device = device,
-                  lng = x,
-                  lat = y,
+                  lat = x,
+                  lng = y,
                   md5 = md5,
                   sha1 = sha1)
     pic.save()
