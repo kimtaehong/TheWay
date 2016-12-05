@@ -4,7 +4,7 @@ var pic_data;
 
 $(function(){
     var result = [];
-    for(var i = 1; i < pic_count; i++){
+    for(var i = 0; i < pic_count; i++){
         result.push(i);
     }
     var container = $('#pagination');
