@@ -64,11 +64,13 @@ def result(request):
 def gallery(request):
     applications = Application.objects.all()
     user = UserInfo.objects.all()
+    pictures = Picture.objects.all()
 
     context = {
         'time': timezone.localtime(timezone.now()),
         'application': applications,
         'user': user,
+        'pictures': pictures,
     }
     return render(request, 'twpoint/gallery.html', context)
 
