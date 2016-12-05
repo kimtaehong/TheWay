@@ -14,6 +14,7 @@ $(function(){
         scaleControl: true,
     });
 
+    // checkbox check
     $(".g_check").click(function(){
         if($(this).is(":checked")){
             var id = Number(this.id);

@@ -96,13 +96,13 @@ def parsing(request):
 def base_station(request):
     applications = Application.objects.all()
     user = UserInfo.objects.all()
-    bs = BaseStation.objects.all()
+    stations = BaseStation.objects.all()
 
     context = {
         'time': timezone.localtime(timezone.now()),
         'application': applications,
         'user': user,
-        'bs': bs,
+        'stations': stations,
     }
 
     return render(request, 'twpoint/basestation.html', context)

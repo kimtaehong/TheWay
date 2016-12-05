@@ -21,7 +21,7 @@ $(function(){
                 html += "<div class='caption'>\n\t";
                 html += "<h5 class='page-header'>" + pic_data[source[index]].name + "</h5>\n\t";
                 html += "<p>";
-                html += "<a class='btn btn-primary' role='button' onclick='imageClick(";
+                html += "<a class='btn btn-info btn-lg btn-block' role='button' onclick='imageClick(";
                 html += pic_data[source[index]].id +")'>Select</a></p>\n</div>";
                 html += "\n</div>\n</div>";
             });

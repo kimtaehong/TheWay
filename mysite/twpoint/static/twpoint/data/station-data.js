@@ -1,4 +1,3 @@
-"use strict";
 var bs_url = '/basestation';
 var bs_data = {};
 var bs_point = {};
@@ -21,40 +20,40 @@ $(function(){
         scaleControl: true,
     });
 
-    $(".bsmarking").click(function(){
+    $(".s_check").click(function(){
         if($(this).is(":checked")){
-            for(var i=0;i<bs_data.length;i++){
-                if(bs_data[i].id == this.id){
-                    bs_point = bs_data[i];
-                    break;
-                }
-            }
-            bs_location={lat: Number(bs_point.lat), lng: Number(bs_point.lng)}
+            var id = Number(this.id);
+            bs_point = bs_data.filter(function(item, index, array){
+                return item['id'] == id;
+            });
+
+            bs_location = {lat: bs_point[0].lat, lng: bs_point[0].lng };
 
             marker = new google.maps.Marker({
                 position: bs_location,
                 map: bs_map,
             });
+
             circle = new google.maps.Circle({
                map: bs_map,
-               fillColor: '#ffffff',
-               fillOpacity: 0.3,
+               fillColor: '#ff0000',
+               fillOpacity: 0.35,
                strokeColor: '#ff0000',
                strokeOpacity: 1.0,
                strokeWeight: 1.5,
-               radius: 100// 50 MILES in meters
+               radius: 100,
+               center: bs_location,
             });
-            circle.bindTo('center', marker, 'position');
+
             markers[this.id] = marker;
             circles[this.id] = circle;
-            circle.setMap(bs_map);
             bs_map.panTo(marker.getPosition());
         }
         else{
             markers[this.id].setMap(null);
             circles[this.id].setMap(null);
         }
-    })
+    });
 })
 
 $.getJSON(bs_url,function(b_json){

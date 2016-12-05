@@ -1,6 +1,6 @@
 $(function(){
     // Data Table
     $('#waypointTable').DataTable();
-    $('#bswaypointTable').DataTable();
+    $('#station_table').DataTable();
     $('#gallery_table').DataTable();
 })
