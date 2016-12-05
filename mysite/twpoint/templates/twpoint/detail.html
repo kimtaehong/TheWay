@@ -12,7 +12,7 @@
     <!-- /.row -->
     <div class="row">
         <div class="col-lg-12">
-            <div class="panel panel-default">
+            <div class="panel panel-green">
                 <div class="panel-heading">
                     <i class="glyphicon glyphicon-road"></i> GPS
                     <div class="pull-right">
@@ -37,9 +37,12 @@
             </div>
             <!--/.panel panel-default-->
         </div>
+    </div>
+    <div class="myAlert"></div>
+    <div class="row">
         <!--/.col-lg-8 -->
         <div class="col-lg-12">
-            <div class="panel panel-default">
+            <div class="panel panel-info">
                 <div class="panel-heading">
                     <i class="glyphicon glyphicon-th-list"></i>  정보
                 </div>
@@ -87,6 +90,6 @@
 {% endblock %}
 
 {% block js %}
-<script src="{% static 'twpoint/data/table-data.js' %}"></script>
 <script src="{% static 'twpoint/data/map-data.js' %}"></script>
+<script src="{% static 'twpoint/data/table-data.js' %}"></script>
 {% endblock %}
