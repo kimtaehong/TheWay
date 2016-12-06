@@ -41,7 +41,7 @@ $(function(){
                 way_location = {lat: Number(way_point[0].position_y), lng: Number(way_point[0].position_x) };
             }
             else if(way_point[0].start != null || way_point[0].start_x != null && way_point[0].start_y !=null){
-                consoel.log('start');
+                console.log('start');
                 way_name = way_point[0].start;
                 way_location = {lat: Number(way_point[0].start_y), lng: Number(way_point[0].start_x) };
             }
