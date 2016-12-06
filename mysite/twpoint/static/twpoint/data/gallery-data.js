@@ -27,13 +27,13 @@ $(function(){
             var pic_caption = pic_info.children()[1];
             var src = "/image?file="+pic[0].path+"/"+pic[0].name;
             pic_img.src = src;
-            var html = "<h5 class='page-header'>"+pic[0].name+"</h5>";
-            html += "<h5> Device :" + pic[0].device + "</h5>\t";
-            html += "<h5> Latitude :" + pic[0].lat + "</h5>\t";
-            html += "<h5> Longitude :" + pic[0].lng + "</h5>\t";
-            html += "<h5> Path: " + pic[0].path + "</h5>\t";
-            html += "<h5> MD5: " + pic[0].md5 + "</h5>\t";
-            html += "<h5> SHA1: " + pic[0].sha1 + "</h5>\t";
+            var html = "<h5 class='page-header'><strong>"+pic[0].name+"</strong></h5>";
+            html += "<h5> <strong>Device:</strong> " + pic[0].device + "</h5>\t";
+            html += "<h5> <strong>Latitude:</strong> " + pic[0].lat + "</h5>\t";
+            html += "<h5> <strong>Longitude:</strong> " + pic[0].lng + "</h5>\t";
+            html += "<h5> <strong>Path:</strong> " + pic[0].path + "</h5>\t";
+            html += "<h5> <strong>MD5:</strong> " + pic[0].md5 + "</h5>\t";
+            html += "<h5> <strong>SHA1:</strong> " + pic[0].sha1 + "</h5>\t";
             pic_caption.innerHTML = html;
 
             /* marking */
@@ -65,13 +65,13 @@ function imageClick(id){
     var pic_caption = pic_info.children()[1];
     var src = "/image?file="+pic[0].path+"/"+pic[0].name;
     pic_img.src = src;
-    var html = "<h5 class='page-header'>"+pic[0].name+"</h5>";
-    html += "<h5> Device :" + pic[0].device + "</h5>\t";
-    html += "<h5> Latitude :" + pic[0].lat + "</h5>\t";
-    html += "<h5> Longitude :" + pic[0].lng + "</h5>\t";
-    html += "<h5> Path: " + pic[0].path + "</h5>\t";
-    html += "<h5> MD5: " + pic[0].md5 + "</h5>\t";
-    html += "<h5> SHA1: " + pic[0].sha1 + "</h5>\t";
+    var html = "<h5 class='page-header'><strong>"+pic[0].name+"</strong></h5>";
+    html += "<h5> <strong>Device:</strong> " + pic[0].device + "</h5>\t";
+    html += "<h5> <strong>Latitude:</strong> " + pic[0].lat + "</h5>\t";
+    html += "<h5> <strong>Longitude:</strong> " + pic[0].lng + "</h5>\t";
+    html += "<h5> <strong>Path:</strong> " + pic[0].path + "</h5>\t";
+    html += "<h5> <strong>MD5:</strong> " + pic[0].md5 + "</h5>\t";
+    html += "<h5> <strong>SHA1:</strong> " + pic[0].sha1 + "</h5>\t";
     pic_caption.innerHTML = html;
 
     /* marking */
