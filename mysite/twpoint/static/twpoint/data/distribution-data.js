@@ -7,7 +7,7 @@ $(function(){
     $.getJSON(way_url,function(w_json){
         way_data = w_json;
         d_map = new google.maps.Map(document.getElementById('d_map'),{
-            zoom: 8,
+            zoom: 9,
             center: {lat: 37.497518, lng: 127.029676 },
             scrollwheel: false,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -20,8 +20,9 @@ $(function(){
             type: "FeatureCollection",
             metadata: {
                 title: "Way Location",
-                api:"1.0.13",
-                "status":200,
+                api: "1.0.13",
+                status: 200,
+                count: 0,
             },
             features:[],
             bbox: [
@@ -63,6 +64,13 @@ $(function(){
                 feature = createFeature();
             }
         }
+        data.metadata.count = data.features.length;
+        d_map.data.setStyle(function(feature) {
+          var magnitude = 5;
+          return {
+            icon: getCircle(magnitude)
+          };
+        });
         d_map.data.addGeoJson(data);
 
   });
@@ -79,3 +87,14 @@ function createFeature(){
         id: "",
     };
 }
+
+function getCircle(magnitude) {
+        return {
+          path: google.maps.SymbolPath.CIRCLE,
+          fillColor: 'red',
+          fillOpacity: 0.18,
+          scale: Math.pow(2, magnitude) / 2,
+          strokeColor: 'white',
+          strokeWeight: .5
+        };
+      }
