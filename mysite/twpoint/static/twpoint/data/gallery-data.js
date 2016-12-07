@@ -12,6 +12,7 @@ $(function(){
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         disableDefaultUI: true,
         scaleControl: true,
+        zoomControl: true,
     });
 
     // checkbox check

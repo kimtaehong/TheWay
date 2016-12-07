@@ -111,11 +111,13 @@ def base_station(request):
 def distribution(request):
     applications = Application.objects.all()
     user = UserInfo.objects.all()
+    waypoints = WayPoint.objects.all()
 
     context = {
         'time': timezone.localtime(timezone.now()),
         'application': applications,
         'user': user,
+        'waypoints': waypoints
     }
 
     return render(request, 'twpoint/distribution.html', context)

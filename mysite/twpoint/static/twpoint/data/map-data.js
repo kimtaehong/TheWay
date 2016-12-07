@@ -21,97 +21,101 @@ $(function(){
     app_map = new google.maps.Map(document.getElementById('app_map'),{
         zoom: 18,
         center: {lat: 37.497518, lng: 127.029676 },
-        scrollwheel: true,
+        scrollwheel: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         disableDefaultUI: true,
         scaleControl: true,
+        zoomControl: true,
     });
+
     function CenterControl(controlDiv, app_map) {
-      // Set CSS for the control border.
-      var controlUI = document.createElement('div');
-      controlUI.style.backgroundColor = '#fff';
-      controlUI.style.border = '2px solid #fff';
-      controlUI.style.float = 'left';
-      controlUI.style.borderRadius = '3px';
-      controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
-      controlUI.style.cursor = 'pointer';
-      controlUI.style.marginBottom = '22px';
-      controlUI.style.textAlign = 'center';
-      controlUI.title = 'Click to recenter the map';
-      controlDiv.appendChild(controlUI);
+        // Set CSS for the control border.
+        var controlUI = document.createElement('div');
+        controlUI.style.backgroundColor = '#fff';
+        controlUI.style.border = '2px solid #fff';
+        controlUI.style.float = 'left';
+        controlUI.style.borderRadius = '3px';
+        controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+        controlUI.style.cursor = 'pointer';
+        controlUI.style.marginBottom = '22px';
+        controlUI.style.textAlign = 'center';
+        controlUI.title = 'Click to recenter the map';
+        controlDiv.appendChild(controlUI);
 
-      // Set CSS for the control interior.
-      var controlText = document.createElement('div');
-      controlText.style.color = 'rgb(25,25,25)';
-      controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
-      controlText.style.fontSize = '16px';
-      controlText.style.lineHeight = '38px';
-      controlText.style.paddingLeft = '5px';
-      controlText.style.paddingRight = '5px';
-      controlText.innerHTML = 'Time tracking';
-      controlUI.appendChild(controlText);
+        // Set CSS for the control interior.
+        var controlText = document.createElement('div');
+        controlText.style.color = 'rgb(25,25,25)';
+        controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
+        controlText.style.fontSize = '16px';
+        controlText.style.lineHeight = '38px';
+        controlText.style.paddingLeft = '5px';
+        controlText.style.paddingRight = '5px';
+        controlText.innerHTML = 'Time tracking';
+        controlUI.appendChild(controlText);
 
-      var controlUI2 = document.createElement('div');
-      controlUI2.style.backgroundColor = '#fff';
-      controlUI2.style.border = '2px solid #fff';
-      controlUI2.style.borderRadius = '3px';
-      controlUI2.style.float = 'left';
-      controlUI2.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
-      controlUI2.style.cursor = 'pointer';
-      controlUI2.style.marginBottom = '22px';
-      controlUI2.style.textAlign = 'center';
-      controlUI2.title = 'Click to recenter the map';
-      controlDiv.appendChild(controlUI2);
+        var controlUI2 = document.createElement('div');
+        controlUI2.style.backgroundColor = '#fff';
+        controlUI2.style.border = '2px solid #fff';
+        controlUI2.style.borderRadius = '3px';
+        controlUI2.style.float = 'left';
+        controlUI2.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+        controlUI2.style.cursor = 'pointer';
+        controlUI2.style.marginBottom = '22px';
+        controlUI2.style.textAlign = 'center';
+        controlUI2.title = 'Click to recenter the map';
+        controlDiv.appendChild(controlUI2);
 
-      // Set CSS for the control interior.
-      var controlText2 = document.createElement('div');
-      controlText2.style.color = 'rgb(25,25,25)';
-      controlText2.style.fontFamily = 'Roboto,Arial,sans-serif';
-      controlText2.style.fontSize = '16px';
-      controlText2.style.lineHeight = '38px';
-      controlText2.style.paddingLeft = '5px';
-      controlText2.style.paddingRight = '5px';
-      controlText2.innerHTML = 'clearMarkers';
-      controlUI2.appendChild(controlText2);
+        // Set CSS for the control interior.
+        var controlText2 = document.createElement('div');
+        controlText2.style.color = 'rgb(25,25,25)';
+        controlText2.style.fontFamily = 'Roboto,Arial,sans-serif';
+        controlText2.style.fontSize = '16px';
+        controlText2.style.lineHeight = '38px';
+        controlText2.style.paddingLeft = '5px';
+        controlText2.style.paddingRight = '5px';
+        controlText2.innerHTML = 'clearMarkers';
+        controlUI2.appendChild(controlText2);
 
 
-      controlUI.addEventListener('click', function drop() {
-    clearMarkers();
-    way_data_time.sort(function compare(a, b) {
-     return a.point_time < b.point_time ? -1 : a.point_time > b.point_time ? 1 : 0;
-    });
-    for (var i = 0; i < way_data_time.length; i++) {
-            if(way_data_time[i].position != null || way_data_time[i].position_x != null && way_data_time[i].position_y != null){
-               way_location_time = {lat: Number(way_data_time[i].position_y), lng: Number(way_data_time[i].position_x) };
+        controlUI.addEventListener('click', function drop() {
+            clearMarkers();
+            way_data_time.sort(function compare(a, b) {
+                return a.point_time < b.point_time ? -1 : a.point_time > b.point_time ? 1 : 0;
+            });
+
+            for (var i = 0; i < way_data_time.length; i++) {
+                if(way_data_time[i].position != null || way_data_time[i].position_x != null && way_data_time[i].position_y != null){
+                    way_location_time = {lat: Number(way_data_time[i].position_y), lng: Number(way_data_time[i].position_x) };
+                }
+                else if(way_data_time[i].start != null || way_data_time[i].start_x != null && way_data_time[i].start_y !=null){
+                    way_location_time = {lat: Number(way_data_time[i].start_y), lng: Number(way_data_time[i].start_x) };
+                }
+                else if(way_data_time[i].search != null && way_data_time[i].search_x != null && way_data_time[i].search_y != null){
+                    way_location_time = {lat: Number(way_data_time[i].search_y), lng: Number(way_data_time[i].search_x) };
+                }
+                addMarkerWithTimeout(way_location_time, i*500);
             }
-            else if(way_data_time[i].start != null || way_data_time[i].start_x != null && way_data_time[i].start_y !=null){
-               way_location_time = {lat: Number(way_data_time[i].start_y), lng: Number(way_data_time[i].start_x) };
-            }
-            else if(way_data_time[i].search != null && way_data_time[i].search_x != null && way_data_time[i].search_y != null){
-                way_location_time = {lat: Number(way_data_time[i].search_y), lng: Number(way_data_time[i].search_x) };
-            }
-            addMarkerWithTimeout(way_location_time, i*500);
+        });
+
+        function addMarkerWithTimeout(position, timeout) {
+            window.setTimeout(function() {
+                markers.push(new google.maps.Marker({
+                    position: position,
+                    map: app_map,
+                    animation: google.maps.Animation.DROP
+                }));
+            }, timeout);
         }
 
-    });
-    function addMarkerWithTimeout(position, timeout) {
-      window.setTimeout(function() {
-        markers.push(new google.maps.Marker({
-          position: position,
-          map: app_map,
-          animation: google.maps.Animation.DROP
-        }));
-      }, timeout);
+        function clearMarkers() {
+            for (var i = 0; i < markers.length; i++) {
+                markers[i].setMap(null);
+            }
+            markers = [];
+        }
+        controlUI2.addEventListener('click', clearMarkers);
     }
 
-    function clearMarkers() {
-      for (var i = 0; i < markers.length; i++) {
-        markers[i].setMap(null);
-      }
-      markers = [];
-    }
-    controlUI2.addEventListener('click', clearMarkers);
-}
     var centerControlDiv = document.createElement('div');
     var centerControl = new CenterControl(centerControlDiv, app_map);
 
@@ -119,6 +123,7 @@ $(function(){
     centerControlDiv.style['padding-top'] = '10px';
     app_map.controls[google.maps.ControlPosition.TOP_RIGHT].push(centerControlDiv);
 
+    /* checkbox check */
     $(".marking").click(function(){
         if($(this).is(":checked")){
             var id = Number(this.id);
