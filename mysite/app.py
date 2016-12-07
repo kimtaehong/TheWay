@@ -30,7 +30,7 @@ def sqlParse(record, path, afterprocess):
             rec.__dict__[values[i]] = appRecord[i]
         rec.save()
     if afterprocess != '':
-        after.process(afterprocess)
+        after.process(afterprocess, ap.id)
 
 
 def xmlParse(record, path, afterprocess):
@@ -67,7 +67,7 @@ def xmlParse(record, path, afterprocess):
             rec.__dict__[values[i]] = appRecord[i]
         rec.save()
         if afterprocess != '' :
-            after.process(afterprocess)
+            after.process(afterprocess, ap.id)
 
 def fileParse(record, target):
     return appParse.Parse(record['appName'],
@@ -85,7 +85,6 @@ def appdata(target) :
         if record is None:
             break
         record = util.list2dic(record)
-        print (record)
         if record['DataType'].split('_')[0] == 'SQL':
             sqlParse(record, target, record['DataType'].split('_')[1])
         elif record['DataType'].split('_')[0] == 'XML':

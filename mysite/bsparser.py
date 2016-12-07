@@ -5,15 +5,6 @@ from twpoint.models import BaseStation
 
 def input_django(rowdata) :
     #return time, lat, lon, rowData['sender'], rowData['reciver'], rowData['position'], rowData['type']
-    '''
-        time = models.CharField(max_length=255)
-        location = models.CharField(max_length=255)
-        lat = models.FloatField('Latitude')
-        lng = models.FloatField('Longitude')
-        sender = models.CharField(max_length=255)
-        receiver = models.CharField(max_length=255)
-        type = models.CharField(max_length=255)
-    '''
     if rowdata == False :
         return
     bs = BaseStation(time     = rowdata[0],
@@ -122,7 +113,6 @@ def xlsParse(file):
 
 
 def parse(filename, file):
-    print (file)
     if filename.split('.')[-1].lower() == 'csv':
         csvParse(file)
     elif file.split('.')[-1].lower() == 'xls':

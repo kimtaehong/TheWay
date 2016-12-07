@@ -1,6 +1,7 @@
 import dbutil
 from twpoint.models import Application, WayPoint
 import pdb
+import util
 
 def Parse(appName, packageName, path, tableName, target):
     if appName == 'appA' and path == 'fileA' :
@@ -18,7 +19,6 @@ def appA_fileA(appName, packageName, path):
 
 def cymera_cymeraGallery(appName, packageName, path, target) :
     #Get Max value
-    print ("[+] Cymera!")
     try :
         con    = dbutil.appdbconnect(packageName, path, target)
         cursor = con.cursor()
@@ -40,8 +40,9 @@ def cymera_cymeraGallery(appName, packageName, path, target) :
         data = cursor.fetchone()
         if type(data) == type(None) : #Notfound
             continue
-        lng = data[0]
-        lat  = data[1]
+        lng = util.parse_dms(data[0])
+        lat = util.parse_dms(data[1])
+
         input_data = WayPoint(path        = path,
                               table_name  = 'cymera_photos, cymera_exif',
                               position_x  = lng,
