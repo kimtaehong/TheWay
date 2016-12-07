@@ -64,7 +64,6 @@ def appQuery(appInfo, appRecord, values):
 def genQuery(record):
     query = "select "
     values = []
-    print('record')
     for i in list(record.keys())[4:-1]:
         query = query + record[i] + ","
         values.append(i)

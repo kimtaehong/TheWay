@@ -122,6 +122,15 @@ def timeTotimestamp(timeS):
         return int(time.mktime(time.strptime(timeS, "%Y-%m-%d %H:%M:%S")))
     except :
         print(timeS)
+
 #############################################################
 #############################################################
 #############################################################
+def dms2dd(degrees, minutes, seconds, direction):
+    dd = float(degrees) + float(minutes)/60 + float(seconds)/(60*60);
+    return dd
+
+def parse_dms(dms):
+    parts = re.split('[^\d\w]+', dms)
+    before_dd = dms2dd(parts[0], parts[1], parts[2], parts[3])
+    return before_dd
