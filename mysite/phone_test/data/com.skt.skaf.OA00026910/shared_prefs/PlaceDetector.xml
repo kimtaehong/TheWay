@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="pref_store_place_region"></string>
+    <string name="pref_area_place_regions">[]</string>
+</map>

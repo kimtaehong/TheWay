@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="delivery_range_ver">1.6</string>
+    <int name="badge_count" value="0" />
+    <string name="newest_app_version">6.3.7</string>
+</map>

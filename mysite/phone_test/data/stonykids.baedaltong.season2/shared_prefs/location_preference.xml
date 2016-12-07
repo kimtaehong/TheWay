@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="latitude" value="4630366007134613708" />
+    <string name="siName">아산시</string>
+    <string name="dongName">송악면</string>
+    <boolean name="userLocation" value="true" />
+    <long name="time" value="1481119475337" />
+    <long name="longitude" value="4638637944062816203" />
+    <string name="doName">충청남도</string>
+</map>

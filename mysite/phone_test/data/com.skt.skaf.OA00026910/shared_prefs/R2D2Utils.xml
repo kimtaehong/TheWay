@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="pref_night_time_to" value="5" />
+    <int name="pref_night_time_from" value="23" />
+    <boolean name="pref_always_trackable" value="true" />
+</map>

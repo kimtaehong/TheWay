@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="wlPattern">.*(MIXXO_KN|RitzCarlton|gong5f|toz_knd|hackers|gangnam|kangnam|강남|ENGdangi_[0-9]F[0-9]_[0-9]G).*|.*(coex|COEX|Coex|interTouch|yatt|SunEdison|Public WiFi FREE|BPL-R211|tradeconsultant|SUNATFOODBS|NSEnt|NSguest|GlobalWiFi|^SKP_[0-9A-Fa-f]{4}_[0-9A-Fa-f]{4}$|^SKP-GUEST$|^SKP-OA$|^@HYUNDAI-WIFI$).*</string>
+    <boolean name="wlEnable" value="true" />
+    <long name="wlNearestDataExpiration" value="604800" />
+    <long name="wlNearestInterval" value="300" />
+</map>

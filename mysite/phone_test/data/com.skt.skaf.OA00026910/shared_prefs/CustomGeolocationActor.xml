@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="enable" value="true" />
+    <string name="region_map">AAAAAA==</string>
+    <int name="proirity" value="2" />
+    <long name="last_start_time" value="1481108311883" />
+    <int name="elapsedTimeThreshold" value="180" />
+    <int name="interval" value="300" />
+</map>

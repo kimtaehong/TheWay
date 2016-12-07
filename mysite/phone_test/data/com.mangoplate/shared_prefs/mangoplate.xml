@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="notification_enabled" value="true" />
+    <boolean name="PROFILE_MY_LIST_TUTORIAL" value="false" />
+    <int name="execute_count" value="1" />
+    <boolean name="RESTAURANT_MY_LIST_TUTORIAL" value="false" />
+    <boolean name="terms_of_service_allowed" value="true" />
+    <string name="session_info_v1">{&quot;id&quot;:&quot;7a22ad3b-75e7-4ab9-aa80-72f0b1eca38d&quot;,&quot;lastUsedAt&quot;:1481119367235,&quot;pageSequence&quot;:1,&quot;pageSequenceAndUpdate&quot;:1,&quot;sequence&quot;:1}</string>
+    <boolean name="FIND_LOCATION_FILTER_TUTORIAL" value="false" />
+    <int name="FIND_SEARCH_BY" value="3" />
+    <boolean name="is_shown_profile_page" value="true" />
+    <boolean name="location_service_allowed" value="true" />
+    <boolean name="privacy_policy_allowed" value="true" />
+    <boolean name="is_shown_notifications_list_page" value="true" />
+    <string name="login_result">{&quot;status&quot;:&quot;success&quot;,&quot;message&quot;:&quot;A new member is successfully registered&quot;,&quot;access_token&quot;:&quot;tK9EH1yCEMtXu0hdUMCfzg&quot;,&quot;member_uuid&quot;:671597,&quot;user_info&quot;:{&quot;member_uuid&quot;:671597,&quot;facebook_id&quot;:&quot;1158329840899001&quot;,&quot;kakao_id&quot;:null,&quot;picture_url&quot;:&quot;https://graph.facebook.com/1158329840899001/picture&quot;,&quot;picture_type&quot;:&quot;fb&quot;,&quot;nick_name&quot;:&quot;최현표&quot;,&quot;signup_type&quot;:1,&quot;is_public_list&quot;:false,&quot;follower_count&quot;:6,&quot;review_count&quot;:null,&quot;is_holic&quot;:false,&quot;badge_list&quot;:null,&quot;user_info&quot;:{&quot;member_uuid&quot;:671597,&quot;hashed_password&quot;:null,&quot;member_first_name&quot;:&quot;현표&quot;,&quot;member_last_name&quot;:&quot;최&quot;,&quot;country&quot;:&quot;KR&quot;,&quot;gender&quot;:&quot;&quot;,&quot;language_type&quot;:&quot;kor&quot;,&quot;kakao_id&quot;:null,&quot;kakaotalk_id&quot;:null,&quot;twiter_id&quot;:null,&quot;facebook_id&quot;:&quot;1158329840899001&quot;,&quot;email&quot;:&quot;gusvy7788@naver.com&quot;,&quot;phone_tel&quot;:null,&quot;phone_mobile&quot;:null,&quot;region&quot;:null,&quot;metro&quot;:null,&quot;birthday_month&quot;:10,&quot;birthday_day&quot;:24,&quot;birthday_year&quot;:1997,&quot;agent&quot;:&quot;OFF&quot;,&quot;status&quot;:null,&quot;mango_point&quot;:0,&quot;distance&quot;:0,&quot;notification&quot;:null,&quot;reg_time&quot;:&quot;2016-12-07T23:02:44.000+09:00&quot;,&quot;update_time&quot;:null,&quot;picture_url&quot;:&quot;https://graph.facebook.com/1158329840899001/picture&quot;,&quot;is_mango_YN&quot;:&quot;N&quot;,&quot;permission_level&quot;:0,&quot;last_signed_at&quot;:&quot;2016-12-07T23:02:46.716+09:00&quot;,&quot;member_pwd&quot;:null,&quot;is_verified&quot;:1,&quot;nick_name&quot;:&quot;최현표&quot;,&quot;background_url&quot;:null,&quot;last_state_code&quot;:null,&quot;last_region_code&quot;:null,&quot;picture_type&quot;:&quot;fb&quot;,&quot;last_metro_code&quot;:null,&quot;holic_score&quot;:null,&quot;is_holic&quot;:0,&quot;holic_tag&quot;:null,&quot;follower_count&quot;:6,&quot;review_count&quot;:null,&quot;is_public_list&quot;:0,&quot;suspected_level&quot;:0,&quot;signup_type&quot;:1,&quot;badge_list&quot;:null},&quot;email&quot;:&quot;gusvy7788@naver.com&quot;},&quot;is_allow_facebook&quot;:true,&quot;isAllowFacebook&quot;:true,&quot;is_allow_use_contacts&quot;:false,&quot;isAllowUseContacts&quot;:false,&quot;is_allow_location_info&quot;:false,&quot;hasPreferences&quot;:false,&quot;facebook_description&quot;:&quot;소셜 맛집 서비스!  언제 어디서나 친구들이 즐겨 찾아가는 식당들을 검색하고 친구들이 믿을수 있는 리뷰를 볼 수 있는 앱입니다.&quot;,&quot;facebook_picture&quot;:&quot;http://mangoplate.com/icon_mangoplate.png&quot;,&quot;facebook_name&quot;:&quot;MangoPlate를 사용하기 시작했습니다!&quot;,&quot;has_new_buddy&quot;:false,&quot;followings_count&quot;:6,&quot;should_show_invitation_input&quot;:false,&quot;policy_agreements&quot;:{&quot;user_contract&quot;:false,&quot;private_info&quot;:false,&quot;location_info&quot;:false,&quot;newsletter&quot;:false},&quot;unread_noti_count&quot;:0}</string>
+    <string name="device_id">c495aa5678602db8d45b4c4d90cbd3a05b1d2019</string>
+    <boolean name="newsletter_allowed" value="false" />
+    <string name="access_token">tK9EH1yCEMtXu0hdUMCfzg</string>
+    <int name="unread_notifications_count" value="0" />
+    <int name="unread_campaign_count" value="15" />
+    <string name="2longitude">127.0099907</string>
+    <string name="latitude">36.7293071</string>
+    <boolean name="is_shown_campaign_list_page" value="false" />
+    <string name="registration_id">cfNjeZLj1Sc:APA91bH56XKLbW79yHKzayAWO93e5MssWoNXvituUv4ASAKIhL9SOGPFByloKDe9GADscMwJdXqsm5W4PyWNTIIGsgSkUTiwQ8zphRdqAzksTiPilC0dF64hje5jjCv_YmhSwgqXqtcU</string>
+</map>

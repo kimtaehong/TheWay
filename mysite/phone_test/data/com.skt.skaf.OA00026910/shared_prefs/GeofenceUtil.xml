@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="pref_last_location">{&quot;timeStamp&quot;:1476838459531,&quot;eventType&quot;:&quot;ar&quot;,&quot;eventDetail&quot;:&quot;state_scan_shortly&quot;,&quot;tid&quot;:1756998436,&quot;latitude&quot;:36.7692899,&quot;longitude&quot;:126.9326515,&quot;accuracy&quot;:20.773000717163086,&quot;time&quot;:1476838459527,&quot;provider&quot;:&quot;fused&quot;,&quot;altitude&quot;:0,&quot;speed&quot;:0,&quot;bearing&quot;:0}</string>
+</map>

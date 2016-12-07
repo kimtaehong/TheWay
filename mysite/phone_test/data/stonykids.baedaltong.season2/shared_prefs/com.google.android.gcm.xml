@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="regId">APA91bE1remQn_x0IVONgYGYPTYHMvUvnj80FVdsh3rTTgwT9mR6Mych3-7RZpVtQYTm-XARGfxQu97y0dB0h9o1aU75-jAky0E_aQb3dJTfhYyd8w1DnU8f0nYvT3PoyfFVG91ITCfU</string>
+    <int name="appVersion" value="140" />
+    <int name="backoff_ms" value="3000" />
+</map>

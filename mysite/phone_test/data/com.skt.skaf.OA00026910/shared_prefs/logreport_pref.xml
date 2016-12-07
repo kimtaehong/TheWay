@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="enable" value="true" />
+    <long name="KEY_LAST_LOG_SEND_TIME" value="1480752059207" />
+    <boolean name="collectAdvertiseId" value="true" />
+    <boolean name="ignoreUserConsent" value="false" />
+    <long name="reportGuardTime" value="180000" />
+    <int name="reportCount" value="30" />
+    <long name="reportInterval" value="1800000" />
+    <long name="keepingInterval" value="86400000" />
+    <int name="maxReportCount" value="150" />
+</map>

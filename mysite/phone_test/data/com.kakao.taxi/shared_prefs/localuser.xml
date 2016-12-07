@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="did_show_message_guide" value="true" />
+    <boolean name="register_first_time" value="false" />
+    <string name="passenger">klofcpNbZBn9MeN+oIPybomE3Ls2lxcwYX5P54n6wwcunYw0CE1eAwbq+ZxL9Zbz88p0Al01TzaM
+rR3XyYJ5fzmUN9FBG+aJ2n9qGe3WwBloWJeDUSkvFXczZoPZCa4dxABqtw2F3LkL6SXF2xFTJg9H
++ZxxfWlOAlGyHv7mAoT7GU5qNU64lxnIFI0iQy/YMopruDd0126sktiXCUsCvZ1Xldg8LdA0nMiS
+UBRts80zc2wa8G1nHyikAL+KBcTdK2OlBIcli83//h6eQVMPHOqqYwrVb4oAeKdS/ht0rdXYmG4v
+6sNkJjV4liZhnHxw/FT1F6HXIAc5MPo2+CzUc15PvZJssQwyVh/6m1mafouHaHempLrRcc0MjziU
+J2mZTKw2ecKXK65NkVhYL+SJrw==
+    </string>
+    <string name="checked_phone_number">VQ7/TuILxO1YeXi7WdCEQg==
+    </string>
+    <boolean name="did_show_map_click_guide" value="true" />
+    <string name="auth_token">T/HL0d4aOHFfmLTCnINPL+svPNhkwKdXNmiWxiyNe9DXKEy3ep9qsx+wiG337XlM
+    </string>
+    <long name="rating_calllID" value="-1" />
+    <boolean name="is_limit_ad_tracking" value="false" />
+    <string name="last_dest_region">krMAcofC5OtEt6mNoBxGyw==
+    </string>
+    <boolean name="should_show_current_location_warning" value="false" />
+    <boolean name="use_card" value="true" />
+    <boolean name="show_other_app" value="false" />
+    <string name="adid">rhBEic5lK9mVCiY7EnLxjT8hBXN8dQzs1MSiVFuDvNlZBfSycgr6oppHUj4igN/H
+    </string>
+    <long name="rating_date" value="1476702319611" />
+    <long name="reported_callID" value="-1" />
+    <boolean name="is_new_user" value="false" />
+</map>

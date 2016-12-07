@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="slotPeriod" value="900" />
+    <int name="lastSlotState" value="32976" />
+    <boolean name="behaviorReport" value="true" />
+    <long name="networkDataCapacity" value="20971520" />
+    <set name="filterEvent">
+        <string>ar</string>
+        <string>ondemand</string>
+        <string>loop</string>
+        <string>screen</string>
+    </set>
+    <int name="trackLevel" value="18" />
+    <set name="filterGroup">
+        <string>networks</string>
+        <string>scans</string>
+        <string>transactions</string>
+        <string>events</string>
+        <string>notification</string>
+        <string>messagebox</string>
+    </set>
+    <int name="lastSlotIndex" value="1200" />
+    <long name="trackTimestamp" value="1481108403047" />
+    <boolean name="trackEnabled" value="true" />
+</map>

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="ApptimizePermanentlyDisabledVersions">[]</string>
+    <long name="ApptimizeAppFirstDate" value="1481119472000" />
+    <string name="fakeGUID">10a6f4dd-e687-4b93-a9e2-1f95ba99b972</string>
+</map>

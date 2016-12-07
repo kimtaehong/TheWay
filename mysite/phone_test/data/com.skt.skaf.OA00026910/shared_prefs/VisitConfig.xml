@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <float name="thresholdWiFi" value="0.3" />
+    <boolean name="enableVisitDetection" value="true" />
+    <float name="thresholdLocation" value="20.0" />
+    <float name="thresholdBLE" value="1.1" />
+    <string name="wifiExcludePattern">skt_4g_lte_bridge.*|t pocket-fi.*|kt_eap_roaming.*|ollehegg.*|kteg.*|wibro.*bridge|chromecast|^iroad_[a-z].*|^janus_bb_.*|^iphone.*|androidhotspot.*|^g5_.*|^g4_.*|^g3 cat.*|lg u\+ router.*|hp-print-(\w+)-(\w+).*|skt wibro.*|.*iphone|hp\w+.\w+|.*아이폰$|.*imac$|direct-(((.*[-]|.*) series)|([0-9a-z]{2}-hp.*))|sa-print-(\w+)-(\w+)-(\w+)</string>
+    <long name="minVisitAdmitTime" value="60000" />
+</map>

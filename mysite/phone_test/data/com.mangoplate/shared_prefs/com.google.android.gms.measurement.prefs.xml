@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="health_monitor:count" value="1" />
+    <string name="health_monitor:value">1WC9683:Param value can't be null: -</string>
+    <string name="gmp_app_id">1:725939888688:android:cf5a98919bbf9caa</string>
+    <boolean name="use_service" value="true" />
+    <long name="time_active" value="0" />
+    <long name="health_monitor:start" value="1481119346433" />
+    <boolean name="has_been_opened" value="true" />
+    <long name="last_pause_time" value="1481119429968" />
+    <long name="last_upload" value="1481119345728" />
+    <boolean name="start_new_session" value="false" />
+    <string name="previous_os_version">6.0</string>
+</map>

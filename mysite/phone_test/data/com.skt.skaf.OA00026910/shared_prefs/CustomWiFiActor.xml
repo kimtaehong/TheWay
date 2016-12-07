@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="region_map">AAAAAA==</string>
+    <boolean name="enabled" value="true" />
+    <long name="interval" value="60" />
+</map>

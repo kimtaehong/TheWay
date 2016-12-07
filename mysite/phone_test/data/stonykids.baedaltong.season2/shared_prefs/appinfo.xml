@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="api.web_payment_url">https://m.bdtong.co.kr:444/pay/payForm.php</string>
+    <long name="common.lead_member_dialog_last_show_time" value="0" />
+    <boolean name="shop_menu.use_tooltip" value="false" />
+    <long name="common.main_ad_dialog_last_show_time" value="1481119483489" />
+    <long name="common.lead_event_ad_enable_dialog_last_show_time" value="0" />
+    <boolean name="common.app_review_on_off" value="true" />
+    <boolean name="shop_menu.use_animation" value="false" />
+    <int name="api.environment" value="2" />
+    <boolean name="common.app_event_push_enabled" value="true" />
+    <boolean name="common.use.gps" value="true" />
+    <string name="api.protocol">https</string>
+    <string name="api.php_host">m.bdtong.co.kr</string>
+    <int name="shop_menu.active_section_count" value="1" />
+    <string name="api.aspx_host">api.bdtong.co.kr/bs2/</string>
+    <long name="common.do_not_show_main_ad_dialog_until_time" value="1481205883455" />
+</map>

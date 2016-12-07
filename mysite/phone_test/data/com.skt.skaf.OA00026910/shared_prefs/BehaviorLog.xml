@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="scans:ble" value="1" />
+    <long name="events:ar_state_stop_scan" value="1" />
+    <long name="events:loop_loop" value="1" />
+</map>

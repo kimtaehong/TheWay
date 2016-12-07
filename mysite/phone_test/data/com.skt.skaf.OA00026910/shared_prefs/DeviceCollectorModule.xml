@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="dailyLimitByTR" value="10" />
+    <int name="minimumLevel" value="50" />
+    <boolean name="enabled" value="true" />
+    <set name="trTypes">
+        <string>tr_syrup_coupon</string>
+        <string>tr_syrup_mcard</string>
+        <string>default</string>
+    </set>
+    <int name="dailyLimit" value="10" />
+    <set name="triggers">
+        <string>ondemand</string>
+        <string>tr</string>
+    </set>
+    <long name="availableTimestamp" value="60000" />
+</map>

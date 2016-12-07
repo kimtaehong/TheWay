@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="pref_tech_state_info">{&quot;ble&quot;:true,&quot;geofence&quot;:true,&quot;wifi&quot;:true}</string>
+</map>

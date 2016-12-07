@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="pref_ble_nearest_interval" value="300" />
+    <string name="pref_geo_map">{}</string>
+    <boolean name="pref_bt_enable_forced_by_geo" value="false" />
+    <boolean name="pref_bt_zone_entered" value="false" />
+    <int name="pref_ble_lollipop_scan_length" value="3000" />
+    <int name="pref_ble_guard_time" value="300000" />
+    <string name="pref_ble_geo_location">{&quot;time&quot;:1476838459580,&quot;lat&quot;:36.7692899,&quot;lon&quot;:126.9326515}</string>
+    <boolean name="pref_ble_disable_using_bt" value="false" />
+    <long name="pref_ble_last_nearest_called_time" value="1476867201868" />
+    <boolean name="pref_ble_headset_connected" value="false" />
+    <long name="pref_ble_scan_stop_will_time" value="765939710" />
+    <boolean name="pref_ble_run_sdk" value="true" />
+    <boolean name="pref_bt_is_enable_bluetooth_called" value="false" />
+    <int name="pref_on_demand_scan_times" value="4" />
+    <int name="pref_ble_kitkat_scan_length" value="3000" />
+    <long name="pref_ble_last_scan_time" value="1481108403072" />
+    <boolean name="pref_ble_enable_lollipop_scan" value="false" />
+    <int name="pref_ble_nearest_expiration" value="86400" />
+    <string name="pref_bt_zone_info">{&quot;appId&quot;:&quot;UOFU0wArBs2k4tww&quot;,&quot;zid&quot;:&quot;1198391&quot;,&quot;targetId&quot;:&quot;&quot;,&quot;zoneType&quot;:0,&quot;tid&quot;:-599460930}</string>
+    <int name="pref_ble_scan_interval" value="60" />
+    <float name="pref_ble_propagation" value="2.3789053" />
+</map>

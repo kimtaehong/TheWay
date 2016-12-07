@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="pref_update_time" value="86400" />
+    <long name="pref_last_update_time" value="1481098898400" />
+    <string name="pref_bounding_box">[36.778042,126.944552,36.760052,126.922094]</string>
+</map>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="location_enabled_set" value="false" />
+    <string name="blacklisted_attributes">[]</string>
+    <float name="location_distance" value="-1.0" />
+    <boolean name="location_enabled" value="false" />
+    <string name="blacklisted_events">[]</string>
+    <long name="config_time" value="1454378876" />
+    <long name="location_time" value="-1" />
+    <string name="last_configured_appboy_sdk_version">1.15.1</string>
+    <string name="blacklisted_purchases">[]</string>
+    <boolean name="piq_enabled" value="false" />
+</map>

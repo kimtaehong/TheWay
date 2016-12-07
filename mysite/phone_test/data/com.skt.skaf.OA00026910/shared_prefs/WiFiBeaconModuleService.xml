@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <set name="wbAvailableProviders">
+        <string>fused</string>
+    </set>
+    <boolean name="wbEnable" value="true" />
+    <string name="wbPattern">SKP_[0-9A-Fa-f]{4}_[0-9A-Fa-f]{4}|SKP-GUEST|SKP-OA</string>
+    <long name="wbMobileMapVersion" value="0" />
+    <long name="wbGuardTime" value="300" />
+    <string name="wbMobileMapUrl"> </string>
+    <long name="wbNearestDataExpiration" value="86400" />
+    <long name="wbNearestInterval" value="300" />
+</map>

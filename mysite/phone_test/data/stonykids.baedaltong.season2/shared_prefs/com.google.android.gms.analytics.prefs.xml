@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="installation_campaign">utm_source=google-play&amp;utm_medium=organic</string>
+    <long name="monitoring:start" value="1481119474457" />
+    <long name="first_run" value="1481119474558" />
+    <long name="monitoring:count" value="8" />
+    <string name="monitoring:value">3WC9.8.77:AnalyticsService not registered in the app manifest. Hits might not be delivered reliably. See http://goo.gl/8Rd3yj for instructions.</string>
+</map>

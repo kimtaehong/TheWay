@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="bnc_session_id">335045771768187451</string>
+    <string name="bnc_link_click_identifier">bnc_no_value</string>
+    <string name="bnc_user_url">http://mp8.io/a/key_live_beeMcFpDWQgi7SKuIfO8hbmnvyac1zPZ?%24identity_id=335045695990337455</string>
+    <string name="bnc_external_intent_uri">bnc_no_value</string>
+    <string name="bnc_branch_key">key_live_beeMcFpDWQgi7SKuIfO8hbmnvyac1zPZ</string>
+    <string name="bnc_session_params">bnc_no_value</string>
+    <string name="bnc_push_identifier">bnc_no_value</string>
+    <string name="bnc_app_link">bnc_no_value</string>
+    <string name="bnc_device_fingerprint_id">251310772930555066</string>
+    <string name="bnc_app_version">1.1.5</string>
+    <int name="bnc_is_referrable" value="1" />
+    <string name="bnc_link_click_id">bnc_no_value</string>
+    <string name="bnc_external_intent_extra">bnc_no_value</string>
+    <string name="bnc_identity_id">335045695990337455</string>
+    <boolean name="bnc_triggered_by_fb_app_link" value="false" />
+</map>

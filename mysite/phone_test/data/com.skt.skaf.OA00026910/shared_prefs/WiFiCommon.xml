@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="bssidMapUrl">http://skpis.cache.scs.skcdn.co.kr/proximity/bssidmap_v12.sqlite</string>
+    <long name="bssidMapVersion" value="12" />
+</map>
