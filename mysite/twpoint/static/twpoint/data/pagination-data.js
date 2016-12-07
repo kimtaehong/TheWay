@@ -35,5 +35,5 @@ $(function(){
 $.getJSON(pic_url,function(p_json){
     pic_count = p_json.length;
     pic_data = p_json;
-})
+});
 

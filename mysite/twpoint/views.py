@@ -108,6 +108,20 @@ def base_station(request):
     return render(request, 'twpoint/basestation.html', context)
 
 
+def distribution(request):
+    applications = Application.objects.all()
+    user = UserInfo.objects.all()
+
+    context = {
+        'time': timezone.localtime(timezone.now()),
+        'application': applications,
+        'user': user,
+    }
+
+    return render(request, 'twpoint/distribution.html', context)
+
+
+# Data View By JSON
 def dataview(request):
     """/application application 정보"""
     app_data = Application.objects.all()

@@ -6,6 +6,7 @@ urlpatterns = [
     url(r'^result/(?P<application_id>[0-9]+)/$', views.detail, name="detail"), # detail page url
     url(r'^result$', views.result, name="result"),
     url(r'^result/gallery$', views.gallery, name="gallery"),
+    url(r'^result/distribution$', views.distribution, name="distribution"),
     url(r'^result/basestation$', views.base_station, name="basestation"),
     url(r'^parsing$', views.parsing,name="parsing"),
     url(r'^application', views.dataview),
