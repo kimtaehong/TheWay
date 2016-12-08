@@ -7,7 +7,7 @@ $(function(){
     $.getJSON(way_url,function(w_json){
         way_data = w_json;
         d_map = new google.maps.Map(document.getElementById('d_map'),{
-            zoom: 9,
+            zoom: 10,
             center: {lat: 37.497518, lng: 127.029676 },
             scrollwheel: false,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
