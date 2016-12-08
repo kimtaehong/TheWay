@@ -34,7 +34,7 @@ $(function(){
         });
 
 
-        var markers = locations.map(function(location, i) {
+        var markers = locations.map(function(location) {
             return new google.maps.Marker({
                 position: location,
             });
