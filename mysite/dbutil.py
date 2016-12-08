@@ -1,7 +1,7 @@
+from twpoint.models import Application, WayPoint, statics
 import sqlite3
 import util
 import pdb
-
 #############################################
 ################### SETUP ###################
 #############################################
@@ -120,3 +120,27 @@ def bsQuery(rowData):
         rowData['receiver'] = 'None'
 
     return time, lat, lon, rowData['sender'], rowData['receiver'], rowData['position'], rowData['type']
+
+
+def input_django(datas) :
+    level = 1
+    id = 0
+    for data in datas :
+        if len(statics.objects.filter(pid = id, level = level, name = data)) != 0 :
+            res       = statics.objects.get(pid = id, level = level, name = data)
+            res.count = res.count + 1
+            res.save()
+            id        = res.id
+            level     = level + 1
+        else :
+            dp    = statics(name = data, pid = id, count = 1, level = level)
+            dp.save()
+            id    = dp.id
+            level = level + 1
+
+def input(a, b) :
+    loc   = util.toLoc(a, b)
+    if loc == False :
+        return False
+    level = util.cutting(loc)
+    input_django(level)

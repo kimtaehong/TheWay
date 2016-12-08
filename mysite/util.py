@@ -11,6 +11,7 @@ import xlrd
 import urllib
 import sys
 import pdb
+import urllib.request
 
 #############################################################
 ######################## convert ############################
@@ -134,3 +135,25 @@ def parse_dms(dms):
     parts = re.split('[^\d\w]+', dms)
     before_dd = dms2dd(parts[0], parts[1], parts[2], parts[3])
     return before_dd
+
+def toLoc(x, y) :
+    url  = 'https://maps.googleapis.com/maps/api/geocode/json?latlng=' + str(y) + ',' + str(x) + '&language=ko'
+    html = urllib.request.urlopen(url).read().decode('utf-8')
+    try :
+        location  = re.findall('"formatted_address" : "(.+?)"', html)[0]
+    except :
+        return False
+    return location
+
+def cutting(loc) :
+    levels = loc.split(' ')
+    if re.match('[0-9, -]+', levels[-1]) :
+        return levels[1:-1]
+    else :
+        return levels[1:]
+
+def isNotNone(a, b) :
+    if a != None and b != None :
+        return True
+    else :
+        return False
