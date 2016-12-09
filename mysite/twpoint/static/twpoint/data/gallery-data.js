@@ -22,20 +22,9 @@ $(function(){
             var pic = pic_data.filter(function(item, index, array){
                 return item['id'] == id;
             });
+
             /* photo info change */
-            var pic_info = $('#pic_info');
-            var pic_img = pic_info.children()[0];
-            var pic_caption = pic_info.children()[1];
-            var src = "/image?file="+pic[0].path+"/"+pic[0].name;
-            pic_img.src = src;
-            var html = "<h5 class='page-header'><strong>"+pic[0].name+"</strong></h5>";
-            html += "<h5> <strong>Device:</strong> " + pic[0].device + "</h5>\t";
-            html += "<h5> <strong>Latitude:</strong> " + pic[0].lat + "</h5>\t";
-            html += "<h5> <strong>Longitude:</strong> " + pic[0].lng + "</h5>\t";
-            html += "<h5> <strong>Path:</strong> " + pic[0].path + "</h5>\t";
-            html += "<h5> <strong>MD5:</strong> " + pic[0].md5 + "</h5>\t";
-            html += "<h5> <strong>SHA1:</strong> " + pic[0].sha1 + "</h5>\t";
-            pic_caption.innerHTML = html;
+            CreatePhotoInfo(pic[0]);
 
             /* marking */
             pic_location = { lat: Number(pic[0].lat), lng: Number(pic[0].lng)};
@@ -46,6 +35,7 @@ $(function(){
 
             markers[pic[0].id] = marker;
             gallery_map.panTo(marker.getPosition());
+
         }
         else{
             markers[this.id].setMap(null);
@@ -61,19 +51,7 @@ function imageClick(id){
     });
 
     /* photo info change */
-    var pic_info = $('#pic_info');
-    var pic_img = pic_info.children()[0];
-    var pic_caption = pic_info.children()[1];
-    var src = "/image?file="+pic[0].path+"/"+pic[0].name;
-    pic_img.src = src;
-    var html = "<h5 class='page-header'><strong>"+pic[0].name+"</strong></h5>";
-    html += "<h5> <strong>Device:</strong> " + pic[0].device + "</h5>\t";
-    html += "<h5> <strong>Latitude:</strong> " + pic[0].lat + "</h5>\t";
-    html += "<h5> <strong>Longitude:</strong> " + pic[0].lng + "</h5>\t";
-    html += "<h5> <strong>Path:</strong> " + pic[0].path + "</h5>\t";
-    html += "<h5> <strong>MD5:</strong> " + pic[0].md5 + "</h5>\t";
-    html += "<h5> <strong>SHA1:</strong> " + pic[0].sha1 + "</h5>\t";
-    pic_caption.innerHTML = html;
+    CreatePhotoInfo(pic[0]);
 
     /* marking */
     pic_location = { lat: Number(pic[0].lat), lng: Number(pic[0].lng)};
@@ -86,3 +64,19 @@ function imageClick(id){
     gallery_map.panTo(marker.getPosition());
 }
 
+function CreatePhotoInfo(pic){
+    var pic_info = $('#pic_info');
+    var pic_img = pic_info.children()[0];
+    var pic_caption = pic_info.children()[1];
+    var src = "/image?file=" + pic.path + "/" + pic.name;
+    pic_img.src = src;
+
+    var html = "<h5 class='page-header'><strong>"+pic.name+"</strong></h5>";
+    html += "<h5> <strong>Device:</strong> " + pic.device + "</h5>\t";
+    html += "<h5> <strong>Latitude:</strong> " + pic.lat + "</h5>\t";
+    html += "<h5> <strong>Longitude:</strong> " + pic.lng + "</h5>\t";
+    html += "<h5> <strong>Path:</strong> " + pic.path + "</h5>\t";
+    html += "<h5> <strong>MD5:</strong> " + pic.md5 + "</h5>\t";
+    html += "<h5> <strong>SHA1:</strong> " + pic.sha1 + "</h5>\t";
+    pic_caption.innerHTML = html;
+}
