@@ -37,7 +37,7 @@ $.getJSON(station_url, function(json){
     station_data = json;
 });
 
-
+/* alert */
 function MyAlert(msg){
     var alert_html = "";
     alert_html += "<div class='alert alert-danger alert-dismissable' role='alert'>\t\n";
@@ -70,10 +70,6 @@ function Action(station_data, radius){
                 map: map,
             });
         });
-
         flag = true;
     }
-
-
-
 }

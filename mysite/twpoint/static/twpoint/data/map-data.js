@@ -10,6 +10,9 @@ var way_point = {};                                 // 특정 위치정보
 var app_map;
 var marker;
 var markers = [];
+
+// travel mode
+var service = null, display = null;
 // lat = 위도 (37...) , lng = 경도 (127...)
 
 
@@ -130,7 +133,10 @@ $(function(){
             way_point = way_data.filter(function(item, index, array){
                 return item['id'] == id;
             });
-
+            if(service != null){
+                service = null;
+                display = null;
+            }
             if(way_point[0] == null){
                 MyAlert("Way Point is None");
                 $(this)[0].checked = false;
@@ -146,6 +152,12 @@ $(function(){
                 console.log('start');
                 way_name = way_point[0].start;
                 way_location = {lat: Number(way_point[0].start_y), lng: Number(way_point[0].start_x) };
+
+                var service = new google.maps.DirectionsService;
+                var display = new google.maps.DirectionsRenderer;
+                display.setMap(app_map);
+
+                TravelMode(service, display, way_point[0]);
             }
             else if(way_point[0].search != null && way_point[0].search_x != null && way_point[0].search_y != null){
                 console.log('search');
@@ -158,6 +170,7 @@ $(function(){
                 $(this)[0].checked = false;
                 return;
             }
+
             /* add custom control */
             if($('.location_info').length == 0){
                 var ctrlDiv = document.createElement('div');
@@ -171,7 +184,7 @@ $(function(){
                 UpdateControl($('.location_text')[0], way_name, way_location.lat, way_location.lng);
             }
 
-            /* marking*/
+            /* marking */
             marker = new google.maps.Marker({
                 position: way_location,
                 map: app_map,
@@ -184,6 +197,10 @@ $(function(){
         else{
             if($('.location_info').length != 0){
                 DeleteControl($('.location_info')[0]);
+            }
+            if(service != null){
+                service = null;
+                display = null;
             }
             markers[this.id].setMap(null);
         }
@@ -245,6 +262,24 @@ function MyAlert(msg){
     alert_html += "</div>";
 
     $('.myAlert')[0].innerHTML = alert_html;
+}
+
+function TravelMode(service, display, wayPt){
+    var origin = new google.maps.LatLng(Number(wayPt.start_y),  Number(wayPt.start_x));
+    var destination = new google.maps.LatLng( Number(wayPt.end_y),Number(wayPt.end_x));
+    service.route({
+        origin: origin,
+        destination: destination,
+        optimizeWaypoints: true,
+        travelMode: google.maps.TravelMode.WALKING
+    }, function(response, status){
+        if(status == google.maps.DirectionsStatus.OK){
+            display.setDirections(response);
+        }
+        else{
+            MyAlert("No route could be found between the origin and destination.");
+        }
+    });
 }
 
 /*

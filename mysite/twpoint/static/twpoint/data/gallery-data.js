@@ -5,6 +5,7 @@ var marker;
 var markers = [];
 
 $(function(){
+    /* create map */
     gallery_map = new google.maps.Map(document.getElementById('gallery_map'),{
         zoom: 18,
         center: {lat: 37.497518, lng: 127.029676 },
@@ -15,7 +16,7 @@ $(function(){
         zoomControl: true,
     });
 
-    // checkbox check
+    /* checkbox check */
     $(".g_check").click(function(){
         if($(this).is(":checked")){
             var id = Number(this.id);
@@ -32,8 +33,9 @@ $(function(){
                 position: pic_location,
                 map: gallery_map,
             });
-
             markers[pic[0].id] = marker;
+
+            /* location change */
             gallery_map.panTo(marker.getPosition());
 
         }
@@ -64,6 +66,7 @@ function imageClick(id){
     gallery_map.panTo(marker.getPosition());
 }
 
+/* change photo info */
 function CreatePhotoInfo(pic){
     var pic_info = $('#pic_info');
     var pic_img = pic_info.children()[0];

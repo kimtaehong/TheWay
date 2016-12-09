@@ -1,5 +1,5 @@
 $(function(){
-    // Data Table
+    /* data table */
     $('#waypointTable').DataTable();
     $('#station_table').DataTable();
     $('#gallery_table').DataTable();

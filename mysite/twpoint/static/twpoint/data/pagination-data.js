@@ -6,10 +6,14 @@ $(function(){
     $.getJSON(pic_url,function(p_json){
         pic_count = p_json.length;
         pic_data = p_json;
+
+        /* pagination */
         var result = [];
         for(var i = 0; i < pic_count; i++){
             result.push(i);
         }
+
+        /* add thumbnail */
         var container = $('#pagination');
         var option = {
             dataSource: result,

@@ -38,9 +38,9 @@ $(function() {
 });
 
 $.getJSON(app_url,function(a_json){
-    for(i=0; i<a_json.length; i++){
-        app_data.push({'id': a_json[i].id, 'app_name': a_json[i].app_name});
-    }
+    a_json.forEach(function(item){
+        app_data.push({'id': item.id, 'app_name': item.app_name});
+    });
 });
 
 
