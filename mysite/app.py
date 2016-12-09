@@ -85,6 +85,7 @@ def appdata(target) :
         if record is None:
             break
         record = util.list2dic(record)
+        print('[+] ' + record['appName'] + ' : ' + record['tableName'])
         if record['DataType'].split('_')[0] == 'SQL':
             sqlParse(record, target, record['DataType'].split('_')[1])
         elif record['DataType'].split('_')[0] == 'XML':

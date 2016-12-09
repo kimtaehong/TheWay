@@ -112,9 +112,16 @@ def locToCoord(location) :
         locations = data.decode('utf-8').replace(' ', '').replace('\r', '').replace('\n', '').replace('\t', '')
     elif True :
         locations = data.decode('utf-8').replace(' ', '').replace('\r', '').replace('\n', '').replace('\t', '')
-    location = re.findall('<location>(.+?)</location>', locations)[0]
-    lat = re.findall('<lat>(.+?)</lat>', location)[0]
-    lon = re.findall('<lng>(.+?)</lng>', location)[0]
+
+    try :
+        tmp_location = re.findall('<location>(.+?)</location>', locations)[0]
+        lat = re.findall('<lat>(.+?)</lat>', tmp_location)[0]
+        lon = re.findall('<lng>(.+?)</lng>', tmp_location)[0]
+    except :
+        if location.count('-') == 0 :
+            return False, False
+        else :
+            return locToCoord(location.split('-')[0])
     return lat, lon
 
 
@@ -157,3 +164,6 @@ def isNotNone(a, b) :
         return True
     else :
         return False
+
+def updatepercentage(a, b) :
+    pass
