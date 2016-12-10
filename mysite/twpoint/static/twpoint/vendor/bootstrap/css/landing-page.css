@@ -34,7 +34,6 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../../../img/intro-bg.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -116,7 +115,6 @@ h6 {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(../img/banner-bg.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -212,4 +210,9 @@ p.copyright {
 }
 .icon{
     margin: 0 0 28px;
+}
+
+.ex-img{
+    max-height: 78px;
+    max-width: 78px;
 }
