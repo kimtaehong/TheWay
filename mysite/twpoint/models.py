@@ -137,6 +137,7 @@ class UserInfo(models.Model):
     def __str__(self):
         return self.name
 
+
 class statics(models.Model):
     name  = models.CharField(max_length=50)
     count = models.IntegerField()

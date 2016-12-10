@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, HttpResponse, render_to_response
-from .models import WayPoint, Application, BaseStation, Picture, UserInfo
+from .models import WayPoint, Application, BaseStation, Picture, UserInfo, statics
 from django.utils import timezone
 import json
 import bsparser
@@ -18,6 +18,7 @@ def index(request):
     user_model = UserInfo.objects.all()
     bs_model = BaseStation.objects.all()
     picture_model = Picture.objects.all()
+    static = statics.objects.all()
     # db clear
 
     bs_model.delete()
@@ -25,6 +26,7 @@ def index(request):
     user_model.delete()
     app_model.delete()
     way_model.delete()
+    static.delete()
 
     return render(request, 'twpoint/index.html', {"time": timezone.localtime(timezone.now()), })
 
@@ -53,10 +55,13 @@ def result(request):
 
     applications = Application.objects.all()
     user = UserInfo.objects.first()
+    wayPt = WayPoint.objects.all()
+
     context = {
         'time': timezone.localtime(timezone.now()),
         'application': applications,
         'user': user,
+        'waypoints': wayPt,
     }
     return render(request, 'twpoint/result.html', context)
 
@@ -111,13 +116,13 @@ def base_station(request):
 def distribution(request):
     applications = Application.objects.all()
     user = UserInfo.objects.all()
-    waypoints = WayPoint.objects.all()
+    static = statics.objects.all()
 
     context = {
         'time': timezone.localtime(timezone.now()),
         'application': applications,
         'user': user,
-        'waypoints': waypoints
+        'statics': static
     }
 
     return render(request, 'twpoint/distribution.html', context)
@@ -168,6 +173,16 @@ def basestationview(request):
     data = []
     for bs in base_data:
         data.append(bs.dic())
+
+    return HttpResponse(json.dumps(data), content_type='application/json')
+
+
+def staticsview(request):
+    """ /staticsdata statics 정보 """
+    static = statics.objects.all()
+    data = []
+    for st in static:
+        data.append(st.dic())
 
     return HttpResponse(json.dumps(data), content_type='application/json')
 

@@ -4,6 +4,7 @@ import appParse
 from twpoint.models import Application, WayPoint
 import pdb
 import after
+import analysis
 
 
 def sqlParse(record, path, afterprocess):
@@ -16,16 +17,16 @@ def sqlParse(record, path, afterprocess):
         return False  # Except None file
 
     if len(Application.objects.filter(app_name=record['appName'])) == 0:
-        ap = Application(app_name = record['appName'], app_package = record['packageName'])
+        ap = Application(app_name=record['appName'], app_package=record['packageName'])
         ap.save()
-    else :
-        ap = Application.objects.filter(app_name = record['appName'])[0]
+    else:
+        ap = Application.objects.filter(app_name=record['appName'])[0]
 
     while True:
         appRecord = appcursor.fetchone()
         if appRecord is None:
             break
-        rec = WayPoint(app_name_id = ap.id, path = record['path'], table_name = record['tableName'])
+        rec = WayPoint(app_name_id=ap.id, path=record['path'], table_name=record['tableName'])
         for i in range(0, len(values)):
             rec.__dict__[values[i]] = appRecord[i]
         rec.save()
@@ -41,7 +42,7 @@ def xmlParse(record, path, afterprocess):
         return False
 
     if len(Application.objects.filter(app_name=record['appName'])) == 0:
-        ap = Application(app_name = record['appName'], app_package = record['packageName'])
+        ap = Application(app_name=record['appName'], app_package=record['packageName'])
         ap.save()
     else :
         ap = Application.objects.filter(app_name = record['appName'])[0]
@@ -51,7 +52,7 @@ def xmlParse(record, path, afterprocess):
     else:
         appRecords = [xmlcon]
     valueList = []
-    for key in record.keys()[3:-2] : #First 3 == appName, packageName, path End 2 == Sperate, dataType
+    for key in record.keys()[3:-2]:
         if key == 'Sperate':
             pass
         if record[key] != '':
@@ -62,12 +63,13 @@ def xmlParse(record, path, afterprocess):
         for re in record.keys()[3:-2]:
             reData = util.findAll(appRecord, record[re])[0]
             datas.append(reData)
-        rec = WayPoint(app_name_id = ap.id, path = record['path'], table_name = record['tableName'])
-        for i in range(0, len(values)) :
+        rec = WayPoint(app_name_id=ap.id, path=record['path'], table_name=record['tableName'])
+        for i in range(0, len(values)):
             rec.__dict__[values[i]] = appRecord[i]
         rec.save()
-        if afterprocess != '' :
+        if afterprocess != '':
             after.process(afterprocess, ap.id)
+
 
 def fileParse(record, target):
     return appParse.Parse(record['appName'],
@@ -76,7 +78,8 @@ def fileParse(record, target):
                           record['tableName'],
                           target)
 
-def appdata(target) :
+
+def appdata(target):
     con = dbutil.appdata()
     cursor = con.cursor()
     cursor.execute("select * from appinfo;")
@@ -94,3 +97,4 @@ def appdata(target) :
             fileParse(record, target)
         else:
             return False
+    analysis.static()

@@ -14,5 +14,6 @@ urlpatterns = [
     url(r'^waypoint/(?P<application_id>[0-9]+)', views.wayviewbyapp),
     url(r'^picture$', views.pictureview),
     url(r'^basestation$', views.basestationview),
+    url(r'^dataStatic$', views.staticsview),
     url(r'^image$', views.image),
 ]
