@@ -28,7 +28,7 @@ def index(request):
     way_model.delete()
     static.delete()
 
-    return render(request, 'twpoint/index.html', {"time": timezone.localtime(timezone.now()), })
+    return render(request, 'twpoint/index.html', {"time": timezone.localtime(timezone.now())})
 
 
 def detail(request, application_id):
@@ -68,7 +68,7 @@ def result(request):
 
 def gallery(request):
     applications = Application.objects.all()
-    user = UserInfo.objects.all()
+    user = UserInfo.objects.first()
     pictures = Picture.objects.all()
 
     context = {
@@ -83,24 +83,25 @@ def gallery(request):
 def parsing(request):
     picture.picture_search('./' + request.POST['filename'])
     app.appdata('./'+request.POST['filename'])
-    # db.sqlite3안에 data table, picture table에 값을 가져오는 코드 필요...
+
     post_user = UserInfo()
     post_user.name = request.POST['Name']
     post_user.case_no = request.POST['Case_no']
     post_user.description = request.POST['Description']
     post_user.save()
 
-    user = UserInfo.objects.first()
+    applications = Application.objects.all()
 
     context = {
-        'user': user
+        'time': timezone.localtime(timezone.now()),
+        'applications': applications,
     }
     return render_to_response('twpoint/parsing.html', context)
 
 
 def base_station(request):
     applications = Application.objects.all()
-    user = UserInfo.objects.all()
+    user = UserInfo.objects.first()
     stations = BaseStation.objects.all()
 
     context = {
@@ -115,7 +116,7 @@ def base_station(request):
 
 def distribution(request):
     applications = Application.objects.all()
-    user = UserInfo.objects.all()
+    user = UserInfo.objects.first()
     static = statics.objects.all()
 
     context = {

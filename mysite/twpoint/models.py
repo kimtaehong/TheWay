@@ -69,6 +69,15 @@ class WayPoint(models.Model):
             result[field] = self.__dict__[field]
         return result
 
+    def getpackage(self, way_id):
+        apps = Application.objects.all()
+        for app in apps:
+            if way_id == app.id:
+                return app.app_package
+            else:
+                return ""
+
+        return ""
 
 class Picture(models.Model):
     name   = models.CharField(max_length=255)
@@ -149,6 +158,7 @@ class statics(models.Model):
 
     def dic(self):
         fields = [
+            'id',
             'name',
             'count',
             'level',
