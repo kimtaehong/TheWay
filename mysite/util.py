@@ -164,6 +164,3 @@ def isNotNone(a, b) :
         return True
     else :
         return False
-
-def updatepercentage(a, b) :
-    pass

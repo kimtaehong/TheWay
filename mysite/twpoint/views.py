@@ -7,7 +7,9 @@ import app
 import picture
 from django.views.decorators.csrf import csrf_exempt
 import os
+import util
 import pdb
+from PIL import Image
 
 
 @csrf_exempt
@@ -189,5 +191,10 @@ def staticsview(request):
 
 
 def image(request):
-    file = open(request.GET['file'], 'rb').read()
+    im = Image.open(request.GET['file'])
+    size = 256,256
+    im.thumbnail(size)
+    filename = request.GET['file'].split('/')[-1]
+    im.save('./temp/tmp_pic_' + filename + '.jpeg', 'JPEG')
+    file = open('./temp/tmp_pic_' + filename + '.jpeg', 'rb').read()
     return HttpResponse(file, content_type="image/jpeg")
