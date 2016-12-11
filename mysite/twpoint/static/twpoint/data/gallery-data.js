@@ -15,12 +15,11 @@ $(function(){
         scaleControl: true,
         zoomControl: true,
     });
-
     /* checkbox check */
     $(".g_check").click(function(){
         if($(this).is(":checked")){
             var id = Number(this.id);
-            var pic = pic_data.filter(function(item, index, array){
+            var pic = pic_data.filter(function(item){
                 return item['id'] == id;
             });
 
@@ -46,14 +45,18 @@ $(function(){
 
     /* checkbox select all */
     $("#example-select-all").click(function(){
-        var row = $('#gallery_table');
+        var row = g_table.rows({ 'search': 'applied' }).nodes();
+        for(var i=0;i<row.length;i++){
+            row[i].children[0].children[0].click();
+        }
+        $('input[type="checkbox"]', row).prop('checked', this.checked);
+
     });
 })
-
 // button click
 function imageClick(id){
 
-    var pic = pic_data.filter(function(item, index, array){
+    var pic = pic_data.filter(function(item){
         return item['id'] == id;
     });
 
