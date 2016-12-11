@@ -19,22 +19,22 @@ class Application(models.Model):
 
 class WayPoint(models.Model):
     """위치 정보에 관한 모델"""
-    app_name   = models.ForeignKey(Application, on_delete=models.CASCADE)
-    path       = models.CharField(max_length=255, null=True)
+    app_name = models.ForeignKey(Application, on_delete=models.CASCADE)
+    path = models.CharField(max_length=255, null=True)
     table_name = models.CharField(max_length=255, null=True)
     point_time = models.CharField(max_length=255, null=True)
-    position   = models.CharField(max_length=255, null=True)
+    position = models.CharField(max_length=255, null=True)
     position_x = models.CharField(max_length=255, null=True)
     position_y = models.CharField(max_length=255, null=True)
-    start      = models.CharField(max_length=255, null=True)
-    start_x    = models.CharField(max_length=255, null=True)
-    start_y    = models.CharField(max_length=255, null=True)
-    end        = models.CharField(max_length=255, null=True)
-    end_x      = models.CharField(max_length=255, null=True)
-    end_y      = models.CharField(max_length=255, null=True)
-    search     = models.CharField(max_length=255, null=True)
-    search_x   = models.CharField(max_length=255, null=True)
-    search_y   = models.CharField(max_length=255, null=True)
+    start = models.CharField(max_length=255, null=True)
+    start_x = models.CharField(max_length=255, null=True)
+    start_y = models.CharField(max_length=255, null=True)
+    end = models.CharField(max_length=255, null=True)
+    end_x = models.CharField(max_length=255, null=True)
+    end_y = models.CharField(max_length=255, null=True)
+    search = models.CharField(max_length=255, null=True)
+    search_x = models.CharField(max_length=255, null=True)
+    search_y = models.CharField(max_length=255, null=True)
 
     def __str__(self):
         if self.position is not None:
@@ -79,15 +79,16 @@ class WayPoint(models.Model):
 
         return ""
 
+
 class Picture(models.Model):
-    name   = models.CharField(max_length=255)
-    path   = models.CharField(max_length=255)
-    time   = models.IntegerField()
+    name = models.CharField(max_length=255)
+    path = models.CharField(max_length=255)
+    time = models.IntegerField()
     device = models.CharField(max_length=255)
-    lng    = models.FloatField()
-    lat    = models.FloatField()
-    sha1   = models.CharField(max_length=40)
-    md5    = models.CharField(max_length=32)
+    lng = models.FloatField()
+    lat = models.FloatField()
+    sha1 = models.CharField(max_length=40)
+    md5 = models.CharField(max_length=32)
 
     def __str__(self):
         return self.name
@@ -110,13 +111,13 @@ class Picture(models.Model):
 
 
 class BaseStation(models.Model):
-    time     = models.CharField(max_length=255)
+    time = models.CharField(max_length=255)
     location = models.CharField(max_length=255)
-    lat      = models.FloatField('Latitude')
-    lng      = models.FloatField('Longitude')
-    sender   = models.CharField(max_length=255)
+    lat = models.FloatField('Latitude')
+    lng = models.FloatField('Longitude')
+    sender = models.CharField(max_length=255)
     receiver = models.CharField(max_length=255)
-    type     = models.CharField(max_length=255)
+    type = models.CharField(max_length=255)
 
     def __str__(self):
         return self.name
@@ -139,8 +140,8 @@ class BaseStation(models.Model):
 
 
 class UserInfo(models.Model):
-    name        = models.CharField(max_length=50)
-    case_no     = models.CharField(max_length=255)
+    name = models.CharField(max_length=50)
+    case_no = models.CharField(max_length=255)
     description = models.CharField(max_length=255)
 
     def __str__(self):
@@ -148,10 +149,10 @@ class UserInfo(models.Model):
 
 
 class statics(models.Model):
-    name  = models.CharField(max_length=50)
+    name = models.CharField(max_length=50)
     count = models.IntegerField()
-    level = models.IntegerField() #Level -> 서울시 => lv1, 강남구 => Lv2
-    pid   = models.IntegerField() #parent ID
+    level = models.IntegerField()   # Level -> 서울시 => lv1, 강남구 => Lv2
+    pid  = models.IntegerField()    # parent ID
 
     def __str__(self):
             return "statics"

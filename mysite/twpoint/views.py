@@ -6,9 +6,6 @@ import bsparser
 import app
 import picture
 from django.views.decorators.csrf import csrf_exempt
-import os
-import util
-import pdb
 from PIL import Image
 
 
