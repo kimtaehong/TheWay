@@ -7,9 +7,15 @@ var marker;
 var circle;
 var circles = [];
 var markers = [];
+var myIcon = new google.maps.MarkerImage("../BaseSation.png", null, null, null, new google.maps.Size(12,20));
 // lat = 위도 (37...) , lng = 경도 (127...)
+<<<<<<< HEAD
 var x=500;
 
+=======
+var chicago = {lat: 41.85, lng: -87.65};
+var x=100;
+>>>>>>> master
 $(function(){
         function CenterControl(controlDiv, bs_map) {
       // Set CSS for the control border.

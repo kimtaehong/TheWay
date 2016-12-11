@@ -43,6 +43,11 @@ $(function(){
             markers[this.id].setMap(null);
         }
     });
+
+    /* checkbox select all */
+    $("#example-select-all").click(function(){
+        var row = $('#gallery_table');
+    });
 })
 
 // button click
