@@ -74,8 +74,8 @@ def list2dic(record):
 #############################################################
 #############################################################
 
-def xmlOpen(packageName, path) :
-    return open('./phone/data/' + packageName + '/' + path, 'rb').read()
+def xmlOpen(packageName, path, folderpath) :
+    return open(folderpath + '/data/' + packageName + '/' + path, 'rb').read()
 
 def findAll(data, regex) :
     for reg in regex.split('&&&&') :

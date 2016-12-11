@@ -37,7 +37,7 @@ def sqlParse(record, path, afterprocess):
 def xmlParse(record, path, afterprocess):
     try:
         record['tableName'] = ''
-        xmlcon = util.xmlOpen(record['packageName'], record['path'], path)
+        xmlcon = util.xmlOpen(record['packageName'], record['path'], path).decode('utf-8')
     except:
         return False
 
@@ -52,7 +52,7 @@ def xmlParse(record, path, afterprocess):
     else:
         appRecords = [xmlcon]
     valueList = []
-    for key in record.keys()[3:-2]:
+    for key in list(record)[3:-2]:
         if key == 'Sperate':
             pass
         if record[key] != '':
@@ -60,12 +60,13 @@ def xmlParse(record, path, afterprocess):
 
     for appRecord in appRecords:
         datas = []
-        for re in record.keys()[3:-2]:
+        for re in list(record)[3:-2]:
             reData = util.findAll(appRecord, record[re])[0]
             datas.append(reData)
         rec = WayPoint(app_name_id=ap.id, path=record['path'], table_name=record['tableName'])
+        values = list(record)[3:-2]
         for i in range(0, len(values)):
-            rec.__dict__[values[i]] = appRecord[i]
+            rec.__dict__[values[i]] = datas[i]
         rec.save()
         if afterprocess != '':
             after.process(afterprocess, ap.id)
@@ -88,7 +89,7 @@ def appdata(target):
         if record is None:
             break
         record = util.list2dic(record)
-        print('[+] ' + record['appName'] + ' : ' + record['tableName'])
+        print('[+] ' + record['appName'])
         if record['DataType'].split('_')[0] == 'SQL':
             sqlParse(record, target, record['DataType'].split('_')[1])
         elif record['DataType'].split('_')[0] == 'XML':

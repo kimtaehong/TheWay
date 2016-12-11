@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="state" value="4" />
+    <long name="last_launched" value="1481108448430" />
+    <long name="last_interval" value="60000" />
+    <int name="ar_enable" value="1" />
+    <int name="detectProcessor" value="0" />
+</map>
