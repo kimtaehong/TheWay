@@ -113,11 +113,11 @@ def Syrup_sensor(appName, packageName, path, target) :
     except :
         return
 
-    if len(Application.objects.filter(app_name=record['appName'])) == 0:
-        ap = Application(app_name=record['appName'], app_package=record['packageName'])
+    if len(Application.objects.filter(app_name=appName)) == 0:
+        ap = Application(app_name=appName, app_package=packageName)
         ap.save()
     else :
-        ap = Application.objects.filter(app_name = record['appName'])[0]
+        ap = Application.objects.filter(app_name = appName)[0]
 
     cursor.execute("select _SOURCE_GEOMETRY, _BASETARGET, _EXPIREDDATE from T_BLE")
     while True :
@@ -165,6 +165,5 @@ def Beadaltong_ab(appName, packageName, path, target) :
             continue
         input_data = WayPoint(position_x = lng,
                               position_y = lat,
-                              point_time = date,
                               app_name_id = ap.id)
         input_data.save()
