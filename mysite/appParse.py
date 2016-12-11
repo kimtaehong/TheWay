@@ -12,6 +12,10 @@ def Parse(appName, packageName, path, tableName, target):
         return GGulGGulMoneyBook_spending(appName, packageName, path, target)
     elif appName == 'KakaoTaxi' and path == 'databases/data.db' :
         return KakaoTaxi_data(appName, packageName, path, target)
+    elif appName == 'Syrup' and path == 'databases/.C3PO_SensorDB.db' :
+        return Syrup_sensor(appName, packageName, path, target)
+    elif appName == 'BaedalTong' and path == 'databases/appboy.db' :
+        return Beadaltong_ab(appName, packageName, path, target)
 
 
 def appA_fileA(appName, packageName, path):
@@ -100,4 +104,67 @@ def KakaoTaxi_data(appName, packageName, path, target) :
             input_data.end_y = util.findAll(data[3], "\"lat\":[0-9.]+")[0].split(":")[1]
         input_data.point_time = data[2]
         input_data.app_name_id = ap.id
+        input_data.save()
+
+def Syrup_sensor(appName, packageName, path, target) :
+    try :
+        con    = dbutil.appdbconnect(packageName, path, target)
+        cursor = con.cursor()
+    except :
+        return
+
+    if len(Application.objects.filter(app_name=record['appName'])) == 0:
+        ap = Application(app_name=record['appName'], app_package=record['packageName'])
+        ap.save()
+    else :
+        ap = Application.objects.filter(app_name = record['appName'])[0]
+
+    cursor.execute("select _SOURCE_GEOMETRY, _BASETARGET, _EXPIREDDATE from T_BLE")
+    while True :
+        data = cursor.fetchone()
+        if data == None :
+            break
+        #{"type":"Point","coordinates":[126.93271694,36.77677689,0]}
+        loc = util.findAll(data[0], "[0-9.]+")
+        try :
+            lat = loc[0]
+            lng = loc[1]
+        except :
+            continue
+        #{"targetId":"29249132","type":"MID","targetName":"GS25 순천향학사"}
+        name = util.findAll(data[1], "\"targetName\":\"(.+?)\"")[0]
+        date = data[2]
+        input_data = WayPoint(position = name,
+                              position_x = lng,
+                              position_y = lat,
+                              point_time = date,
+                              app_name_id = ap.id)
+        input_data.save()
+
+def Beadaltong_ab(appName, packageName, path, target) :
+    try :
+        con    = dbutil.appdbconnect(packageName, path, target)
+        cursor = con.cursor()
+    except :
+        return
+
+    ap = Application(app_name = appName, app_package = packageName)
+    ap.save()
+
+    cursor.execute("select event_data, timestamp from ab_events where event_type = 'lr'")
+    while True :
+        data = cursor.fetchone()
+        if data == None :
+            break
+        #{"latitude":36.7293028,"longitude":127.0098995,"altitude":0,"ll_accuracy":25}
+        loc = util.findAll(data[0], "[0-9.]+")
+        try:
+            lat = loc[0]
+            lng = loc[1]
+        except :
+            continue
+        input_data = WayPoint(position_x = lng,
+                              position_y = lat,
+                              point_time = date,
+                              app_name_id = ap.id)
         input_data.save()

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="odn_k_last_event">com.skplanet.sdk.proximity.r2d2.events.GeofenceEvent,com.skplanet.sdk.proximity.locationmanager.events.ScreenEvent,com.skplanet.sdk.proximity.locationmanager.events.AREvent,com.skplanet.sdk.proximity.locationmanager.events.c,com.skplanet.sdk.proximity.locationmanager.events.BluetoothEvent,com.skplanet.sdk.proximity.locationmanager.events.WiFiEvent,com.skplanet.sdk.proximity.locationmanager.events.LoopScheduleEvent</string>
+    <string name="odn_k_last_action">com.skplanet.sdk.proximity.r2d2.actors.a,com.skplanet.sdk.proximity.r2d2.actors.c,com.skplanet.sdk.proximity.r2d2.actors.b</string>
+    <boolean name="odn_k_is_dispatcher_enable" value="true" />
+</map>

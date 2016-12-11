@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="com.skplanet.sdk.proximity.r2d2.module.s">[&quot;J3i2ADJ20AK3dkD8&quot;]</string>
+    <boolean name="isDownloadingBssidMap" value="false" />
+    <long name="lastNearestBeaconRequestTimestamp" value="1476788532085" />
+    <string name="com.skplanet.sdk.proximity.r2d2.module.aa">[&quot;J3i2ADJ20AK3dkD8&quot;]</string>
+    <string name="DeviceCollectorModule/LOCATION">{&quot;timestamp&quot;:1476838459569,&quot;accuracy&quot;:20.773000717163086,&quot;longitude&quot;:126.9326515,&quot;latitude&quot;:36.7692899,&quot;provider&quot;:&quot;fused&quot;}</string>
+    <string name="LOCATION/LAST">{&quot;timestamp&quot;:1476838459527,&quot;latitude&quot;:36.7692899,&quot;longitude&quot;:126.9326515,&quot;altitude&quot;:0,&quot;accuracy&quot;:20.773000717163086,&quot;provider&quot;:&quot;fused&quot;,&quot;speed&quot;:0,&quot;bearing&quot;:0,&quot;tid&quot;:1756998436}</string>
+    <int name="bssidMapVersion" value="12" />
+</map>

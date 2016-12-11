@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="odn_k_interval_time" value="600000" />
+    <string name="odn_k_class_name">com.skplanet.sdk.proximity.locationmanager.events.LoopScheduleEvent</string>
+</map>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="com.kakao.user.thumbbnailpath">{&quot;value&quot;:&quot;http:\/\/mud-kage.kakao.co.kr\/14\/dn\/btqcqy5xae6\/wAcHpC0PksjakJSD0NLb4k\/o.jpg&quot;,&quot;valueType&quot;:&quot;string&quot;}</string>
+    <string name="com.kakao.token.AccessToken.ExpiresAt">{&quot;value&quot;:1475337558351,&quot;valueType&quot;:&quot;long&quot;}</string>
+    <string name="com.kakao.token.RefreshToken">{&quot;value&quot;:&quot;s1\/gYraKVXQbVfSCg\/2xA9YE74RUXan\/\/Ny3WEHdr6qn3GAA5OmhT\/jfHGs+TeLMRcpNx8xZVutM\n0h4bWgxhnw==\n&quot;,&quot;valueType&quot;:&quot;string&quot;}</string>
+    <string name="com.kakao.user.serviceuserid">{&quot;value&quot;:0,&quot;valueType&quot;:&quot;long&quot;}</string>
+    <string name="com.kakao.user.remaininggroupmsgcount">{&quot;value&quot;:0,&quot;valueType&quot;:&quot;int&quot;}</string>
+    <string name="com.kakao.user.uuid">{&quot;value&quot;:&quot;o5Kgk6aQopS4i7iJsYOwhrWZq5-uma36&quot;,&quot;valueType&quot;:&quot;string&quot;}</string>
+    <string name="com.kakao.user.userId">{&quot;value&quot;:68893456,&quot;valueType&quot;:&quot;long&quot;}</string>
+    <string name="com.kakao.token.KakaoSecureMode">{&quot;value&quot;:&quot;true&quot;,&quot;valueType&quot;:&quot;string&quot;}</string>
+    <string name="com.kakao.token.RefreshToken.ExpiresAt">{&quot;value&quot;:9223372036854775807,&quot;valueType&quot;:&quot;long&quot;}</string>
+    <string name="com.kakao.user.profilepath">{&quot;value&quot;:&quot;http:\/\/mud-kage.kakao.co.kr\/14\/dn\/btqcqGWJQZd\/GKko8DMOgun2t8hOfG7WsK\/o.jpg&quot;,&quot;valueType&quot;:&quot;string&quot;}</string>
+    <string name="com.kakao.user.remaininginvitecount">{&quot;value&quot;:0,&quot;valueType&quot;:&quot;int&quot;}</string>
+    <string name="com.kakao.user.nickname">{&quot;value&quot;:&quot;최현표&quot;,&quot;valueType&quot;:&quot;string&quot;}</string>
+    <string name="com.kakao.token.AccessToken">{&quot;value&quot;:&quot;FXcGcuFIj7usepuUjiNy1mRrXeQr1Q8k52RM5jiHsFVjQoOsG9rwkbL+qF\/n+WRUn6uTr\/T\/nGE5\nBm\/siIEVCg==\n&quot;,&quot;valueType&quot;:&quot;string&quot;}</string>
+</map>

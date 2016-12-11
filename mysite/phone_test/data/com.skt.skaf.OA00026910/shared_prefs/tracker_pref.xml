@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="key_send_run_first" value="true" />
+    <string name="advertising_id">d82917ca-a6fc-4fdd-a887-5f8a748205cc</string>
+    <long name="first_send_event_time" value="1475805731568" />
+    <string name="referrer">utm_source%3D%28not%2520set%29%26utm_medium%3D%28not%2520set%29</string>
+    <boolean name="first_run" value="false" />
+    <boolean name="key_send_referrer" value="true" />
+</map>

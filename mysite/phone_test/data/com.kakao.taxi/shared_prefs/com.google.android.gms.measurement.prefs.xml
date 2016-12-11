@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="time_active" value="0" />
+    <long name="health_monitor:start" value="1475143034509" />
+    <long name="health_monitor:count" value="1010" />
+    <boolean name="has_been_opened" value="true" />
+    <long name="last_pause_time" value="1476702461782" />
+    <string name="health_monitor:value">1EC8487:Uploading is not possible. App measurement disabled</string>
+    <boolean name="start_new_session" value="false" />
+</map>
