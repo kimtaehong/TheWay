@@ -2,6 +2,7 @@ var station_url = '/basestation';
 var station_data = [];
 var flag = false;
 var circles;
+var b_markers;
 
 $(function(){
     /* base station 100m option */
@@ -24,12 +25,26 @@ $(function(){
     });
 
     /* base statoin 500m option */
-    $('#station_100').click(function(){
+    $('#station_500').click(function(){
         if(station_data.length == 0){
             MyAlert("No Base Station Data!");
             return;
         }
         Action(station_data, 500);
+    });
+
+    $('#station_delete').click(function(){
+        if(b_markers == null && circles == null){
+            MyAlert("The base station is not selected");
+            return;
+        }
+        b_markers.forEach(function(item){
+            item.setMap(null);
+        });
+        circles.forEach(function(item){
+            item.setMap(null);
+        });
+        flag = false;
     });
 })
 
@@ -55,18 +70,30 @@ function Action(station_data, radius){
         locations.push({lat: item.lat, lng: item.lng});
     });
 
-    var map = google.maps.Map(document.getElementById('app_map'));
-
+    var map = app_map;
     if(flag){
-        circles.setRadius(radius);
+        circles.forEach(function(item){
+            item.setRadius(radius);
+        });
     } else{
         circles = locations.map(function(item, index){
-            return google.maps.Circle({
-                fillcolor: 'red',
-                fillOpacity: 0.3,
-                strokeColor: 'white',
+            return new google.maps.Circle({
+                fillColor: '#ff0000',
+                fillOpacity: 0.08,
+                strokeColor: '#ff0000',
+                strokeOpacity: 1.0,
                 radius: radius,
+                center: item,
+                map: map,
+            });
+        });
+        b_markers = locations.map(function(item){
+            return new google.maps.Marker({
                 position: item,
+                icon:{
+                    url: '/static/twpoint/img/base_station_icon.png',
+                    scaledSize: new google.maps.Size(50,50),
+                },
                 map: map,
             });
         });

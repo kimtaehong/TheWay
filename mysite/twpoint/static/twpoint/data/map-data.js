@@ -10,17 +10,19 @@ var way_point = {};                                 // 특정 위치정보
 var app_map;
 var marker;
 var markers = [];
-
-// travel mode
-var service = null, display = null;
+var animateTimer=[];
 // lat = 위도 (37...) , lng = 경도 (127...)
 
-
+function clearMarkers() {
+  for (var i = 0; i < markers.length; i++) {
+    if(markers[i]) markers[i].setMap(null);
+  }
+  markers = [];
+}
 
 
 $(function(){
     // 맵 생성
-
     app_map = new google.maps.Map(document.getElementById('app_map'),{
         zoom: 18,
         center: {lat: 37.497518, lng: 127.029676 },
@@ -28,96 +30,223 @@ $(function(){
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         disableDefaultUI: true,
         scaleControl: true,
-        zoomControl: true,
     });
 
+
+
+
     function CenterControl(controlDiv, app_map) {
-        // Set CSS for the control border.
-        var controlUI = document.createElement('div');
-        controlUI.style.backgroundColor = '#fff';
-        controlUI.style.border = '2px solid #fff';
-        controlUI.style.float = 'left';
-        controlUI.style.borderRadius = '3px';
-        controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
-        controlUI.style.cursor = 'pointer';
-        controlUI.style.marginBottom = '22px';
-        controlUI.style.textAlign = 'center';
-        controlUI.title = 'Click to recenter the map';
-        controlDiv.appendChild(controlUI);
+      // Set CSS for the control border.
+      var controlUI = document.createElement('div');
+      controlUI.style.backgroundColor = '#fff';
+      controlUI.style.border = '2px solid #fff';
+      controlUI.style.float = 'left';
+      controlUI.style.borderRadius = '3px';
+      controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+      controlUI.style.cursor = 'pointer';
+      controlUI.style.marginBottom = '22px';
+      controlUI.style.textAlign = 'center';
+      controlUI.title = 'Tracking Stop';
+      controlDiv.appendChild(controlUI);
 
-        // Set CSS for the control interior.
-        var controlText = document.createElement('div');
-        controlText.style.color = 'rgb(25,25,25)';
-        controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
-        controlText.style.fontSize = '16px';
-        controlText.style.lineHeight = '38px';
-        controlText.style.paddingLeft = '5px';
-        controlText.style.paddingRight = '5px';
-        controlText.innerHTML = 'Time tracking';
-        controlUI.appendChild(controlText);
+      // Set CSS for the control interior.
+      var controlText = document.createElement('div');
+      controlText.style.color = 'rgb(25,25,25)';
+      controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
+      controlText.style.fontSize = '16px';
+      controlText.style.lineHeight = '38px';
+      controlText.style.paddingLeft = '5px';
+      controlText.style.paddingRight = '5px';
+      controlText.innerHTML = 'Stop';
+      controlUI.appendChild(controlText);
 
-        var controlUI2 = document.createElement('div');
-        controlUI2.style.backgroundColor = '#fff';
-        controlUI2.style.border = '2px solid #fff';
-        controlUI2.style.borderRadius = '3px';
-        controlUI2.style.float = 'left';
-        controlUI2.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
-        controlUI2.style.cursor = 'pointer';
-        controlUI2.style.marginBottom = '22px';
-        controlUI2.style.textAlign = 'center';
-        controlUI2.title = 'Click to recenter the map';
-        controlDiv.appendChild(controlUI2);
+      var controlUI2 = document.createElement('div');
+      controlUI2.style.backgroundColor = '#fff';
+      controlUI2.style.border = '2px solid #fff';
+      controlUI2.style.borderRadius = '3px';
+      controlUI2.style.float = 'left';
+      controlUI2.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+      controlUI2.style.cursor = 'pointer';
+      controlUI2.style.marginBottom = '22px';
+      controlUI2.style.textAlign = 'center';
+      controlUI2.title = 'Clearmarkers';
+      controlDiv.appendChild(controlUI2);
 
-        // Set CSS for the control interior.
-        var controlText2 = document.createElement('div');
-        controlText2.style.color = 'rgb(25,25,25)';
-        controlText2.style.fontFamily = 'Roboto,Arial,sans-serif';
-        controlText2.style.fontSize = '16px';
-        controlText2.style.lineHeight = '38px';
-        controlText2.style.paddingLeft = '5px';
-        controlText2.style.paddingRight = '5px';
-        controlText2.innerHTML = 'clearMarkers';
-        controlUI2.appendChild(controlText2);
+      // Set CSS for the control interior.
+      var controlText2 = document.createElement('div');
+      controlText2.style.color = 'rgb(25,25,25)';
+      controlText2.style.fontFamily = 'Roboto,Arial,sans-serif';
+      controlText2.style.fontSize = '16px';
+      controlText2.style.lineHeight = '38px';
+      controlText2.style.paddingLeft = '5px';
+      controlText2.style.paddingRight = '5px';
+      controlText2.innerHTML = 'Clear';
+      controlUI2.appendChild(controlText2);
 
+    controlUI.addEventListener('click',pauseAnimate);
 
-        controlUI.addEventListener('click', function drop() {
-            clearMarkers();
-            way_data_time.sort(function compare(a, b) {
-                return a.point_time < b.point_time ? -1 : a.point_time > b.point_time ? 1 : 0;
-            });
-
-            for (var i = 0; i < way_data_time.length; i++) {
-                if(way_data_time[i].position != null || way_data_time[i].position_x != null && way_data_time[i].position_y != null){
-                    way_location_time = {lat: Number(way_data_time[i].position_y), lng: Number(way_data_time[i].position_x) };
-                }
-                else if(way_data_time[i].start != null || way_data_time[i].start_x != null && way_data_time[i].start_y !=null){
-                    way_location_time = {lat: Number(way_data_time[i].start_y), lng: Number(way_data_time[i].start_x) };
-                }
-                else if(way_data_time[i].search != null && way_data_time[i].search_x != null && way_data_time[i].search_y != null){
-                    way_location_time = {lat: Number(way_data_time[i].search_y), lng: Number(way_data_time[i].search_x) };
-                }
-                addMarkerWithTimeout(way_location_time, i*500);
-            }
-        });
-
-        function addMarkerWithTimeout(position, timeout) {
-            window.setTimeout(function() {
-                markers.push(new google.maps.Marker({
-                    position: position,
-                    map: app_map,
-                    animation: google.maps.Animation.DROP
-                }));
-            }, timeout);
-        }
-
-        function clearMarkers() {
-            for (var i = 0; i < markers.length; i++) {
-                markers[i].setMap(null);
-            }
-            markers = [];
-        }
-        controlUI2.addEventListener('click', clearMarkers);
+    function pauseAnimate() {
+       for(var i = 0; i < way_data_time.length; i++)
+       window.clearTimeout(animateTimer[i]);
     }
+
+    controlUI2.addEventListener('click', clearMarkers);
+
+
+}
+    function CenterControl2(controlDiv2, app_map) {
+      // Set CSS for the control border.
+      var controlUI3 = document.createElement('div');
+      controlUI3.style.backgroundColor = '#fff';
+      controlUI3.style.border = '2px solid #fff';
+      controlUI3.style.float = 'left';
+      controlUI3.style.borderRadius = '3px';
+      controlUI3.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+      controlUI3.style.cursor = 'pointer';
+      controlUI3.style.marginBottom = '22px';
+      controlUI3.style.textAlign = 'center';
+      controlUI3.title = 'Tracking Fast';
+      controlDiv2.appendChild(controlUI3);
+
+      // Set CSS for the control interior.
+      var controlText3 = document.createElement('div');
+      controlText3.style.color = 'rgb(25,25,25)';
+      controlText3.style.fontFamily = 'Roboto,Arial,sans-serif';
+      controlText3.style.fontSize = '16px';
+      controlText3.style.lineHeight = '38px';
+      controlText3.style.paddingLeft = '5px';
+      controlText3.style.paddingRight = '5px';
+      controlText3.innerHTML = 'Fast';
+      controlUI3.appendChild(controlText3);
+
+      var controlUI4 = document.createElement('div');
+      controlUI4.style.backgroundColor = '#fff';
+      controlUI4.style.border = '2px solid #fff';
+      controlUI4.style.borderRadius = '3px';
+      controlUI4.style.float = 'left';
+      controlUI4.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+      controlUI4.style.cursor = 'pointer';
+      controlUI4.style.marginBottom = '22px';
+      controlUI4.style.textAlign = 'center';
+      controlUI4.title = 'Tracking Normal';
+      controlDiv2.appendChild(controlUI4);
+
+      // Set CSS for the control interior.
+      var controlText4 = document.createElement('div');
+      controlText4.style.color = 'rgb(25,25,25)';
+      controlText4.style.fontFamily = 'Roboto,Arial,sans-serif';
+      controlText4.style.fontSize = '16px';
+      controlText4.style.lineHeight = '38px';
+      controlText4.style.paddingLeft = '5px';
+      controlText4.style.paddingRight = '5px';
+      controlText4.innerHTML = 'Normal';
+      controlUI4.appendChild(controlText4);
+
+
+      var controlUI5 = document.createElement('div');
+      controlUI5.style.backgroundColor = '#fff';
+      controlUI5.style.border = '2px solid #fff';
+      controlUI5.style.borderRadius = '3px';
+      controlUI5.style.float = 'left';
+      controlUI5.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+      controlUI5.style.cursor = 'pointer';
+      controlUI5.style.marginBottom = '22px';
+      controlUI5.style.textAlign = 'center';
+      controlUI5.title = 'Tracking Slow';
+      controlDiv2.appendChild(controlUI5);
+
+      // Set CSS for the control interior.
+      var controlText5 = document.createElement('div');
+      controlText5.style.color = 'rgb(25,25,25)';
+      controlText5.style.fontFamily = 'Roboto,Arial,sans-serif';
+      controlText5.style.fontSize = '16px';
+      controlText5.style.lineHeight = '38px';
+      controlText5.style.paddingLeft = '5px';
+      controlText5.style.paddingRight = '5px';
+      controlText5.innerHTML = 'Slow';
+      controlUI5.appendChild(controlText5);
+
+    controlUI3.addEventListener('click', function drop() {
+    clearMarkers();
+    way_data_time.sort(function compare(a, b) {
+     return a.point_time < b.point_time ? -1 : a.point_time > b.point_time ? 1 : 0;
+    });
+    for (var i = 0; i < way_data_time.length; i++) {
+            if(way_data_time[i].position != null || way_data_time[i].position_x != null && way_data_time[i].position_y != null){
+               way_location_time = {lat: Number(way_data_time[i].position_y), lng: Number(way_data_time[i].position_x) };
+            }
+            else if(way_data_time[i].start != null || way_data_time[i].start_x != null && way_data_time[i].start_y !=null){
+               way_location_time = {lat: Number(way_data_time[i].start_y), lng: Number(way_data_time[i].start_x) };
+            }
+            else if(way_data_time[i].search != null && way_data_time[i].search_x != null && way_data_time[i].search_y != null){
+                way_location_time = {lat: Number(way_data_time[i].search_y), lng: Number(way_data_time[i].search_x) };
+            }
+            addMarkerWithTimeout(way_location_time, i*300,i);
+        }
+
+    });
+    controlUI4.addEventListener('click', function drop() {
+    clearMarkers();
+    way_data_time.sort(function compare(a, b) {
+     return a.point_time < b.point_time ? -1 : a.point_time > b.point_time ? 1 : 0;
+    });
+    for (var i = 0; i < way_data_time.length; i++) {
+            if(way_data_time[i].position != null || way_data_time[i].position_x != null && way_data_time[i].position_y != null){
+               way_location_time = {lat: Number(way_data_time[i].position_y), lng: Number(way_data_time[i].position_x) };
+            }
+            else if(way_data_time[i].start != null || way_data_time[i].start_x != null && way_data_time[i].start_y !=null){
+               way_location_time = {lat: Number(way_data_time[i].start_y), lng: Number(way_data_time[i].start_x) };
+            }
+            else if(way_data_time[i].search != null && way_data_time[i].search_x != null && way_data_time[i].search_y != null){
+                way_location_time = {lat: Number(way_data_time[i].search_y), lng: Number(way_data_time[i].search_x) };
+            }
+            addMarkerWithTimeout(way_location_time, i*600,i);
+        }
+
+    });
+    controlUI5.addEventListener('click', function drop() {
+    clearMarkers();
+    way_data_time.sort(function compare(a, b) {
+     return a.point_time < b.point_time ? -1 : a.point_time > b.point_time ? 1 : 0;
+    });
+    for (var i = 0; i < way_data_time.length; i++) {
+            if(way_data_time[i].position != null || way_data_time[i].position_x != null && way_data_time[i].position_y != null){
+               way_location_time = {lat: Number(way_data_time[i].position_y), lng: Number(way_data_time[i].position_x) };
+            }
+            else if(way_data_time[i].start != null || way_data_time[i].start_x != null && way_data_time[i].start_y !=null){
+               way_location_time = {lat: Number(way_data_time[i].start_y), lng: Number(way_data_time[i].start_x) };
+            }
+            else if(way_data_time[i].search != null && way_data_time[i].search_x != null && way_data_time[i].search_y != null){
+                way_location_time = {lat: Number(way_data_time[i].search_y), lng: Number(way_data_time[i].search_x) };
+            }
+            addMarkerWithTimeout(way_location_time, i*1000,i);
+        }
+
+    });
+
+    function addMarkerWithTimeout(position, timeout,i) {
+     animateTimer[i]=window.setTimeout(function() {
+            markers.push(new google.maps.Marker({
+              position: position,
+              map: app_map,
+              animation: google.maps.Animation.DROP
+            }));
+            app_map.panTo(position);
+          }, timeout);
+    }
+
+}
+
+    var centerControlDiv2 = document.createElement('div');
+    var centerControl2 = new CenterControl2(centerControlDiv2, app_map);
+
+    centerControlDiv2.index = 2;
+    centerControlDiv2.style['padding-top'] = '10px';
+    app_map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(centerControlDiv2);
+
+
+
+
 
     var centerControlDiv = document.createElement('div');
     var centerControl = new CenterControl(centerControlDiv, app_map);
@@ -126,17 +255,13 @@ $(function(){
     centerControlDiv.style['padding-top'] = '10px';
     app_map.controls[google.maps.ControlPosition.TOP_RIGHT].push(centerControlDiv);
 
-    /* checkbox check */
     $(".marking").click(function(){
         if($(this).is(":checked")){
             var id = Number(this.id);
             way_point = way_data.filter(function(item, index, array){
                 return item['id'] == id;
             });
-            if(service != null){
-                service = null;
-                display = null;
-            }
+
             if(way_point[0] == null){
                 MyAlert("Way Point is None");
                 $(this)[0].checked = false;
@@ -170,7 +295,6 @@ $(function(){
                 $(this)[0].checked = false;
                 return;
             }
-
             /* add custom control */
             if($('.location_info').length == 0){
                 var ctrlDiv = document.createElement('div');
@@ -184,7 +308,7 @@ $(function(){
                 UpdateControl($('.location_text')[0], way_name, way_location.lat, way_location.lng);
             }
 
-            /* marking */
+            /* marking*/
             marker = new google.maps.Marker({
                 position: way_location,
                 map: app_map,
@@ -197,10 +321,6 @@ $(function(){
         else{
             if($('.location_info').length != 0){
                 DeleteControl($('.location_info')[0]);
-            }
-            if(service != null){
-                service = null;
-                display = null;
             }
             markers[this.id].setMap(null);
         }
@@ -320,3 +440,5 @@ function TravelMode(service, display, wayPt){
     marker.getPosition();       // marker의 position 가져오기
     marker.setMap(map);         // map에 marker를 추가, null일 경우 없어진다.
 */
+
+
