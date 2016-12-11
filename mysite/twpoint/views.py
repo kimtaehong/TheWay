@@ -90,10 +90,12 @@ def parsing(request):
     post_user.save()
 
     applications = Application.objects.all()
+    user = UserInfo.objects.first();
 
     context = {
         'time': timezone.localtime(timezone.now()),
         'applications': applications,
+        'user': user,
     }
     return render_to_response('twpoint/parsing.html', context)
 
