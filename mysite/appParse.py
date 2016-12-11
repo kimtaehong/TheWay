@@ -10,6 +10,8 @@ def Parse(appName, packageName, path, tableName, target):
         return cymera_cymeraGallery(appName, packageName, path, target)
     elif appName == 'GGulGGulMoneyBook' and path == 'databases/spending.db' :
         return GGulGGulMoneyBook_spending(appName, packageName, path, target)
+    elif appName == 'KakaoTaxi' and path == 'databases/data.db' :
+        return KakaoTaxi_data(appName, packageName, path, target)
 
 
 def appA_fileA(appName, packageName, path):
@@ -71,4 +73,31 @@ def GGulGGulMoneyBook_spending(appName, packageName, path, target) :
         input_data = WayPoint(position = position,
                               point_time = date,
                               app_name_id = ap.id)
+        input_data.save()
+
+def KakaoTaxi_data(appName, packageName, path, target) :
+    try :
+        con    = dbutil.appdbconnect(packageName, path, target)
+        cursor = con.cursor()
+    except :
+        return
+
+    ap = Application(app_name = appName, app_package = packageName)
+    ap.save()
+
+    cursor.execute("select source, type, selected_at, v from location_item")
+    while True :
+        data = cursor.fetchone()
+        if data == None :
+            break
+        if data[0] == 'HISTORY_START' :
+            input_data = WayPoint(start = util.findAll(data[3], "\"name\":\"(.+?)\"")[0])
+            input_data.start_x = util.findAll(data[3], "\"lng\":[0-9.]+")[0].split(":")[1]
+            input_data.start_y = util.findAll(data[3], "\"lat\":[0-9.]+")[0].split(":")[1]
+        elif data[0] == 'HISTORY_END' :
+            input_data = WayPoint(end = util.findAll(data[3], "\"name\":\"(.+?)\"")[0])
+            input_data.end_x = util.findAll(data[3], "\"lng\":[0-9.]+")[0].split(":")[1]
+            input_data.end_y = util.findAll(data[3], "\"lat\":[0-9.]+")[0].split(":")[1]
+        input_data.point_time = data[2]
+        input_data.app_name_id = ap.id
         input_data.save()

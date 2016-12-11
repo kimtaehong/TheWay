@@ -5,7 +5,6 @@ from twpoint.models import Application, WayPoint, statics
 
 def static():
     datas = WayPoint.objects.all()
-    print(dir(datas[0]))
     for data in datas:
         if util.isNotNone(data.start_x, data.start_y):
             dbutil.input(data.start_x, data.start_y)
