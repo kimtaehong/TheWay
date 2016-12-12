@@ -50,7 +50,7 @@ $(function() {
                     }
 
                     donut_data.data = data;
-
+                    
                     Morris.Donut(donut_data);
                 });
             });
