@@ -23,6 +23,7 @@ $(function() {
                 data.push({'label': item.app_name, "data": way_count});
             });
             w_count = w_json.length;
+            /* Flot Chart */
             CreateFlotChart($('#flot-pie-chart'), data);
 
             var pic_url = '/picture';
@@ -46,11 +47,10 @@ $(function() {
                     data.push({label: "Application Location Data", value: w_count});
                     data.push({label: "Picture Location Data", value: pic_count});
                     if( bs_count != 0 ){
-                        data.push({label: "Base Station Data", value: pic_count});
+                        data.push({label: "Base Station Data", value: bs_count});
                     }
-
                     donut_data.data = data;
-                    
+                    /* donut Chart */
                     Morris.Donut(donut_data);
                 });
             });
