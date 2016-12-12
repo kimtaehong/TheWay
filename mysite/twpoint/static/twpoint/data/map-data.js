@@ -255,10 +255,11 @@ $(function(){
     centerControlDiv.style['padding-top'] = '10px';
     app_map.controls[google.maps.ControlPosition.TOP_RIGHT].push(centerControlDiv);
 
+    /* checkbox check */
     $(".marking").click(function(){
         if($(this).is(":checked")){
             var id = Number(this.id);
-            way_point = way_data.filter(function(item, index, array){
+            way_point = way_data.filter(function(item){
                 return item['id'] == id;
             });
 
@@ -269,12 +270,10 @@ $(function(){
             }
 
             if(way_point[0].position != null || way_point[0].position_x != null && way_point[0].position_y != null){
-                console.log('position');
                 way_name = way_point[0].position;
                 way_location = {lat: Number(way_point[0].position_y), lng: Number(way_point[0].position_x) };
             }
             else if(way_point[0].start != null || way_point[0].start_x != null && way_point[0].start_y !=null){
-                console.log('start');
                 way_name = way_point[0].start;
                 way_location = {lat: Number(way_point[0].start_y), lng: Number(way_point[0].start_x) };
 
@@ -285,7 +284,6 @@ $(function(){
                 TravelMode(service, display, way_point[0]);
             }
             else if(way_point[0].search != null && way_point[0].search_x != null && way_point[0].search_y != null){
-                console.log('search');
                 way_name = way_point[0].search;
                 way_location = {lat: Number(way_point[0].search_y), lng: Number(way_point[0].search_x) };
             }
@@ -324,7 +322,33 @@ $(function(){
             }
             markers[this.id].setMap(null);
         }
-    })
+    });
+
+    /* checkbox select all */
+    $("#example-select-all").click(function(){
+        var rows = a_table.rows({ 'search': 'applied' }).nodes();
+        var divide_data = way_data.filter(function(item){
+            if(item.position_x != null && item.position_y != null){
+                return item;
+            } else if(item.search_x != null && item.search_y != null){
+                return item;
+            }
+        });
+        var row = rows.filter(function(item, index){
+            var r_id = item.children[0].children[0].id;
+            var status = divide_data.some(function(item){
+                return item.id == r_id;
+            });
+            if(status){
+                return item;
+            }
+        });
+
+        for(var i=0;i<row.length;i++){
+            row[i].children[0].children[0].click();
+        }
+        $('input[type="checkbox"]', row).prop('checked', this.checked);
+    });
 })
 
 $.getJSON(way_url,function(w_json){

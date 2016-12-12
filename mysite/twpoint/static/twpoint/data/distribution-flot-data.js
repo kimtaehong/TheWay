@@ -24,6 +24,7 @@ $(function(){
 
         /* left */
         CreateFlotChart($("#flot-pie-chart"), data);
+        /* right */
         CreateFlotChart($("#flot-pie-chart-detail"), sub_data);
 
         /* drop box click */
@@ -72,21 +73,3 @@ function CreateFlotChart(div, data){
         }
     });
 };
-/*
-
-                            <ul class="dropdown-menu pull-right" role="menu">
-                                <li>
-                                    <a id="station_100">100m</a>
-                                </li>
-                                <li>
-                                    <a id="station_300">300m</a>
-                                </li>
-                                <li>
-                                    <a id="station_500">500m</a>
-                                </li>
-                                <li>
-                                    <a id="station_delete">Delete</a>
-                                </li>
-                            </ul>
-
-*/
