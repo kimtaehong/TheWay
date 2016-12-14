@@ -26,7 +26,7 @@ $(function(){
     app_map = new google.maps.Map(document.getElementById('app_map'),{
         zoom: 18,
         center: {lat: 37.497518, lng: 127.029676 },
-        scrollwheel: false,
+        scrollwheel: true,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         disableDefaultUI: true,
         scaleControl: true,
