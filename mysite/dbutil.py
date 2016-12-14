@@ -112,7 +112,7 @@ def bsQuery(rowData):
         return False
     if len(rowData['position']) == 4 or len(rowData['position']) == 0:
         return False
-    time = util.timeTotimestamp(rowData['time'])
+    time = rowData['time']
     lat, lon = util.locToCoord(rowData['position'])
     if 'sender' not in rowData:
         rowData['sender'] = 'None'

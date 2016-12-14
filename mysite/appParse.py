@@ -53,7 +53,7 @@ def cymera_cymeraGallery(appName, packageName, path, target) :
                               table_name  = 'cymera_photos, cymera_exif',
                               position_x  = lng,
                               position_y  = lat,
-                              point_time  = date,
+                              point_time  = util.standTime(date),
                               app_name_id = ap.id)
         input_data.save()
 
@@ -75,7 +75,7 @@ def GGulGGulMoneyBook_spending(appName, packageName, path, target) :
         date = data[0] + " " + data[1]
         position = data[2]
         input_data = WayPoint(position = position,
-                              point_time = date,
+                              point_time = util.standTime(date),
                               app_name_id = ap.id)
         input_data.save()
 
@@ -102,7 +102,7 @@ def KakaoTaxi_data(appName, packageName, path, target) :
             input_data = WayPoint(end = util.findAll(data[3], "\"name\":\"(.+?)\"")[0])
             input_data.end_x = util.findAll(data[3], "\"lng\":[0-9.]+")[0].split(":")[1]
             input_data.end_y = util.findAll(data[3], "\"lat\":[0-9.]+")[0].split(":")[1]
-        input_data.point_time = data[2]
+        input_data.point_time = util.standTime(data[2])
         input_data.app_name_id = ap.id
         input_data.save()
 
@@ -137,7 +137,7 @@ def Syrup_sensor(appName, packageName, path, target) :
         input_data = WayPoint(position = name,
                               position_x = lng,
                               position_y = lat,
-                              point_time = date,
+                              point_time = util.standTime(date),
                               app_name_id = ap.id)
         input_data.save()
 

@@ -164,3 +164,21 @@ def isNotNone(a, b) :
         return True
     else :
         return False
+
+def sleeping(sec) :
+    time.sleep(sec)
+    return
+
+def standTime(s) :
+    if re.match('[0-9]{10}', str(s)) != None :
+        s = datetime.datetime.fromtimestamp(int(str(s)[:10])).strftime('%Y-%m-%d %H:%M:%S')
+    elif re.match('[0-9]{4}:[0-9]{2}:[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}', str(s)) != None :
+        s = int(time.mktime(time.strptime(s, "%Y:%m:%d %H:%M:%S")))
+        s = datetime.datetime.fromtimestamp(int(s)).strftime('%Y-%m-%d %H:%M:%S')
+    elif re.match('[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}', str(s)) != None :
+        s = int(time.mktime(time.strptime(s, "%Y-%m-%d %H:%M:%S")))
+        s = datetime.datetime.fromtimestamp(int(s)).strftime('%Y-%m-%d %H:%M:%S')
+    elif re.match('[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}', str(s)) != None :
+        s = int(time.mktime(time.strptime(s, "%Y-%m-%d %H:%M")))
+        s = datetime.datetime.fromtimestamp(int(s)).strftime('%Y-%m-%d %H:%M')
+    return s

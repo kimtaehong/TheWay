@@ -8,8 +8,17 @@ var circle;
 var circles = [];
 var markers = [];
 // lat = 위도 (37...) , lng = 경도 (127...)
-
 var x=500;
+
+bs_map = new google.maps.Map(document.getElementById('bs_map'),{
+    zoom: 18,
+    center: {lat: 37.497518, lng: 127.029676 },
+    scrollwheel: true,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    disableDefaultUI: true,
+    scaleControl: true,
+});
+
 $(function(){
         function CenterControl(controlDiv, bs_map) {
       // Set CSS for the control border.
@@ -84,26 +93,28 @@ $(function(){
 
       // Setup the click event listeners: simply set the map to Chicago.
       controlUI.addEventListener('click', function() {
+      for(var k=0;k<circles.length;k++){
+          if(circles[k]) circles[k].setRadius(100);
+      }
        x=100;
       });
       controlUI2.addEventListener('click', function() {
+       for(var k=0;k<circles.length;k++){
+          if(circles[k]) circles[k].setRadius(300);
+      }
        x=300;
       });
       controlUI3.addEventListener('click', function() {
+       for(var k=0;k<circles.length;k++){
+          if(circles[k]) circles[k].setRadius(500);
+      }
        x=500;
       });
     }
 
 
     // 맵 생성
-    bs_map = new google.maps.Map(document.getElementById('bs_map'),{
-        zoom: 18,
-        center: {lat: 37.497518, lng: 127.029676 },
-        scrollwheel: true,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        disableDefaultUI: true,
-        scaleControl: true,
-    });
+
     var centerControlDiv = document.createElement('div');
     var centerControl = new CenterControl(centerControlDiv, bs_map);
 
@@ -153,3 +164,83 @@ $(function(){
 $.getJSON(bs_url,function(b_json){
     bs_data = b_json;
 });
+
+$.getJSON(bs_url, function(json){
+    station_data = json;
+});
+
+
+var station_data = [];
+var flag = false;
+var circles;
+var b_markers;
+
+$(function(){
+    /* base station 100m option */
+    $('#station_100').click(function(){
+        Action(station_data, 100);
+    });
+
+    /* base station 300m option */
+
+    $('#station_300').click(function(){
+        Action(station_data, 300);
+    });
+
+    /* base statoin 500m option */
+    $('#station_500').click(function(){
+        Action(station_data, 500);
+    });
+
+    $('#station_delete').click(function(){
+        b_markers.forEach(function(item){
+            item.setMap(null);
+        });
+        circles.forEach(function(item){
+            item.setMap(null);
+        });
+        flag = false;
+    });
+})
+
+
+/* alert */
+
+
+function Action(station_data, radius){
+    var locations = [];
+
+    station_data.forEach(function(item, index, array){
+        locations.push({lat: item.lat, lng: item.lng});
+    });
+
+    var map = bs_map;
+    if(flag){
+        circles.forEach(function(item){
+            item.setRadius(radius);
+        });
+    } else{
+        circles = locations.map(function(item, index){
+            return new google.maps.Circle({
+                fillColor: '#ff0000',
+                fillOpacity: 0.08,
+                strokeColor: '#ff0000',
+                strokeOpacity: 1.0,
+                radius: radius,
+                center: item,
+                map: map,
+            });
+        });
+        b_markers = locations.map(function(item){
+            return new google.maps.Marker({
+                position: item,
+                icon:{
+                    url: '/static/twpoint/img/base_station_icon.png',
+                    scaledSize: new google.maps.Size(50,50),
+                },
+                map: map,
+            });
+        });
+        flag = true;
+    }
+}
